@@ -24,7 +24,6 @@ internal static class Program
         _services = new ServiceCollection()
                     .AddSingleton(_configuration)
                     .AddSingleton<DiscordSocketClient>()
-                    .AddSingleton<LoggingService>()
                     .AddSingleton<CommandService>()
                     .AddSingleton(x => new InteractionService(x.GetRequiredService<DiscordSocketClient>()))
                     .AddSingleton<InteractionHandler>()
@@ -32,7 +31,6 @@ internal static class Program
                     .BuildServiceProvider();
 
         _client = _services.GetRequiredService<DiscordSocketClient>();
-        _client.Log += LoggingService.LogAsync;
 
         // Here we can initialize the service that will register and execute our commands
         await _services.GetRequiredService<InteractionHandler>()

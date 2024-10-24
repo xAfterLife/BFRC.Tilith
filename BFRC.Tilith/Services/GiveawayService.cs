@@ -2,106 +2,151 @@
 using BFRC.Tilith.Models;
 using Discord;
 using Discord.WebSocket;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace BFRC.Tilith.Services;
 
 public class GiveawayService
 {
-    private static readonly Random Random = new();
+    private readonly ConcurrentDictionary<ulong, GiveawayInfo> _activeGiveaways;
+    private readonly CancellationTokenSource _cancellationTokenSource;
     private readonly DiscordSocketClient _client;
-    private readonly ConcurrentDictionary<ulong, Giveaway> _giveaways = new();
+    private readonly SemaphoreSlim _lock;
 
-    public GiveawayService(IServiceProvider services)
+    public GiveawayService(DiscordSocketClient client)
     {
-        _client = services.GetRequiredService<DiscordSocketClient>();
-        _client.ReactionAdded += HandleReactionAddedAsync;
+        _client = client;
+        _activeGiveaways = new ConcurrentDictionary<ulong, GiveawayInfo>();
+        _lock = new SemaphoreSlim(1, 1);
+        _cancellationTokenSource = new CancellationTokenSource();
+
+        // Start background task for winner selection
+        _ = RunGiveawayCheckerAsync(_cancellationTokenSource.Token);
     }
 
-    public async Task CreateGiveawayAsync(ITextChannel channel, string prize, TimeSpan duration, IUser host, string imageUrl = null)
+    private async Task RunGiveawayCheckerAsync(CancellationToken cancellationToken)
     {
-        var endTime = DateTime.UtcNow + duration;
-        var giveaway = new Giveaway
+        while ( !cancellationToken.IsCancellationRequested )
         {
-            ChannelId = channel.Id,
-            Prize = prize,
-            EndTime = endTime,
-            HostId = host.Id
-        };
-
-        var timestampTag = new TimestampTag(endTime, TimestampTagStyles.Relative);
-        var embed = new EmbedBuilder()
-                    .WithTitle("Giveaway!")
-                    .WithDescription($"Prize: {prize}\nEnds at: {timestampTag}\nReact with 🎉 to enter!")
-                    .WithColor(Color.Gold)
-                    .WithFooter($"Hosted by: {host.Username}")
-                    .WithCurrentTimestamp();
-
-        if ( !string.IsNullOrEmpty(imageUrl) )
-            embed.WithImageUrl(imageUrl);
-
-        var message = await channel.SendMessageAsync(embed: embed.Build());
-        giveaway.MessageId = message.Id;
-
-        _giveaways[message.Id] = giveaway;
-
-        // Schedule the giveaway to end
-        _ = Task.Delay(duration).ContinueWith(async _ => await EndGiveawayAsync(giveaway));
-    }
-
-    private Task HandleReactionAddedAsync(Cacheable<IUserMessage, ulong> cachedMessage, Cacheable<IMessageChannel, ulong> cachedChannel, SocketReaction reaction)
-    {
-        if ( reaction.Emote.Name != "🎉" )
-            return Task.CompletedTask;
-
-        if ( !_giveaways.TryGetValue(reaction.MessageId, out var giveaway) )
-            return Task.CompletedTask;
-
-        if ( giveaway.Participants.Contains(reaction.UserId) )
-            return Task.CompletedTask;
-
-        giveaway.Participants.Add(reaction.UserId);
-
-        return Task.CompletedTask;
-    }
-
-    private async Task EndGiveawayAsync(Giveaway giveaway)
-    {
-        try
-        {
-            if ( !_giveaways.TryRemove(giveaway.MessageId, out _) )
-                return;
-
-            if ( _client.GetChannel(giveaway.ChannelId) is not ITextChannel channel )
-                return;
-
-            if ( await channel.GetMessageAsync(giveaway.MessageId) is not IUserMessage message )
-                return;
-
-            if ( giveaway.Participants.Count == 0 )
+            await _lock.WaitAsync(cancellationToken);
+            try
             {
-                await message.ModifyAsync(x => x.Embed = new EmbedBuilder()
-                                                         .WithTitle("Giveaway Ended")
-                                                         .WithDescription("No one entered the giveaway.")
-                                                         .WithColor(Color.Red)
-                                                         .Build()
-                );
-                return;
+                var now = DateTimeOffset.UtcNow;
+                var giveawaysToProcess = _activeGiveaways.Values.Where(g => g.NextDrawTime <= now).ToList();
+
+                foreach ( var giveaway in giveawaysToProcess )
+                    await ProcessGiveawayDrawAsync(giveaway);
+            }
+            finally
+            {
+                _lock.Release();
             }
 
-            var winner = giveaway.Participants[Random.Next(giveaway.Participants.Count)];
-            await message.ModifyAsync(x => x.Embed = new EmbedBuilder()
-                                                     .WithTitle("Giveaway Ended")
-                                                     .WithDescription($"Winner: <@{winner}>!\nPrize: {giveaway.Prize}")
-                                                     .WithColor(Color.Green)
-                                                     .WithImageUrl("https://i.ytimg.com/vi/D3ZTUCoVrss/hqdefault.jpg")
-                                                     .Build()
-            );
+            await Task.Delay(TimeSpan.FromSeconds(10), cancellationToken);
         }
-        catch ( Exception ex )
+    }
+
+    private async Task ProcessGiveawayDrawAsync(GiveawayInfo giveaway)
+    {
+        if ( await _client.GetGuild(giveaway.GuildId)
+                          ?.GetTextChannel(giveaway.ChannelId)
+                          ?.GetMessageAsync(giveaway.MessageId)! is not IUserMessage message )
+            return;
+
+        var reactions = await message.GetReactionUsersAsync(new Emoji("🎉"), 1000).FlattenAsync();
+        var eligibleUsers = reactions.Where(u => !u.IsBot).ToList();
+
+        if ( eligibleUsers.Any() )
         {
-            // Log the exception
-            Console.WriteLine($"Error ending giveaway: {ex}");
+            var winner = eligibleUsers[Random.Shared.Next(eligibleUsers.Count)];
+            await message.Channel.SendMessageAsync(
+                $"Congratulations {winner.Mention}! You won: {giveaway.Prize}"
+            );
+
+            giveaway.Winners.Add(winner.Id);
+        }
+
+        // Update next draw time or end giveaway
+        if ( giveaway.RemainingDraws > 1 )
+        {
+            giveaway.RemainingDraws--;
+            giveaway.NextDrawTime = DateTimeOffset.UtcNow.Add(giveaway.DrawInterval);
+
+            // Update the message with current status
+            var embedBuilder = new EmbedBuilder()
+                               .WithTitle("🎉 GIVEAWAY 🎉")
+                               .WithDescription($"Prize: {giveaway.Prize}\nReact with 🎉 to enter!")
+                               .WithColor(Color.Green)
+                               .WithFooter(footer =>
+                                   footer.Text = $"Ends {giveaway.EndTime:g} UTC • {giveaway.RemainingDraws} draws remaining"
+                               )
+                               .WithTimestamp(giveaway.EndTime);
+
+            if ( !string.IsNullOrWhiteSpace(giveaway.GiveawayImageUrl) )
+                embedBuilder.WithImageUrl(giveaway.GiveawayImageUrl);
+
+            await message.ModifyAsync(msg => msg.Embed = embedBuilder.Build());
+        }
+        else
+        {
+            _activeGiveaways.TryRemove(giveaway.MessageId, out _);
+
+            // Create ended giveaway embed
+            var embedBuilder = new EmbedBuilder()
+                               .WithTitle("🎉 GIVEAWAY ENDED 🎉")
+                               .WithDescription($"Prize: {giveaway.Prize}\n\nWinners: {string.Join(", ", giveaway.Winners.Select(id => $"<@{id}>"))}")
+                               .WithColor(Color.Red)
+                               .WithFooter(footer => footer.Text = "Giveaway has ended")
+                               .WithTimestamp(DateTimeOffset.UtcNow);
+
+            // Use ended image if provided, otherwise keep the original image
+            if ( !string.IsNullOrWhiteSpace(giveaway.EndedImageUrl) )
+                embedBuilder.WithImageUrl(giveaway.EndedImageUrl);
+            else if ( !string.IsNullOrWhiteSpace(giveaway.GiveawayImageUrl) )
+                embedBuilder.WithImageUrl(giveaway.GiveawayImageUrl);
+
+            await message.ModifyAsync(msg => msg.Embed = embedBuilder.Build());
+        }
+    }
+
+    public async Task<bool> AddGiveaway(GiveawayInfo giveaway)
+    {
+        if ( giveaway == null )
+            throw new ArgumentNullException(nameof(giveaway));
+
+        // Validate giveaway parameters
+        if ( giveaway.EndTime <= DateTimeOffset.UtcNow )
+            throw new ArgumentException("Giveaway end time must be in the future.");
+
+        if ( giveaway.EndTime > DateTimeOffset.UtcNow.AddDays(30) )
+            throw new ArgumentException("Giveaway duration cannot exceed 30 days.");
+
+        if ( giveaway.RemainingDraws <= 0 )
+            throw new ArgumentException("Remaining draws must be greater than 0.");
+
+        if ( string.IsNullOrWhiteSpace(giveaway.Prize) )
+            throw new ArgumentException("Prize cannot be empty.");
+
+        // Validate draw interval
+        if ( giveaway.DrawInterval <= TimeSpan.Zero )
+            throw new ArgumentException("Draw interval must be greater than zero.");
+
+        // Validate image URLs if provided
+        if ( !string.IsNullOrWhiteSpace(giveaway.GiveawayImageUrl) &&
+             !Uri.TryCreate(giveaway.GiveawayImageUrl, UriKind.Absolute, out _) )
+            throw new ArgumentException("Invalid giveaway image URL.");
+
+        if ( !string.IsNullOrWhiteSpace(giveaway.EndedImageUrl) &&
+             !Uri.TryCreate(giveaway.EndedImageUrl, UriKind.Absolute, out _) )
+            throw new ArgumentException("Invalid ended image URL.");
+
+        await _lock.WaitAsync();
+        try
+        {
+            return !_activeGiveaways.ContainsKey(giveaway.MessageId) && _activeGiveaways.TryAdd(giveaway.MessageId, giveaway);
+        }
+        finally
+        {
+            _lock.Release();
         }
     }
 }

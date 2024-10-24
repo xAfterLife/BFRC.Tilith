@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using BFRC.Tilith.Services;
 using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
@@ -7,13 +6,12 @@ using Microsoft.Extensions.Configuration;
 
 namespace BFRC.Tilith;
 
-public class InteractionHandler(DiscordSocketClient client, InteractionService handler, IServiceProvider services, IConfiguration config, LoggingService logging)
+public class InteractionHandler(DiscordSocketClient client, InteractionService handler, IServiceProvider services, IConfiguration config)
 {
     public async Task InitializeAsync()
     {
         // Process when the client is ready, so we can register our commands.
         client.Ready += ReadyAsync;
-        handler.Log += LoggingService.LogAsync;
 
         // Add the public modules that inherit InteractionModuleBase<T> to the InteractionService
         await handler.AddModulesAsync(Assembly.GetEntryAssembly(), services);
@@ -36,8 +34,8 @@ public class InteractionHandler(DiscordSocketClient client, InteractionService h
             await handler.RegisterCommandsGloballyAsync();
 #endif
 
-        foreach ( var command in commands )
-            _ = logging.DebugAsync($"Name:{command.Name} Type.{command.Type} loaded");
+        //foreach ( var command in commands )
+        //    _ = logging.DebugAsync($"Name:{command.Name} Type.{command.Type} loaded");
     }
 
     private async Task HandleInteraction(SocketInteraction interaction)
