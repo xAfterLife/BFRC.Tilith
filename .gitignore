@@ -299,6 +299,8 @@ docker/.env.local
 docker/.env.*.local
 
 Tilith.Host/appsettings.json
+*appsettings*.json
+
 
 # Keep the example
 !docker/.env.example
