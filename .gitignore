@@ -298,6 +298,8 @@ docker/.env
 docker/.env.local
 docker/.env.*.local
 
+Tilith.Host/appsettings.json
+
 # Keep the example
 !docker/.env.example
 
