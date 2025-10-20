@@ -1,0 +1,73 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+**/Dockerfile*
+**/docker-compose*
+**/.dockerignore
+
+# Documentation
+**/*.md
+**/LICENSE
+**/docs/
+
+# Environment files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Tests
+**/test/
+**/tests/
+**/*Tests/
+**/*.Tests/
+
+# Logs
+**/logs/
+**/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+**/packages/
+
+# Database
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# Temporary files
+**/tmp/
+**/temp/
+**/.tmp/
