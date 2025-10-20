@@ -1,4 +1,5 @@
-﻿using Discord;
+﻿using System.Diagnostics;
+using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
@@ -16,11 +17,9 @@ public sealed class TilithBot
     private readonly ulong? _testGuildId;
     private readonly string _token;
     private readonly XpService _xpService;
+    private bool _modulesLoaded;
 
-    public TilithBot(IConfiguration config,
-        IServiceProvider services,
-        ILogger<TilithBot> logger,
-        XpService xpService)
+    public TilithBot(IConfiguration config, IServiceProvider services, ILogger<TilithBot> logger, XpService xpService)
     {
         _token = config["Discord:Token"] ?? throw new InvalidOperationException("Discord token missing");
         _testGuildId = config.GetValue<ulong?>("Discord:TestGuild");
@@ -30,15 +29,17 @@ public sealed class TilithBot
 
         Client = new DiscordSocketClient(new DiscordSocketConfig
             {
-                GatewayIntents = GatewayIntents.Guilds | GatewayIntents.GuildMessages | GatewayIntents.MessageContent,
-                LogLevel = LogSeverity.Info
+                GatewayIntents = GatewayIntents.Guilds | GatewayIntents.GuildMessages | GatewayIntents.MessageContent, LogLevel = LogSeverity.Info,
+                MessageCacheSize = 100,
+                ConnectionTimeout = 10000
             }
         );
 
         _interactions = new InteractionService(Client.Rest, new InteractionServiceConfig
             {
                 DefaultRunMode = RunMode.Async,
-                UseCompiledLambda = true // Performance: compiled expression trees
+                UseCompiledLambda = true,
+                ThrowOnError = true
             }
         );
 
@@ -46,19 +47,33 @@ public sealed class TilithBot
         Client.Ready += OnReadyAsync;
         Client.InteractionCreated += OnInteractionCreatedAsync;
         Client.Log += LogAsync;
+        _interactions.Log += LogAsync;
     }
 
     public DiscordSocketClient Client { get; }
 
     public async Task StartAsync(CancellationToken ct)
     {
-        // Load interaction modules
-        await _interactions.AddModulesAsync(typeof(TilithBot).Assembly, _services);
+        // CRITICAL: Load modules BEFORE starting client
+        if ( !_modulesLoaded )
+        {
+            var modules = await _interactions.AddModulesAsync(typeof(TilithBot).Assembly, _services);
+            var moduleInfos = modules as ModuleInfo[] ?? modules.ToArray();
+
+            _modulesLoaded = true;
+            _logger.LogInformation("Loaded {Count} interaction modules: {Modules}",
+                moduleInfos.Length, string.Join(", ", moduleInfos.Select(m => m.Name))
+            );
+
+            if ( moduleInfos.Length == 0 )
+            {
+                throw new InvalidOperationException("No interaction modules loaded. Check assembly scanning.");
+            }
+        }
 
         await Client.LoginAsync(TokenType.Bot, _token);
         await Client.StartAsync();
-
-        _logger.LogInformation("Discord bot started, waiting for ready event...");
+        _logger.LogInformation("Discord client started, waiting for Ready event...");
     }
 
     public async Task StopAsync()
@@ -74,49 +89,67 @@ public sealed class TilithBot
 
     private async Task OnReadyAsync()
     {
-        _logger.LogInformation("Discord bot ready, registering commands...");
+        _logger.LogInformation("Discord Ready event fired. Guilds: {Count}, Latency: {Latency}ms",
+            Client.Guilds.Count, Client.Latency
+        );
 
         try
         {
             if ( _testGuildId.HasValue )
             {
-                // Register to test guild for instant updates during development
-                await _interactions.RegisterCommandsToGuildAsync(_testGuildId.Value);
-                _logger.LogInformation("Slash commands registered to test guild {GuildId}", _testGuildId.Value);
+                var commands = await _interactions.RegisterCommandsToGuildAsync(_testGuildId.Value);
+                _logger.LogInformation("Registered {Count} commands to guild {GuildId}: {Commands}",
+                    commands.Count, _testGuildId.Value, string.Join(", ", commands.Select(c => c.Name))
+                );
             }
             else
             {
-                // Register globally (takes ~1 hour to propagate)
-                await _interactions.RegisterCommandsGloballyAsync();
-                _logger.LogInformation("Slash commands registered globally");
+                var commands = await _interactions.RegisterCommandsGloballyAsync();
+                _logger.LogInformation("Registered {Count} global commands: {Commands}",
+                    commands.Count, string.Join(", ", commands.Select(c => c.Name))
+                );
             }
+
+            _readyTcs.TrySetResult();
         }
         catch ( Exception ex )
         {
-            _logger.LogError(ex, "Failed to register slash commands");
+            _logger.LogCritical(ex, "FATAL: Failed to register slash commands");
+            _readyTcs.TrySetException(ex);
+            throw; // Propagate to crash the worker
         }
-
-        _readyTcs.TrySetResult();
     }
 
     private async Task OnInteractionCreatedAsync(SocketInteraction interaction)
     {
+        var sw = Stopwatch.StartNew();
         try
         {
             var context = new SocketInteractionContext(Client, interaction);
-            await _interactions.ExecuteCommandAsync(context, _services);
+            var result = await _interactions.ExecuteCommandAsync(context, _services);
+
+            if ( !result.IsSuccess )
+            {
+                _logger.LogError("Command execution failed: {Error}", result.ErrorReason);
+                if ( interaction is { Type: InteractionType.ApplicationCommand, HasResponded: false } )
+                {
+                    await interaction.RespondAsync($"❌ Error: {result.ErrorReason}", ephemeral: true);
+                }
+            }
+            else
+            {
+                _logger.LogDebug("Command executed in {Ms}ms", sw.ElapsedMilliseconds);
+            }
         }
         catch ( Exception ex )
         {
-            _logger.LogError(ex, "Error executing interaction");
-
-            // Respond with error if not already responded
+            _logger.LogError(ex, "Exception executing interaction {Id}", interaction.Id);
             if ( interaction.Type == InteractionType.ApplicationCommand )
             {
                 var cmdInteraction = (SocketSlashCommand)interaction;
                 if ( !cmdInteraction.HasResponded )
                 {
-                    await cmdInteraction.RespondAsync("❌ An error occurred processing your command.", ephemeral: true);
+                    await cmdInteraction.RespondAsync("❌ An unexpected error occurred.", ephemeral: true);
                 }
             }
         }
@@ -124,7 +157,6 @@ public sealed class TilithBot
 
     private Task OnMessageReceivedAsync(SocketMessage rawMessage)
     {
-        // Only process for XP (no text commands)
         if ( rawMessage is not SocketUserMessage message || message.Author.IsBot )
             return Task.CompletedTask;
 

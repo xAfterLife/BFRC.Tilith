@@ -69,19 +69,21 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
     {
         await DeferAsync();
 
-        if ( type == "gems" )
+        switch ( type )
         {
-            await ShowGemsLeaderboardAsync(limit);
-        }
-        else
-        {
-            await ShowXpLeaderboardAsync(limit);
+            case "gems":
+                await ShowGemsLeaderboardAsync(limit);
+                break;
+            default:
+                await ShowXpLeaderboardAsync(limit);
+                break;
         }
     }
 
     private async Task ShowXpLeaderboardAsync(int limit)
     {
         var topUsers = await _context.Users
+                                     .AsNoTracking()
                                      .OrderByDescending(u => u.Experience)
                                      .Take(limit)
                                      .Select(u => new { u.DiscordId, u.Experience })

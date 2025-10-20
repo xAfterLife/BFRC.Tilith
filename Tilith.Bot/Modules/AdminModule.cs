@@ -41,9 +41,7 @@ public sealed class AdminModule : InteractionModuleBase<SocketInteractionContext
     }
 
     [SlashCommand("set-xp", "Set a user's XP")]
-    public async Task SetXpAsync([Summary("user", "User to modify")] IUser user,
-        [Summary("xp", "New XP amount")] [MinValue(0)]
-        long xp)
+    public async Task SetXpAsync([Summary("user", "User to modify")] IUser user, [Summary("xp", "New XP amount")] [MinValue(0)] long xp)
     {
         await DeferAsync(true);
 
