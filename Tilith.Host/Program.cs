@@ -24,16 +24,24 @@ builder.Services.AddDbContextPool<TilithDbContext>(
     128
 );
 
-builder.Services.AddSingleton(new XpService(TimeSpan.FromMinutes(1)));
+builder.Services.AddSingleton<LevelCacheService>();
+builder.Services.AddSingleton(sp =>
+    new XpService(
+        TimeSpan.FromMinutes(1),
+        sp.GetRequiredService<LevelCacheService>()
+    )
+);
 builder.Services.AddSingleton<NotificationService>();
 builder.Services.AddSingleton<GemService>();
 builder.Services.AddSingleton<UnitService>();
+builder.Services.AddSingleton<BannerService>();
 builder.Services.AddSingleton<TilithBot>();
 
 // Register workers LAST (they'll start after Build())
 builder.Services.AddHostedService<XpProcessor>();
 builder.Services.AddHostedService<NotificationWorker>();
 builder.Services.AddHostedService<DiscordBotWorker>();
+builder.Services.AddHostedService<CacheCleanupWorker>();
 
 builder.Services.AddControllers().AddApplicationPart(typeof(LeaderboardController).Assembly);
 builder.Services.AddEndpointsApiExplorer();

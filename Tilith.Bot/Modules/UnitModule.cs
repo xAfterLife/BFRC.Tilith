@@ -17,7 +17,7 @@ public class UnitModule : InteractionModuleBase<SocketInteractionContext>
     [SlashCommand("unit", "Displays information about a Brave Frontier unit")]
     public async Task UnitAsync([Summary("name", "The name of the unit")] [Autocomplete(typeof(UnitAutocompleteHandler))] string name)
     {
-        await DeferAsync(false);
+        await DeferAsync();
 
         var unit = _unitService.GetByName(name);
         if ( unit is null )

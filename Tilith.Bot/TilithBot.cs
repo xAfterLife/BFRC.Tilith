@@ -4,6 +4,7 @@ using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Tilith.Core.Models;
 using Tilith.Core.Services;
 
 namespace Tilith.Bot;
@@ -160,7 +161,35 @@ public sealed class TilithBot
         if ( rawMessage is not SocketUserMessage message || message.Author.IsBot )
             return Task.CompletedTask;
 
-        _xpService.TryGrantXp(message.Author.Id, message.Channel.Id, DateTime.UtcNow);
+        _ = Task.Run(async () =>
+            {
+                try
+                {
+                    var author = message.Author;
+                    var displayName = author is SocketGuildUser guildUser
+                        ? guildUser.DisplayName // Server nickname or global display name
+                        : author.GlobalName ?? author.Username;
+
+                    var metadata = new MessageMetadata(
+                        author.Username,
+                        displayName
+                    );
+
+                    await _xpService.TryGrantXpAsync(
+                        author.Id,
+                        message.Channel.Id,
+                        DateTime.UtcNow,
+                        metadata, // Pass metadata
+                        CancellationToken.None
+                    );
+                }
+                catch ( Exception ex )
+                {
+                    _logger.LogError(ex, "Failed to grant XP for user {UserId}", message.Author.Id);
+                }
+            }
+        );
+
         return Task.CompletedTask;
     }
 

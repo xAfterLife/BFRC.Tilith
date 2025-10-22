@@ -26,7 +26,7 @@ public sealed class LeaderboardPageController : ControllerBase
                                   .AsNoTracking()
                                   .OrderByDescending(u => u.Experience)
                                   .Take(limit)
-                                  .Select(u => new { u.DiscordId, u.Experience })
+                                  .Select(u => new { u.DisplayName, u.Experience })
                                   .ToListAsync(ct);
 
         var sb = new StringBuilder(8192);
@@ -53,7 +53,7 @@ public sealed class LeaderboardPageController : ControllerBase
                   <body>
                   <h1>🏆 Tilith XP Leaderboard</h1>
                   <table>
-                  <thead><tr><th>#</th><th>User ID</th><th>Level</th><th>XP</th></tr></thead>
+                  <thead><tr><th>#</th><th>UserName</th><th>Level</th><th>XP</th></tr></thead>
                   <tbody>
                   """
         );
@@ -64,7 +64,7 @@ public sealed class LeaderboardPageController : ControllerBase
             var level = LevelCalculator.CalculateLevel(u.Experience);
             sb.Append("<tr>");
             sb.Append($"<td class='rank'>{rank}</td>");
-            sb.Append($"<td><code>{u.DiscordId}</code></td>");
+            sb.Append($"<td><code>{u.DisplayName}</code></td>");
             sb.Append($"<td class='level'>{level}</td>");
             sb.Append($"<td class='xp'>{u.Experience:N0}</td>");
             sb.Append("</tr>");

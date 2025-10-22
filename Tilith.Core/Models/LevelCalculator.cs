@@ -1,38 +1,78 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Reflection;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Tilith.Core.Models;
 
 public static class LevelCalculator
 {
-    private const long BaseXpPerLevel = 100;
-    private const double ExponentialFactor = 1.15;
+    private static readonly JsonSerializerOptions Options = new()
+    {
+        WriteIndented = true,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+    };
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private static readonly long[] CumulativeXp;
+    private static readonly int MaxLevel;
+
+    static LevelCalculator()
+    {
+        var assembly = Assembly.GetExecutingAssembly();
+        using var stream = assembly.GetManifestResourceStream("Tilith.Core.Resource.brave_frontier_levels.json") ?? throw new InvalidOperationException("brave_frontier_levels.json not found");
+
+        var levels = JsonSerializer.Deserialize<LevelData[]>(stream, Options) ?? throw new InvalidOperationException("Failed to deserialize levels");
+
+        MaxLevel = levels.Length;
+        CumulativeXp = new long[MaxLevel + 1];
+
+        var span = CumulativeXp.AsSpan();
+        span[0] = 0;
+
+        for ( var i = 0; i < MaxLevel; i++ )
+        {
+            span[i + 1] = span[i] + levels[i].XpRequired;
+        }
+    }
+
     public static int CalculateLevel(long experience)
     {
-        if ( experience < BaseXpPerLevel )
+        if ( experience < 0 )
             return 1;
 
-        // Exponential curve: XP for level N = BaseXP * (1.15^(N-1))
-        // Inverse: Level = log(XP/BaseXP) / log(1.15) + 1
-        var level = (int)(Math.Log(experience / (double)BaseXpPerLevel) / Math.Log(ExponentialFactor)) + 1;
-        return Math.Max(1, level);
+        // Binary search for highest cumulative XP less than or equal to experience
+        var span = CumulativeXp.AsSpan();
+        var idx = span.BinarySearch(experience);
+        if ( idx >= 0 )
+            return Math.Clamp(idx + 1, 1, MaxLevel);
+
+        idx = Math.Max(0, ~idx - 1);
+        return Math.Clamp(idx + 1, 1, MaxLevel);
     }
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static long GetXpForLevel(int level)
     {
+        // Returns total XP required to *start* this level
         if ( level <= 1 )
             return 0;
-        return (long)(BaseXpPerLevel * Math.Pow(ExponentialFactor, level - 1));
+        return level > MaxLevel + 1 ? CumulativeXp[^1] : CumulativeXp[level - 1];
     }
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static (int Level, long CurrentLevelXp, long NextLevelXp) GetLevelProgress(long experience)
     {
         var level = CalculateLevel(experience);
         var currentLevelXp = GetXpForLevel(level);
         var nextLevelXp = GetXpForLevel(level + 1);
+
+        // Ensure monotonicity even at cap
+        if ( nextLevelXp <= currentLevelXp )
+            nextLevelXp = currentLevelXp + 1;
+
         return (level, currentLevelXp, nextLevelXp);
+    }
+
+    public static long CalculateXpGain(int currentLevel)
+    {
+        return Math.Clamp((long)Math.Ceiling(9 + currentLevel / 2.0), 10, 50);
     }
 }

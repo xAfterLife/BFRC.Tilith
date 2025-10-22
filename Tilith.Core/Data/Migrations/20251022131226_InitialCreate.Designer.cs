@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Tilith.Core.Data;
@@ -11,9 +12,11 @@ using Tilith.Core.Data;
 namespace Tilith.Core.Data.Migrations
 {
     [DbContext(typeof(TilithDbContext))]
-    partial class TilithDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251022131226_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

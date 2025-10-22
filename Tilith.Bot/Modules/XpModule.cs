@@ -38,10 +38,7 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
         var percentage = (double)progressInLevel / xpNeeded * 100;
 
         // Calculate rank
-        var rank = await _context.Users
-                                 .CountAsync(u => u.Experience > dbUser.Experience) +
-                   1;
-
+        var rank = await _context.Users.CountAsync(u => u.Experience > dbUser.Experience) + 1;
         var progressBar = CreateProgressBar(percentage, 20);
 
         var embed = new EmbedBuilder()
@@ -51,9 +48,7 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
                     .AddField("Level", level, true)
                     .AddField("Rank", $"#{rank}", true)
                     .AddField("Total XP", dbUser.Experience.ToString("N0"), true)
-                    .AddField("Progress to Next Level",
-                        $"{progressBar}\n{progressInLevel:N0} / {xpNeeded:N0} ({percentage:F1}%)"
-                    )
+                    .AddField("Progress to Next Level", $"{progressBar}\n{progressInLevel:N0} / {xpNeeded:N0} ({percentage:F1}%)")
                     .AddField("Gems", $"💎 {dbUser.Gems}", true)
                     .WithFooter($"Created: {dbUser.CreatedAtUtc:yyyy-MM-dd}")
                     .WithCurrentTimestamp()
@@ -111,14 +106,7 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
         );
 
         // Add user's own rank if not in top
-        var userRank = await _context.Users
-                                     .CountAsync(u => u.Experience >
-                                                      _context.Users.Where(x => x.DiscordId == Context.User.Id)
-                                                              .Select(x => x.Experience)
-                                                              .FirstOrDefault()
-                                     ) +
-                       1;
-
+        var userRank = await _context.Users.CountAsync(u => u.Experience > _context.Users.Where(x => x.DiscordId == Context.User.Id).Select(x => x.Experience).FirstOrDefault()) + 1;
         var footer = userRank <= limit
             ? $"Showing top {topUsers.Count} users"
             : $"Showing top {topUsers.Count} users • You are rank #{userRank}";
@@ -176,9 +164,30 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
 
     private static string CreateProgressBar(double percentage, int length)
     {
-        var filled = (int)(percentage / 100 * length);
-        var empty = length - filled;
+        // Clamp for safety
+        if ( length <= 0 )
+            return string.Empty;
 
-        return $"[{'█'.ToString().PadRight(filled, '█')}{'░'.ToString().PadRight(empty, '░')}]";
+        percentage = Math.Clamp(percentage, 0.0, 100.0);
+        var filled = (int)Math.Round((percentage / 100) * length);
+        if ( filled > length )
+            filled = length;
+
+        // Single allocation using String.Create for stack-based fill
+        return string.Create(length + 2, (filled, length), static (span, state) =>
+            {
+                span[0] = '[';
+                var (filledCount, totalLength) = state;
+                var i = 1;
+
+                // Fill bar
+                for ( ; i <= filledCount; i++ )
+                    span[i] = '█';
+                for ( ; i <= totalLength; i++ )
+                    span[i] = '░';
+
+                span[^1] = ']';
+            }
+        );
     }
 }

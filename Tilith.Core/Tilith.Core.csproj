@@ -18,6 +18,14 @@
 		<EmbeddedResource Include="Resource\brave_frontier_units.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</EmbeddedResource>
+		<None Remove="Resource\brave_frontier_levels.json"/>
+		<EmbeddedResource Include="Resource\brave_frontier_levels.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Data\Migrations\"/>
 	</ItemGroup>
 
 </Project>

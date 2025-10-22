@@ -3,6 +3,7 @@ using Discord.Interactions;
 using Tilith.Core.Data;
 using Tilith.Core.Entities;
 using Tilith.Core.Models;
+using Tilith.Core.Services;
 
 namespace Tilith.Bot.Modules;
 
@@ -12,10 +13,12 @@ namespace Tilith.Bot.Modules;
 public sealed class AdminModule : InteractionModuleBase<SocketInteractionContext>
 {
     private readonly TilithDbContext _context;
+    private readonly LevelCacheService _levelCache;
 
-    public AdminModule(TilithDbContext context)
+    public AdminModule(TilithDbContext context, LevelCacheService levelCache)
     {
         _context = context;
+        _levelCache = levelCache;
     }
 
     [SlashCommand("give-gems", "Give gems to a user")]
@@ -37,16 +40,19 @@ public sealed class AdminModule : InteractionModuleBase<SocketInteractionContext
         }
 
         await _context.SaveChangesAsync();
+
         await FollowupAsync($"✅ Gave {amount} gems to {user.Mention}. They now have **{dbUser.Gems} gems**.");
     }
 
     [SlashCommand("set-xp", "Set a user's XP")]
-    public async Task SetXpAsync([Summary("user", "User to modify")] IUser user, [Summary("xp", "New XP amount")] [MinValue(0)] long xp)
+    public async Task SetXpAsync([Summary("user", "User to modify")] IUser user,
+        [Summary("xp", "New XP amount")] [MinValue(0)]
+        long xp)
     {
         await DeferAsync(true);
 
         var dbUser = await _context.Users.FindAsync(user.Id);
-        var oldLevel = dbUser?.Level ?? 1;
+        var oldLevel = dbUser != null ? LevelCalculator.CalculateLevel(dbUser.Experience) : 1;
 
         if ( dbUser is null )
         {
@@ -58,9 +64,12 @@ public sealed class AdminModule : InteractionModuleBase<SocketInteractionContext
             dbUser.Experience = xp;
         }
 
+        var newLevel = LevelCalculator.CalculateLevel(xp);
         await _context.SaveChangesAsync();
 
-        var newLevel = LevelCalculator.CalculateLevel(xp);
-        await FollowupAsync($"✅ Set {user.Mention}'s XP to **{xp:N0}** (Level {oldLevel} → {newLevel})");
+        // Invalidate cache after manual XP modification
+        _levelCache.InvalidateUser(user.Id);
+
+        await FollowupAsync($"✅ Set {user.Mention}'s XP to **{xp:N0}** (Level {oldLevel} → {newLevel}). Cache invalidated.");
     }
 }

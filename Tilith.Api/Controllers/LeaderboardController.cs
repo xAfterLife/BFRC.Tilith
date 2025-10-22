@@ -18,20 +18,16 @@ public sealed class LeaderboardController : ControllerBase
     }
 
     [HttpGet("xp")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> GetXpLeaderboardAsync([FromQuery] int limit = 10,
         [FromQuery] int offset = 0,
         CancellationToken cancellationToken = default)
     {
         if ( limit is < 1 or > 100 )
             return BadRequest(new { error = "Limit must be between 1 and 100" });
-
         if ( offset < 0 )
             return BadRequest(new { error = "Offset must be non-negative" });
 
         var totalUsers = await _context.Users.CountAsync(cancellationToken);
-
         var users = await _context.Users
                                   .OrderByDescending(u => u.Experience)
                                   .Skip(offset)
@@ -39,6 +35,8 @@ public sealed class LeaderboardController : ControllerBase
                                   .Select(u => new
                                       {
                                           u.DiscordId,
+                                          u.Username,
+                                          u.DisplayName,
                                           u.Experience,
                                           Level = LevelCalculator.CalculateLevel(u.Experience),
                                           u.Gems
@@ -46,14 +44,15 @@ public sealed class LeaderboardController : ControllerBase
                                   )
                                   .ToListAsync(cancellationToken);
 
-        // Add rank calculation
         var leaderboard = users.Select((u, index) => new
             {
                 rank = offset + index + 1,
-                u.DiscordId,
-                u.Level,
-                u.Experience,
-                u.Gems
+                discordId = u.DiscordId,
+                username = u.Username ?? "Unknown",
+                displayName = u.DisplayName ?? u.Username ?? $"User#{u.DiscordId}",
+                level = u.Level,
+                experience = u.Experience,
+                gems = u.Gems
             }
         );
 
@@ -131,13 +130,8 @@ public sealed class LeaderboardController : ControllerBase
         var xpNeeded = nextLevelXp - currentLevelXp;
 
         // Calculate ranks
-        var xpRank = await _context.Users
-                                   .CountAsync(u => u.Experience > user.Experience, cancellationToken) +
-                     1;
-
-        var gemRank = user.Gems > 0
-            ? await _context.Users.CountAsync(u => u.Gems > user.Gems, cancellationToken) + 1
-            : (int?)null;
+        var xpRank = await _context.Users.CountAsync(u => u.Experience > user.Experience, cancellationToken) + 1;
+        var gemRank = user.Gems > 0 ? await _context.Users.CountAsync(u => u.Gems > user.Gems, cancellationToken) + 1 : (int?)null;
 
         return Ok(new
             {
