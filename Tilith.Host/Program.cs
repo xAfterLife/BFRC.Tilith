@@ -35,6 +35,8 @@ builder.Services.AddSingleton<NotificationService>();
 builder.Services.AddSingleton<GemService>();
 builder.Services.AddSingleton<UnitService>();
 builder.Services.AddSingleton<BannerService>();
+builder.Services.AddSingleton<SummonService>();
+builder.Services.AddSingleton<InventoryService>();
 builder.Services.AddSingleton<TilithBot>();
 
 // Register workers LAST (they'll start after Build())

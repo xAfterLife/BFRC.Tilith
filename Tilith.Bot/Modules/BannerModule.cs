@@ -7,18 +7,19 @@ namespace Tilith.Bot.Modules;
 [Group("banner", "Banner management commands")]
 [DefaultMemberPermissions(GuildPermission.Administrator)]
 [RequireUserPermission(GuildPermission.Administrator)]
-public sealed class BannerAdminModule : InteractionModuleBase<SocketInteractionContext>
+public sealed class BannerModule : InteractionModuleBase<SocketInteractionContext>
 {
     private readonly BannerService _bannerService;
     private readonly UnitService _unitService;
 
-    public BannerAdminModule(BannerService bannerService, UnitService unitService)
+    public BannerModule(BannerService bannerService, UnitService unitService)
     {
         _bannerService = bannerService;
         _unitService = unitService;
     }
 
     [SlashCommand("list", "List all banners")]
+    [RequireUserPermission(GuildPermission.SendMessages)]
     public async Task ListBannersAsync([Summary("active-only", "Show only active banners")] bool activeOnly = true)
     {
         await DeferAsync(true);
@@ -79,17 +80,7 @@ public sealed class BannerAdminModule : InteractionModuleBase<SocketInteractionC
 
         try
         {
-            var banner = await _bannerService.CreateBannerAsync(
-                name,
-                description,
-                start,
-                end,
-                isActive,
-                imageUrl,
-                unitArray,
-                CancellationToken.None
-            );
-
+            var banner = await _bannerService.CreateBannerAsync(name, description, start, end, isActive, imageUrl, unitArray, CancellationToken.None);
             await FollowupAsync($"✅ Created banner **{banner.Id}: {banner.Name}** with {unitArray.Length} units.", ephemeral: true);
         }
         catch ( InvalidOperationException ex )

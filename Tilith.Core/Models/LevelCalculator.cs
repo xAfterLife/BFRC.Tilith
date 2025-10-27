@@ -40,7 +40,6 @@ public static class LevelCalculator
         if ( experience < 0 )
             return 1;
 
-        // Binary search for highest cumulative XP less than or equal to experience
         var span = CumulativeXp.AsSpan();
         var idx = span.BinarySearch(experience);
         if ( idx >= 0 )
@@ -52,7 +51,6 @@ public static class LevelCalculator
 
     public static long GetXpForLevel(int level)
     {
-        // Returns total XP required to *start* this level
         if ( level <= 1 )
             return 0;
         return level > MaxLevel + 1 ? CumulativeXp[^1] : CumulativeXp[level - 1];
@@ -64,7 +62,6 @@ public static class LevelCalculator
         var currentLevelXp = GetXpForLevel(level);
         var nextLevelXp = GetXpForLevel(level + 1);
 
-        // Ensure monotonicity even at cap
         if ( nextLevelXp <= currentLevelXp )
             nextLevelXp = currentLevelXp + 1;
 

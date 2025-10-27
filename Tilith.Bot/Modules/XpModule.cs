@@ -49,7 +49,7 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
                     .AddField("Rank", $"#{rank}", true)
                     .AddField("Total XP", dbUser.Experience.ToString("N0"), true)
                     .AddField("Progress to Next Level", $"{progressBar}\n{progressInLevel:N0} / {xpNeeded:N0} ({percentage:F1}%)")
-                    .AddField("Gems", $"💎 {dbUser.Gems}", true)
+                    //  .AddField("Gems", $"💎 {dbUser.Gems}", true)
                     .WithFooter($"Created: {dbUser.CreatedAtUtc:yyyy-MM-dd}")
                     .WithCurrentTimestamp()
                     .Build();
@@ -58,21 +58,10 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
     }
 
     [SlashCommand("leaderboard", "View the XP leaderboard")]
-    public async Task LeaderboardAsync([Summary("type", "Leaderboard type")] [Choice("XP", "xp")] [Choice("Gems", "gems")] string type = "xp",
-        [Summary("limit", "Number of users to display (1-25)")] [MinValue(1)] [MaxValue(25)]
-        int limit = 10)
+    public async Task LeaderboardAsync([Summary("limit", "Number of users to display (1-25)")] [MinValue(1)] [MaxValue(25)] int limit = 10)
     {
         await DeferAsync();
-
-        switch ( type )
-        {
-            case "gems":
-                await ShowGemsLeaderboardAsync(limit);
-                break;
-            default:
-                await ShowXpLeaderboardAsync(limit);
-                break;
-        }
+        await ShowXpLeaderboardAsync(limit);
     }
 
     private async Task ShowXpLeaderboardAsync(int limit)
@@ -122,65 +111,22 @@ public sealed class XpModule : InteractionModuleBase<SocketInteractionContext>
         await FollowupAsync(embed: embed);
     }
 
-    private async Task ShowGemsLeaderboardAsync(int limit)
-    {
-        var topUsers = await _context.Users
-                                     .Where(u => u.Gems > 0)
-                                     .OrderByDescending(u => u.Gems)
-                                     .Take(limit)
-                                     .Select(u => new { u.DiscordId, u.Gems })
-                                     .ToListAsync();
-
-        if ( topUsers.Count == 0 )
-        {
-            await FollowupAsync("💎 No users have collected gems yet!");
-            return;
-        }
-
-        var description = string.Join("\n", topUsers.Select((u, index) =>
-                {
-                    var medal = index switch
-                    {
-                        0 => "🥇",
-                        1 => "🥈",
-                        2 => "🥉",
-                        _ => $"`#{index + 1:D2}`"
-                    };
-                    return $"{medal} <@{u.DiscordId}> - **{u.Gems:N0}** 💎";
-                }
-            )
-        );
-
-        var embed = new EmbedBuilder()
-                    .WithColor(Color.Purple)
-                    .WithTitle("💎 Gems Leaderboard")
-                    .WithDescription(description)
-                    .WithFooter($"Showing top {topUsers.Count} gem collectors")
-                    .WithCurrentTimestamp()
-                    .Build();
-
-        await FollowupAsync(embed: embed);
-    }
-
     private static string CreateProgressBar(double percentage, int length)
     {
-        // Clamp for safety
         if ( length <= 0 )
             return string.Empty;
 
         percentage = Math.Clamp(percentage, 0.0, 100.0);
-        var filled = (int)Math.Round((percentage / 100) * length);
+        var filled = (int)Math.Round(percentage / 100 * length);
         if ( filled > length )
             filled = length;
 
-        // Single allocation using String.Create for stack-based fill
         return string.Create(length + 2, (filled, length), static (span, state) =>
             {
                 span[0] = '[';
                 var (filledCount, totalLength) = state;
                 var i = 1;
 
-                // Fill bar
                 for ( ; i <= filledCount; i++ )
                     span[i] = '█';
                 for ( ; i <= totalLength; i++ )

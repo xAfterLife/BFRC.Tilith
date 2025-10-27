@@ -10,6 +10,8 @@ public sealed class TilithDbContext : DbContext
     public DbSet<User> Users => Set<User>();
     public DbSet<Banner> Banners => Set<Banner>();
     public DbSet<BannerUnit> BannerUnits => Set<BannerUnit>();
+    public DbSet<UserInventory> UserInventory => Set<UserInventory>();
+    public DbSet<SummonHistory> SummonHistory => Set<SummonHistory>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -87,6 +89,37 @@ public sealed class TilithDbContext : DbContext
                       .OnDelete(DeleteBehavior.Cascade);
 
                 entity.HasIndex(bu => bu.UnitId);
+            }
+        );
+
+        modelBuilder.Entity<UserInventory>(e =>
+            {
+                e.HasKey(x => x.Id);
+                e.HasIndex(x => new { x.DiscordId, x.UnitId }).IsUnique();
+                e.Property(x => x.Quantity).HasDefaultValue(1);
+                e.Property(x => x.AcquiredAtUtc).HasDefaultValueSql("NOW()");
+                e.Property(x => x.UpdatedAtUtc).HasDefaultValueSql("NOW()");
+                e.HasOne(x => x.User)
+                 .WithMany()
+                 .HasForeignKey(x => x.DiscordId)
+                 .OnDelete(DeleteBehavior.Cascade);
+            }
+        );
+
+        modelBuilder.Entity<SummonHistory>(e =>
+            {
+                e.HasKey(x => x.Id);
+                e.HasIndex(x => x.DiscordId);
+                e.HasIndex(x => x.BannerId);
+                e.Property(x => x.SummonedAtUtc).HasDefaultValueSql("NOW()");
+                e.HasOne(x => x.User)
+                 .WithMany()
+                 .HasForeignKey(x => x.DiscordId)
+                 .OnDelete(DeleteBehavior.Cascade);
+                e.HasOne(x => x.Banner)
+                 .WithMany()
+                 .HasForeignKey(x => x.BannerId)
+                 .OnDelete(DeleteBehavior.SetNull);
             }
         );
     }

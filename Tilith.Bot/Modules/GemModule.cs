@@ -15,7 +15,6 @@ public sealed class GemModule : InteractionModuleBase<SocketInteractionContext>
     [SlashCommand("daily", "Claim your daily gems")]
     public async Task DailyAsync()
     {
-        // Defer to show "Bot is thinking..." (commands must respond within 3s)
         await DeferAsync();
 
         var result = await _gemService.ClaimDailyGemsAsync(Context.User.Id);
@@ -29,7 +28,7 @@ public sealed class GemModule : InteractionModuleBase<SocketInteractionContext>
             var timeLeft = result.TimeUntilNext!.Value;
             await FollowupAsync(
                 $"⏰ Daily already claimed! Next claim in **{timeLeft.Hours}h {timeLeft.Minutes}m**.",
-                ephemeral: true // Only visible to user
+                ephemeral: true
             );
         }
     }
