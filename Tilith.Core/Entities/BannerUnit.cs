@@ -4,7 +4,7 @@ public sealed class BannerUnit
 {
     public int BannerId { get; set; }
 
-    public required string UnitId { get; set; }
+    public required int UnitId { get; set; }
 
     public decimal? RateUpMultiplier { get; set; }
 

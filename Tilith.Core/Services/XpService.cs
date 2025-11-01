@@ -26,7 +26,7 @@ public sealed class XpService
     /// <summary>
     ///     Attempts to grant XP asynchronously. Fetches current level from cache.
     /// </summary>
-    public async ValueTask<bool> TryGrantXpAsync(ulong userId, ulong channelId, DateTime timestamp, MessageMetadata metadata, CancellationToken cancellationToken = default)
+    public async ValueTask<bool> TryGrantXpAsync(ulong userId, ulong channelId, ulong guildId, DateTime timestamp, MessageMetadata metadata, CancellationToken cancellationToken = default)
     {
         if ( !_cooldownTracker.TryConsumeXpCooldown(userId, timestamp) )
             return false;
@@ -34,7 +34,7 @@ public sealed class XpService
         var currentLevel = await _levelCache.GetUserLevelAsync(userId, cancellationToken);
         var xpAmount = LevelCalculator.CalculateXpGain(currentLevel);
 
-        _xpChannel.Writer.TryWrite(new XpGrant(userId, channelId, xpAmount, timestamp, metadata));
+        _xpChannel.Writer.TryWrite(new XpGrant(userId, channelId, guildId, xpAmount, timestamp, metadata));
         return true;
     }
 }

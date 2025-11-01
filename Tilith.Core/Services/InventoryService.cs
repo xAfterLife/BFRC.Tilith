@@ -45,7 +45,7 @@ public sealed class InventoryService
             if ( unit == default )
                 continue;
 
-            if ( rarityFilter.HasValue && int.Parse(unit.Rarity) != rarityFilter.Value )
+            if ( rarityFilter.HasValue && unit.Rarity != rarityFilter.Value )
                 continue;
 
             result.Add((unit, item.Quantity));

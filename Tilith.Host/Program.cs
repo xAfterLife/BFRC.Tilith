@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Tilith.Api.Controllers;
 using Tilith.Bot;
 using Tilith.Core.Data;
+using Tilith.Core.Models;
 using Tilith.Core.Services;
 using Tilith.Host.HealthChecks;
 using Tilith.Host.Workers;
@@ -31,17 +32,19 @@ builder.Services.AddSingleton(sp =>
         sp.GetRequiredService<LevelCacheService>()
     )
 );
-builder.Services.AddSingleton<NotificationService>();
+builder.Services.AddSingleton<LevelUpNotificationService>();
 builder.Services.AddSingleton<GemService>();
 builder.Services.AddSingleton<UnitService>();
 builder.Services.AddSingleton<BannerService>();
 builder.Services.AddSingleton<SummonService>();
 builder.Services.AddSingleton<InventoryService>();
+builder.Services.AddSingleton<EvolutionService>();
+builder.Services.AddSingleton<ElementColorService>();
 builder.Services.AddSingleton<TilithBot>();
 
 // Register workers LAST (they'll start after Build())
 builder.Services.AddHostedService<XpProcessor>();
-builder.Services.AddHostedService<NotificationWorker>();
+builder.Services.AddHostedService<LevelUpNotificationWorker>();
 builder.Services.AddHostedService<DiscordBotWorker>();
 builder.Services.AddHostedService<CacheCleanupWorker>();
 
@@ -122,4 +125,5 @@ app.MapHealthChecks("/health", new HealthCheckOptions
    )
    .CacheOutput(policy => policy.Expire(TimeSpan.FromSeconds(5)));
 
+FontCache.Initialize();
 await app.RunAsync();

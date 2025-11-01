@@ -1,0 +1,8774 @@
+[
+  {
+    "startDataId": 10011,
+    "startRarity": 2,
+    "unitIds": [
+      1,
+      2,
+      3,
+      4,
+      338,
+      801,
+      1302
+    ]
+  },
+  {
+    "startDataId": 10021,
+    "startRarity": 2,
+    "unitIds": [
+      25,
+      26,
+      27,
+      320,
+      792
+    ]
+  },
+  {
+    "startDataId": 10030,
+    "startRarity": 1,
+    "unitIds": [
+      43,
+      44,
+      1079
+    ]
+  },
+  {
+    "startDataId": 10040,
+    "startRarity": 1,
+    "unitIds": [
+      55,
+      56,
+      281
+    ]
+  },
+  {
+    "startDataId": 10050,
+    "startRarity": 1,
+    "unitIds": [
+      67,
+      68,
+      518
+    ]
+  },
+  {
+    "startDataId": 10061,
+    "startRarity": 2,
+    "unitIds": [
+      79,
+      80,
+      312
+    ]
+  },
+  {
+    "startDataId": 10071,
+    "startRarity": 2,
+    "unitIds": [
+      87,
+      88,
+      699
+    ]
+  },
+  {
+    "startDataId": 10081,
+    "startRarity": 2,
+    "unitIds": [
+      99,
+      100,
+      358
+    ]
+  },
+  {
+    "startDataId": 10092,
+    "startRarity": 3,
+    "unitIds": [
+      111,
+      112,
+      364,
+      750
+    ]
+  },
+  {
+    "startDataId": 10102,
+    "startRarity": 3,
+    "unitIds": [
+      123,
+      124,
+      326,
+      709
+    ]
+  },
+  {
+    "startDataId": 10112,
+    "startRarity": 3,
+    "unitIds": [
+      135,
+      136,
+      137,
+      370,
+      1232
+    ]
+  },
+  {
+    "startDataId": 10122,
+    "startRarity": 3,
+    "unitIds": [
+      153,
+      154,
+      155,
+      441,
+      901,
+      1491
+    ]
+  },
+  {
+    "startDataId": 10130,
+    "startRarity": 1,
+    "unitIds": [
+      171,
+      177,
+      183,
+      189
+    ]
+  },
+  {
+    "startDataId": 10141,
+    "startRarity": 2,
+    "unitIds": [
+      203,
+      204,
+      205,
+      435,
+      839
+    ]
+  },
+  {
+    "startDataId": 10152,
+    "startRarity": 3,
+    "unitIds": [
+      221,
+      222,
+      223,
+      471
+    ]
+  },
+  {
+    "startDataId": 10162,
+    "startRarity": 3,
+    "unitIds": [
+      239,
+      240,
+      241,
+      477
+    ]
+  },
+  {
+    "startDataId": 10171,
+    "startRarity": 2,
+    "unitIds": [
+      269,
+      270
+    ]
+  },
+  {
+    "startDataId": 10181,
+    "startRarity": 2,
+    "unitIds": [
+      459,
+      460
+    ]
+  },
+  {
+    "startDataId": 10191,
+    "startRarity": 3,
+    "unitIds": [
+      306
+    ]
+  },
+  {
+    "startDataId": 10202,
+    "startRarity": 3,
+    "unitIds": [
+      254,
+      255,
+      256
+    ]
+  },
+  {
+    "startDataId": 10212,
+    "startRarity": 3,
+    "unitIds": [
+      287,
+      288,
+      289,
+      482
+    ]
+  },
+  {
+    "startDataId": 10222,
+    "startRarity": 3,
+    "unitIds": [
+      579,
+      580
+    ]
+  },
+  {
+    "startDataId": 10233,
+    "startRarity": 4,
+    "unitIds": [
+      318,
+      319,
+      800,
+      1218
+    ]
+  },
+  {
+    "startDataId": 10243,
+    "startRarity": 4,
+    "unitIds": [
+      391,
+      392,
+      868
+    ]
+  },
+  {
+    "startDataId": 10253,
+    "startRarity": 4,
+    "unitIds": [
+      346,
+      347,
+      524,
+      1002,
+      1664
+    ]
+  },
+  {
+    "startDataId": 10261,
+    "startRarity": 2,
+    "unitIds": [
+      629,
+      630
+    ]
+  },
+  {
+    "startDataId": 10273,
+    "startRarity": 4,
+    "unitIds": [
+      415,
+      416,
+      488
+    ]
+  },
+  {
+    "startDataId": 10283,
+    "startRarity": 4,
+    "unitIds": [
+      377,
+      378,
+      555,
+      1134
+    ]
+  },
+  {
+    "startDataId": 10293,
+    "startRarity": 4,
+    "unitIds": [
+      643,
+      644,
+      874
+    ]
+  },
+  {
+    "startDataId": 10302,
+    "startRarity": 3,
+    "unitIds": [
+      345
+    ]
+  },
+  {
+    "startDataId": 10312,
+    "startRarity": 3,
+    "unitIds": [
+      333,
+      813
+    ]
+  },
+  {
+    "startDataId": 10323,
+    "startRarity": 4,
+    "unitIds": [
+      403,
+      404
+    ]
+  },
+  {
+    "startDataId": 10333,
+    "startRarity": 4,
+    "unitIds": [
+      447,
+      448,
+      494,
+      1035
+    ]
+  },
+  {
+    "startDataId": 10344,
+    "startRarity": 5,
+    "unitIds": [
+      429
+    ]
+  },
+  {
+    "startDataId": 10354,
+    "startRarity": 5,
+    "unitIds": [
+      807
+    ]
+  },
+  {
+    "startDataId": 10363,
+    "startRarity": 4,
+    "unitIds": [
+      500,
+      501,
+      502,
+      1196
+    ]
+  },
+  {
+    "startDataId": 10373,
+    "startRarity": 4,
+    "unitIds": [
+      530,
+      531,
+      532
+    ]
+  },
+  {
+    "startDataId": 10433,
+    "startRarity": 4,
+    "unitIds": [
+      1280,
+      1281,
+      1282
+    ]
+  },
+  {
+    "startDataId": 10443,
+    "startRarity": 4,
+    "unitIds": [
+      561,
+      562,
+      563
+    ]
+  },
+  {
+    "startDataId": 10452,
+    "startRarity": 3,
+    "unitIds": [
+      551
+    ]
+  },
+  {
+    "startDataId": 10463,
+    "startRarity": 4,
+    "unitIds": [
+      610,
+      611,
+      612,
+      1299
+    ]
+  },
+  {
+    "startDataId": 10472,
+    "startRarity": 3,
+    "unitIds": [
+      592,
+      593,
+      594,
+      1575
+    ]
+  },
+  {
+    "startDataId": 10483,
+    "startRarity": 4,
+    "unitIds": [
+      673,
+      674
+    ]
+  },
+  {
+    "startDataId": 10493,
+    "startRarity": 4,
+    "unitIds": [
+      655,
+      656,
+      657
+    ]
+  },
+  {
+    "startDataId": 10503,
+    "startRarity": 4,
+    "unitIds": [
+      681,
+      682,
+      683
+    ]
+  },
+  {
+    "startDataId": 10514,
+    "startRarity": 5,
+    "unitIds": [
+      946,
+      947,
+      1254
+    ]
+  },
+  {
+    "startDataId": 10522,
+    "startRarity": 3,
+    "unitIds": [
+      677
+    ]
+  },
+  {
+    "startDataId": 10533,
+    "startRarity": 4,
+    "unitIds": [
+      733,
+      734
+    ]
+  },
+  {
+    "startDataId": 10543,
+    "startRarity": 4,
+    "unitIds": [
+      715,
+      716,
+      717
+    ]
+  },
+  {
+    "startDataId": 10553,
+    "startRarity": 4,
+    "unitIds": [
+      756,
+      757,
+      758,
+      1344,
+      1537
+    ]
+  },
+  {
+    "startDataId": 10563,
+    "startRarity": 4,
+    "unitIds": [
+      833,
+      834
+    ]
+  },
+  {
+    "startDataId": 10573,
+    "startRarity": 4,
+    "unitIds": [
+      780,
+      781,
+      1122
+    ]
+  },
+  {
+    "startDataId": 10583,
+    "startRarity": 4,
+    "unitIds": [
+      815,
+      816,
+      817
+    ]
+  },
+  {
+    "startDataId": 10594,
+    "startRarity": 5,
+    "unitIds": [
+      850,
+      851,
+      852
+    ]
+  },
+  {
+    "startDataId": 10604,
+    "startRarity": 5,
+    "unitIds": [
+      883,
+      884,
+      885,
+      1676
+    ]
+  },
+  {
+    "startDataId": 10612,
+    "startRarity": 3,
+    "unitIds": [
+      934,
+      935
+    ]
+  },
+  {
+    "startDataId": 10622,
+    "startRarity": 3,
+    "unitIds": [
+      1023,
+      1024
+    ]
+  },
+  {
+    "startDataId": 10634,
+    "startRarity": 5,
+    "unitIds": [
+      908,
+      909,
+      910
+    ]
+  },
+  {
+    "startDataId": 10644,
+    "startRarity": 5,
+    "unitIds": [
+      951,
+      952,
+      953,
+      1696
+    ]
+  },
+  {
+    "startDataId": 10653,
+    "startRarity": 4,
+    "unitIds": [
+      969,
+      970,
+      971,
+      1581
+    ]
+  },
+  {
+    "startDataId": 10664,
+    "startRarity": 5,
+    "unitIds": [
+      978,
+      979,
+      980
+    ]
+  },
+  {
+    "startDataId": 10674,
+    "startRarity": 5,
+    "unitIds": [
+      1005,
+      1006,
+      1007,
+      1607
+    ]
+  },
+  {
+    "startDataId": 10684,
+    "startRarity": 5,
+    "unitIds": [
+      1039,
+      1040,
+      1041
+    ]
+  },
+  {
+    "startDataId": 10695,
+    "startRarity": 6,
+    "unitIds": [
+      1069,
+      1070
+    ]
+  },
+  {
+    "startDataId": 10704,
+    "startRarity": 5,
+    "unitIds": [
+      1057,
+      1058
+    ]
+  },
+  {
+    "startDataId": 10715,
+    "startRarity": 6,
+    "unitIds": [
+      1075,
+      1076,
+      1421
+    ]
+  },
+  {
+    "startDataId": 10721,
+    "startRarity": 2,
+    "unitIds": [
+      1158,
+      1159
+    ]
+  },
+  {
+    "startDataId": 10734,
+    "startRarity": 5,
+    "unitIds": [
+      1090,
+      1091,
+      1092,
+      1583
+    ]
+  },
+  {
+    "startDataId": 10743,
+    "startRarity": 4,
+    "unitIds": [
+      1108,
+      1109
+    ]
+  },
+  {
+    "startDataId": 10754,
+    "startRarity": 5,
+    "unitIds": [
+      1138,
+      1139,
+      1140,
+      1387
+    ]
+  },
+  {
+    "startDataId": 10764,
+    "startRarity": 5,
+    "unitIds": [
+      1128,
+      1129
+    ]
+  },
+  {
+    "startDataId": 10774,
+    "startRarity": 5,
+    "unitIds": [
+      1176,
+      1177,
+      1178
+    ]
+  },
+  {
+    "startDataId": 10783,
+    "startRarity": 4,
+    "unitIds": [
+      1338,
+      1339,
+      1340
+    ]
+  },
+  {
+    "startDataId": 10794,
+    "startRarity": 5,
+    "unitIds": [
+      1200,
+      1201,
+      1202
+    ]
+  },
+  {
+    "startDataId": 10804,
+    "startRarity": 5,
+    "unitIds": [
+      1236,
+      1237,
+      1238
+    ]
+  },
+  {
+    "startDataId": 10814,
+    "startRarity": 5,
+    "unitIds": [
+      1220,
+      1221
+    ]
+  },
+  {
+    "startDataId": 10824,
+    "startRarity": 5,
+    "unitIds": [
+      1262,
+      1263,
+      1264
+    ]
+  },
+  {
+    "startDataId": 10846,
+    "startRarity": 7,
+    "unitIds": [
+      1308,
+      1309
+    ]
+  },
+  {
+    "startDataId": 10855,
+    "startRarity": 6,
+    "unitIds": [
+      1325
+    ]
+  },
+  {
+    "startDataId": 10864,
+    "startRarity": 5,
+    "unitIds": [
+      1347,
+      1348,
+      1349
+    ]
+  },
+  {
+    "startDataId": 10875,
+    "startRarity": 6,
+    "unitIds": [
+      1363
+    ]
+  },
+  {
+    "startDataId": 10884,
+    "startRarity": 5,
+    "unitIds": [
+      1369,
+      1370,
+      1371
+    ]
+  },
+  {
+    "startDataId": 10896,
+    "startRarity": 7,
+    "unitIds": [
+      1389,
+      1390
+    ]
+  },
+  {
+    "startDataId": 10904,
+    "startRarity": 5,
+    "unitIds": [
+      1411
+    ]
+  },
+  {
+    "startDataId": 10916,
+    "startRarity": 7,
+    "unitIds": [
+      1417,
+      1418
+    ]
+  },
+  {
+    "startDataId": 10922,
+    "startRarity": 3,
+    "unitIds": [
+      1426,
+      1427
+    ]
+  },
+  {
+    "startDataId": 10936,
+    "startRarity": 7,
+    "unitIds": [
+      1434,
+      1435
+    ]
+  },
+  {
+    "startDataId": 10946,
+    "startRarity": 7,
+    "unitIds": [
+      1457,
+      1458
+    ]
+  },
+  {
+    "startDataId": 10954,
+    "startRarity": 5,
+    "unitIds": [
+      1473,
+      1474,
+      1475
+    ]
+  },
+  {
+    "startDataId": 10964,
+    "startRarity": 5,
+    "unitIds": [
+      1479,
+      1480,
+      1481
+    ]
+  },
+  {
+    "startDataId": 10976,
+    "startRarity": 7,
+    "unitIds": [
+      1493,
+      1494
+    ]
+  },
+  {
+    "startDataId": 10985,
+    "startRarity": 6,
+    "unitIds": [
+      1499,
+      1500
+    ]
+  },
+  {
+    "startDataId": 10996,
+    "startRarity": 7,
+    "unitIds": [
+      1505,
+      1506
+    ]
+  },
+  {
+    "startDataId": 11003,
+    "startRarity": 4,
+    "unitIds": [
+      1525,
+      1526,
+      1527
+    ]
+  },
+  {
+    "startDataId": 11016,
+    "startRarity": 7,
+    "unitIds": [
+      1519,
+      1520
+    ]
+  },
+  {
+    "startDataId": 11027,
+    "startRarity": 8,
+    "unitIds": [
+      1553
+    ]
+  },
+  {
+    "startDataId": 11036,
+    "startRarity": 7,
+    "unitIds": [
+      1555,
+      1556
+    ]
+  },
+  {
+    "startDataId": 11046,
+    "startRarity": 7,
+    "unitIds": [
+      1569,
+      1570
+    ]
+  },
+  {
+    "startDataId": 11056,
+    "startRarity": 7,
+    "unitIds": [
+      1609,
+      1610
+    ]
+  },
+  {
+    "startDataId": 11066,
+    "startRarity": 7,
+    "unitIds": [
+      1624,
+      1625
+    ]
+  },
+  {
+    "startDataId": 11077,
+    "startRarity": 8,
+    "unitIds": [
+      1640
+    ]
+  },
+  {
+    "startDataId": 11087,
+    "startRarity": 8,
+    "unitIds": [
+      1638
+    ]
+  },
+  {
+    "startDataId": 11096,
+    "startRarity": 7,
+    "unitIds": [
+      1649,
+      1650
+    ]
+  },
+  {
+    "startDataId": 11105,
+    "startRarity": 6,
+    "unitIds": [
+      1662
+    ]
+  },
+  {
+    "startDataId": 11116,
+    "startRarity": 7,
+    "unitIds": [
+      1690,
+      1691
+    ]
+  },
+  {
+    "startDataId": 11126,
+    "startRarity": 7,
+    "unitIds": [
+      1703
+    ]
+  },
+  {
+    "startDataId": 11136,
+    "startRarity": 7,
+    "unitIds": [
+      1704
+    ]
+  },
+  {
+    "startDataId": 11146,
+    "startRarity": 7,
+    "unitIds": [
+      1715,
+      1716
+    ]
+  },
+  {
+    "startDataId": 11153,
+    "startRarity": 4,
+    "unitIds": [
+      1748,
+      1749,
+      1750
+    ]
+  },
+  {
+    "startDataId": 11166,
+    "startRarity": 7,
+    "unitIds": [
+      1770,
+      1771
+    ]
+  },
+  {
+    "startDataId": 11174,
+    "startRarity": 5,
+    "unitIds": [
+      1782,
+      1783,
+      1784
+    ]
+  },
+  {
+    "startDataId": 11184,
+    "startRarity": 5,
+    "unitIds": [
+      1801
+    ]
+  },
+  {
+    "startDataId": 18830,
+    "startRarity": 2,
+    "unitIds": [
+      8046
+    ]
+  },
+  {
+    "startDataId": 20011,
+    "startRarity": 2,
+    "unitIds": [
+      5,
+      6,
+      7,
+      8,
+      339,
+      802,
+      1303
+    ]
+  },
+  {
+    "startDataId": 20021,
+    "startRarity": 2,
+    "unitIds": [
+      28,
+      29,
+      30,
+      321,
+      793
+    ]
+  },
+  {
+    "startDataId": 20030,
+    "startRarity": 1,
+    "unitIds": [
+      45,
+      46,
+      1080
+    ]
+  },
+  {
+    "startDataId": 20040,
+    "startRarity": 1,
+    "unitIds": [
+      57,
+      58,
+      282
+    ]
+  },
+  {
+    "startDataId": 20050,
+    "startRarity": 1,
+    "unitIds": [
+      69,
+      70,
+      519
+    ]
+  },
+  {
+    "startDataId": 20061,
+    "startRarity": 2,
+    "unitIds": [
+      81,
+      82,
+      313
+    ]
+  },
+  {
+    "startDataId": 20071,
+    "startRarity": 2,
+    "unitIds": [
+      89,
+      90,
+      700
+    ]
+  },
+  {
+    "startDataId": 20081,
+    "startRarity": 2,
+    "unitIds": [
+      101,
+      102,
+      359
+    ]
+  },
+  {
+    "startDataId": 20092,
+    "startRarity": 3,
+    "unitIds": [
+      113,
+      114,
+      365,
+      751
+    ]
+  },
+  {
+    "startDataId": 20102,
+    "startRarity": 3,
+    "unitIds": [
+      125,
+      126,
+      327,
+      710
+    ]
+  },
+  {
+    "startDataId": 20112,
+    "startRarity": 3,
+    "unitIds": [
+      138,
+      139,
+      140,
+      371
+    ]
+  },
+  {
+    "startDataId": 20122,
+    "startRarity": 3,
+    "unitIds": [
+      156,
+      157,
+      158,
+      442,
+      1233
+    ]
+  },
+  {
+    "startDataId": 20130,
+    "startRarity": 1,
+    "unitIds": [
+      172,
+      178,
+      184,
+      190
+    ]
+  },
+  {
+    "startDataId": 20141,
+    "startRarity": 2,
+    "unitIds": [
+      206,
+      207,
+      208,
+      436,
+      840
+    ]
+  },
+  {
+    "startDataId": 20152,
+    "startRarity": 3,
+    "unitIds": [
+      224,
+      225,
+      226,
+      472,
+      902,
+      1492
+    ]
+  },
+  {
+    "startDataId": 20162,
+    "startRarity": 3,
+    "unitIds": [
+      242,
+      243,
+      244,
+      478
+    ]
+  },
+  {
+    "startDataId": 20171,
+    "startRarity": 2,
+    "unitIds": [
+      271,
+      272
+    ]
+  },
+  {
+    "startDataId": 20181,
+    "startRarity": 2,
+    "unitIds": [
+      461,
+      462
+    ]
+  },
+  {
+    "startDataId": 20191,
+    "startRarity": 3,
+    "unitIds": [
+      307
+    ]
+  },
+  {
+    "startDataId": 20202,
+    "startRarity": 3,
+    "unitIds": [
+      257,
+      258,
+      259
+    ]
+  },
+  {
+    "startDataId": 20212,
+    "startRarity": 3,
+    "unitIds": [
+      290,
+      291,
+      292,
+      483
+    ]
+  },
+  {
+    "startDataId": 20217,
+    "startRarity": 8,
+    "unitIds": [
+      1780
+    ]
+  },
+  {
+    "startDataId": 20222,
+    "startRarity": 3,
+    "unitIds": [
+      581,
+      582
+    ]
+  },
+  {
+    "startDataId": 20233,
+    "startRarity": 4,
+    "unitIds": [
+      334,
+      335,
+      745,
+      1219
+    ]
+  },
+  {
+    "startDataId": 20243,
+    "startRarity": 4,
+    "unitIds": [
+      393,
+      394,
+      869
+    ]
+  },
+  {
+    "startDataId": 20253,
+    "startRarity": 4,
+    "unitIds": [
+      348,
+      349,
+      525
+    ]
+  },
+  {
+    "startDataId": 20261,
+    "startRarity": 2,
+    "unitIds": [
+      631,
+      632
+    ]
+  },
+  {
+    "startDataId": 20273,
+    "startRarity": 4,
+    "unitIds": [
+      417,
+      418,
+      489,
+      975
+    ]
+  },
+  {
+    "startDataId": 20283,
+    "startRarity": 4,
+    "unitIds": [
+      379,
+      380,
+      556,
+      1085
+    ]
+  },
+  {
+    "startDataId": 20293,
+    "startRarity": 4,
+    "unitIds": [
+      645,
+      646,
+      875
+    ]
+  },
+  {
+    "startDataId": 20302,
+    "startRarity": 3,
+    "unitIds": [
+      550
+    ]
+  },
+  {
+    "startDataId": 20313,
+    "startRarity": 4,
+    "unitIds": [
+      405,
+      406
+    ]
+  },
+  {
+    "startDataId": 20323,
+    "startRarity": 4,
+    "unitIds": [
+      449,
+      450,
+      495,
+      1036,
+      1774
+    ]
+  },
+  {
+    "startDataId": 20334,
+    "startRarity": 5,
+    "unitIds": [
+      430
+    ]
+  },
+  {
+    "startDataId": 20344,
+    "startRarity": 5,
+    "unitIds": [
+      808
+    ]
+  },
+  {
+    "startDataId": 20353,
+    "startRarity": 4,
+    "unitIds": [
+      503,
+      504,
+      505,
+      1173
+    ]
+  },
+  {
+    "startDataId": 20363,
+    "startRarity": 4,
+    "unitIds": [
+      533,
+      534,
+      535,
+      1258
+    ]
+  },
+  {
+    "startDataId": 20423,
+    "startRarity": 4,
+    "unitIds": [
+      1283,
+      1284,
+      1285
+    ]
+  },
+  {
+    "startDataId": 20433,
+    "startRarity": 4,
+    "unitIds": [
+      564,
+      565,
+      566
+    ]
+  },
+  {
+    "startDataId": 20442,
+    "startRarity": 3,
+    "unitIds": [
+      552
+    ]
+  },
+  {
+    "startDataId": 20453,
+    "startRarity": 4,
+    "unitIds": [
+      613,
+      614,
+      615
+    ]
+  },
+  {
+    "startDataId": 20462,
+    "startRarity": 3,
+    "unitIds": [
+      595,
+      596,
+      597,
+      1576
+    ]
+  },
+  {
+    "startDataId": 20473,
+    "startRarity": 4,
+    "unitIds": [
+      658,
+      659,
+      660
+    ]
+  },
+  {
+    "startDataId": 20483,
+    "startRarity": 4,
+    "unitIds": [
+      684,
+      685,
+      686
+    ]
+  },
+  {
+    "startDataId": 20494,
+    "startRarity": 5,
+    "unitIds": [
+      778,
+      779
+    ]
+  },
+  {
+    "startDataId": 20503,
+    "startRarity": 4,
+    "unitIds": [
+      735,
+      736
+    ]
+  },
+  {
+    "startDataId": 20513,
+    "startRarity": 4,
+    "unitIds": [
+      718,
+      719,
+      720
+    ]
+  },
+  {
+    "startDataId": 20524,
+    "startRarity": 5,
+    "unitIds": [
+      748,
+      749
+    ]
+  },
+  {
+    "startDataId": 20533,
+    "startRarity": 4,
+    "unitIds": [
+      759,
+      760,
+      761
+    ]
+  },
+  {
+    "startDataId": 20537,
+    "startRarity": 8,
+    "unitIds": [
+      1538
+    ]
+  },
+  {
+    "startDataId": 20543,
+    "startRarity": 4,
+    "unitIds": [
+      782,
+      783,
+      1123
+    ]
+  },
+  {
+    "startDataId": 20553,
+    "startRarity": 4,
+    "unitIds": [
+      818,
+      819,
+      820
+    ]
+  },
+  {
+    "startDataId": 20564,
+    "startRarity": 5,
+    "unitIds": [
+      853,
+      854,
+      855,
+      1511
+    ]
+  },
+  {
+    "startDataId": 20574,
+    "startRarity": 5,
+    "unitIds": [
+      886,
+      887,
+      888,
+      1677
+    ]
+  },
+  {
+    "startDataId": 20582,
+    "startRarity": 3,
+    "unitIds": [
+      936,
+      937
+    ]
+  },
+  {
+    "startDataId": 20592,
+    "startRarity": 3,
+    "unitIds": [
+      1025,
+      1026
+    ]
+  },
+  {
+    "startDataId": 20604,
+    "startRarity": 5,
+    "unitIds": [
+      911,
+      912,
+      913
+    ]
+  },
+  {
+    "startDataId": 20614,
+    "startRarity": 5,
+    "unitIds": [
+      954,
+      955,
+      956,
+      1740
+    ]
+  },
+  {
+    "startDataId": 20624,
+    "startRarity": 5,
+    "unitIds": [
+      981,
+      982,
+      983
+    ]
+  },
+  {
+    "startDataId": 20634,
+    "startRarity": 5,
+    "unitIds": [
+      1008,
+      1009,
+      1010,
+      1608
+    ]
+  },
+  {
+    "startDataId": 20644,
+    "startRarity": 5,
+    "unitIds": [
+      1042,
+      1043,
+      1044
+    ]
+  },
+  {
+    "startDataId": 20654,
+    "startRarity": 5,
+    "unitIds": [
+      1059,
+      1060
+    ]
+  },
+  {
+    "startDataId": 20661,
+    "startRarity": 2,
+    "unitIds": [
+      1160,
+      1161
+    ]
+  },
+  {
+    "startDataId": 20674,
+    "startRarity": 5,
+    "unitIds": [
+      1093,
+      1094,
+      1095,
+      1584
+    ]
+  },
+  {
+    "startDataId": 20683,
+    "startRarity": 4,
+    "unitIds": [
+      1110,
+      1456
+    ]
+  },
+  {
+    "startDataId": 20694,
+    "startRarity": 5,
+    "unitIds": [
+      1141,
+      1142,
+      1143
+    ]
+  },
+  {
+    "startDataId": 20704,
+    "startRarity": 5,
+    "unitIds": [
+      1179,
+      1180,
+      1181
+    ]
+  },
+  {
+    "startDataId": 20713,
+    "startRarity": 4,
+    "unitIds": [
+      1341,
+      1342,
+      1343
+    ]
+  },
+  {
+    "startDataId": 20724,
+    "startRarity": 5,
+    "unitIds": [
+      1203,
+      1204,
+      1205
+    ]
+  },
+  {
+    "startDataId": 20734,
+    "startRarity": 5,
+    "unitIds": [
+      1239,
+      1240,
+      1241
+    ]
+  },
+  {
+    "startDataId": 20744,
+    "startRarity": 5,
+    "unitIds": [
+      1222,
+      1223
+    ]
+  },
+  {
+    "startDataId": 20754,
+    "startRarity": 5,
+    "unitIds": [
+      1265,
+      1266,
+      1267
+    ]
+  },
+  {
+    "startDataId": 20774,
+    "startRarity": 5,
+    "unitIds": [
+      1310,
+      1311,
+      1312
+    ]
+  },
+  {
+    "startDataId": 20784,
+    "startRarity": 5,
+    "unitIds": [
+      1326,
+      1327
+    ]
+  },
+  {
+    "startDataId": 20796,
+    "startRarity": 7,
+    "unitIds": [
+      1350,
+      1351
+    ]
+  },
+  {
+    "startDataId": 20804,
+    "startRarity": 5,
+    "unitIds": [
+      1372,
+      1373,
+      1374
+    ]
+  },
+  {
+    "startDataId": 20816,
+    "startRarity": 7,
+    "unitIds": [
+      1405,
+      1406
+    ]
+  },
+  {
+    "startDataId": 20826,
+    "startRarity": 7,
+    "unitIds": [
+      1391,
+      1392
+    ]
+  },
+  {
+    "startDataId": 20836,
+    "startRarity": 7,
+    "unitIds": [
+      1401,
+      1402
+    ]
+  },
+  {
+    "startDataId": 20844,
+    "startRarity": 5,
+    "unitIds": [
+      1412
+    ]
+  },
+  {
+    "startDataId": 20856,
+    "startRarity": 7,
+    "unitIds": [
+      1407,
+      1408
+    ]
+  },
+  {
+    "startDataId": 20862,
+    "startRarity": 3,
+    "unitIds": [
+      1428,
+      1429
+    ]
+  },
+  {
+    "startDataId": 20876,
+    "startRarity": 7,
+    "unitIds": [
+      1436,
+      1437
+    ]
+  },
+  {
+    "startDataId": 20886,
+    "startRarity": 7,
+    "unitIds": [
+      1448,
+      1449
+    ]
+  },
+  {
+    "startDataId": 20892,
+    "startRarity": 3,
+    "unitIds": [
+      1463,
+      1464
+    ]
+  },
+  {
+    "startDataId": 20906,
+    "startRarity": 7,
+    "unitIds": [
+      1485,
+      1486
+    ]
+  },
+  {
+    "startDataId": 20915,
+    "startRarity": 6,
+    "unitIds": [
+      1501,
+      1502
+    ]
+  },
+  {
+    "startDataId": 20926,
+    "startRarity": 7,
+    "unitIds": [
+      1513,
+      1514
+    ]
+  },
+  {
+    "startDataId": 20933,
+    "startRarity": 4,
+    "unitIds": [
+      1528,
+      1529,
+      1530
+    ]
+  },
+  {
+    "startDataId": 20946,
+    "startRarity": 7,
+    "unitIds": [
+      1547,
+      1548
+    ]
+  },
+  {
+    "startDataId": 20955,
+    "startRarity": 6,
+    "unitIds": [
+      1545,
+      1546
+    ]
+  },
+  {
+    "startDataId": 20966,
+    "startRarity": 7,
+    "unitIds": [
+      1563,
+      1564
+    ]
+  },
+  {
+    "startDataId": 20976,
+    "startRarity": 7,
+    "unitIds": [
+      1571,
+      1572
+    ]
+  },
+  {
+    "startDataId": 20986,
+    "startRarity": 7,
+    "unitIds": [
+      1601,
+      1602
+    ]
+  },
+  {
+    "startDataId": 20996,
+    "startRarity": 7,
+    "unitIds": [
+      1613,
+      1614
+    ]
+  },
+  {
+    "startDataId": 21006,
+    "startRarity": 7,
+    "unitIds": [
+      1651,
+      1652
+    ]
+  },
+  {
+    "startDataId": 21015,
+    "startRarity": 6,
+    "unitIds": [
+      1659
+    ]
+  },
+  {
+    "startDataId": 21025,
+    "startRarity": 6,
+    "unitIds": [
+      1663
+    ]
+  },
+  {
+    "startDataId": 21036,
+    "startRarity": 7,
+    "unitIds": [
+      1670,
+      1671
+    ]
+  },
+  {
+    "startDataId": 21046,
+    "startRarity": 7,
+    "unitIds": [
+      1679,
+      1680
+    ]
+  },
+  {
+    "startDataId": 21056,
+    "startRarity": 7,
+    "unitIds": [
+      1685,
+      1686
+    ]
+  },
+  {
+    "startDataId": 21066,
+    "startRarity": 7,
+    "unitIds": [
+      1705
+    ]
+  },
+  {
+    "startDataId": 21076,
+    "startRarity": 7,
+    "unitIds": [
+      1706
+    ]
+  },
+  {
+    "startDataId": 21086,
+    "startRarity": 7,
+    "unitIds": [
+      1723,
+      1724
+    ]
+  },
+  {
+    "startDataId": 21093,
+    "startRarity": 4,
+    "unitIds": [
+      1751,
+      1752,
+      1753
+    ]
+  },
+  {
+    "startDataId": 21106,
+    "startRarity": 7,
+    "unitIds": [
+      1772,
+      1773
+    ]
+  },
+  {
+    "startDataId": 21114,
+    "startRarity": 5,
+    "unitIds": [
+      1785,
+      1786,
+      1787
+    ]
+  },
+  {
+    "startDataId": 30011,
+    "startRarity": 2,
+    "unitIds": [
+      9,
+      10,
+      11,
+      12,
+      340,
+      803,
+      1304
+    ]
+  },
+  {
+    "startDataId": 30021,
+    "startRarity": 2,
+    "unitIds": [
+      31,
+      32,
+      33,
+      322,
+      794
+    ]
+  },
+  {
+    "startDataId": 30030,
+    "startRarity": 1,
+    "unitIds": [
+      47,
+      48,
+      1081
+    ]
+  },
+  {
+    "startDataId": 30040,
+    "startRarity": 1,
+    "unitIds": [
+      59,
+      60,
+      283
+    ]
+  },
+  {
+    "startDataId": 30050,
+    "startRarity": 1,
+    "unitIds": [
+      71,
+      72,
+      520
+    ]
+  },
+  {
+    "startDataId": 30061,
+    "startRarity": 2,
+    "unitIds": [
+      83,
+      84,
+      314
+    ]
+  },
+  {
+    "startDataId": 30071,
+    "startRarity": 2,
+    "unitIds": [
+      91,
+      92,
+      701
+    ]
+  },
+  {
+    "startDataId": 30081,
+    "startRarity": 2,
+    "unitIds": [
+      103,
+      104,
+      360
+    ]
+  },
+  {
+    "startDataId": 30092,
+    "startRarity": 3,
+    "unitIds": [
+      115,
+      116,
+      366,
+      752
+    ]
+  },
+  {
+    "startDataId": 30102,
+    "startRarity": 3,
+    "unitIds": [
+      127,
+      128,
+      328,
+      711
+    ]
+  },
+  {
+    "startDataId": 30112,
+    "startRarity": 3,
+    "unitIds": [
+      141,
+      142,
+      143,
+      372,
+      976
+    ]
+  },
+  {
+    "startDataId": 30122,
+    "startRarity": 3,
+    "unitIds": [
+      159,
+      160,
+      161,
+      443
+    ]
+  },
+  {
+    "startDataId": 30130,
+    "startRarity": 1,
+    "unitIds": [
+      173,
+      179,
+      185,
+      191
+    ]
+  },
+  {
+    "startDataId": 30141,
+    "startRarity": 2,
+    "unitIds": [
+      209,
+      210,
+      211,
+      437,
+      841
+    ]
+  },
+  {
+    "startDataId": 30152,
+    "startRarity": 3,
+    "unitIds": [
+      227,
+      228,
+      229,
+      473
+    ]
+  },
+  {
+    "startDataId": 30162,
+    "startRarity": 3,
+    "unitIds": [
+      245,
+      246,
+      247,
+      479,
+      948,
+      1742
+    ]
+  },
+  {
+    "startDataId": 30171,
+    "startRarity": 2,
+    "unitIds": [
+      273,
+      274
+    ]
+  },
+  {
+    "startDataId": 30181,
+    "startRarity": 2,
+    "unitIds": [
+      463,
+      464
+    ]
+  },
+  {
+    "startDataId": 30191,
+    "startRarity": 3,
+    "unitIds": [
+      308
+    ]
+  },
+  {
+    "startDataId": 30202,
+    "startRarity": 3,
+    "unitIds": [
+      260,
+      261,
+      262
+    ]
+  },
+  {
+    "startDataId": 30212,
+    "startRarity": 3,
+    "unitIds": [
+      293,
+      294,
+      295,
+      484
+    ]
+  },
+  {
+    "startDataId": 30222,
+    "startRarity": 3,
+    "unitIds": [
+      583,
+      584
+    ]
+  },
+  {
+    "startDataId": 30233,
+    "startRarity": 4,
+    "unitIds": [
+      336,
+      337,
+      882,
+      1156
+    ]
+  },
+  {
+    "startDataId": 30243,
+    "startRarity": 4,
+    "unitIds": [
+      395,
+      396,
+      870
+    ]
+  },
+  {
+    "startDataId": 30253,
+    "startRarity": 4,
+    "unitIds": [
+      350,
+      351,
+      526
+    ]
+  },
+  {
+    "startDataId": 30261,
+    "startRarity": 2,
+    "unitIds": [
+      633,
+      634
+    ]
+  },
+  {
+    "startDataId": 30273,
+    "startRarity": 4,
+    "unitIds": [
+      419,
+      420,
+      490,
+      1174
+    ]
+  },
+  {
+    "startDataId": 30283,
+    "startRarity": 4,
+    "unitIds": [
+      381,
+      382,
+      557
+    ]
+  },
+  {
+    "startDataId": 30293,
+    "startRarity": 4,
+    "unitIds": [
+      647,
+      648,
+      876
+    ]
+  },
+  {
+    "startDataId": 30303,
+    "startRarity": 4,
+    "unitIds": [
+      407,
+      408
+    ]
+  },
+  {
+    "startDataId": 30313,
+    "startRarity": 4,
+    "unitIds": [
+      451,
+      452,
+      496,
+      1135
+    ]
+  },
+  {
+    "startDataId": 30324,
+    "startRarity": 5,
+    "unitIds": [
+      431
+    ]
+  },
+  {
+    "startDataId": 30334,
+    "startRarity": 5,
+    "unitIds": [
+      809
+    ]
+  },
+  {
+    "startDataId": 30343,
+    "startRarity": 4,
+    "unitIds": [
+      506,
+      507,
+      508,
+      1197
+    ]
+  },
+  {
+    "startDataId": 30353,
+    "startRarity": 4,
+    "unitIds": [
+      536,
+      537,
+      538
+    ]
+  },
+  {
+    "startDataId": 30393,
+    "startRarity": 4,
+    "unitIds": [
+      847,
+      848
+    ]
+  },
+  {
+    "startDataId": 30413,
+    "startRarity": 4,
+    "unitIds": [
+      1286,
+      1287,
+      1288
+    ]
+  },
+  {
+    "startDataId": 30423,
+    "startRarity": 4,
+    "unitIds": [
+      567,
+      568,
+      569
+    ]
+  },
+  {
+    "startDataId": 30432,
+    "startRarity": 3,
+    "unitIds": [
+      553
+    ]
+  },
+  {
+    "startDataId": 30443,
+    "startRarity": 4,
+    "unitIds": [
+      616,
+      617,
+      618,
+      1259,
+      1441
+    ]
+  },
+  {
+    "startDataId": 30452,
+    "startRarity": 3,
+    "unitIds": [
+      598,
+      599,
+      600,
+      1577
+    ]
+  },
+  {
+    "startDataId": 30463,
+    "startRarity": 4,
+    "unitIds": [
+      661,
+      662,
+      663
+    ]
+  },
+  {
+    "startDataId": 30473,
+    "startRarity": 4,
+    "unitIds": [
+      687,
+      688,
+      689
+    ]
+  },
+  {
+    "startDataId": 30483,
+    "startRarity": 4,
+    "unitIds": [
+      737,
+      738
+    ]
+  },
+  {
+    "startDataId": 30493,
+    "startRarity": 4,
+    "unitIds": [
+      8083
+    ]
+  },
+  {
+    "startDataId": 30493,
+    "startRarity": 4,
+    "unitIds": [
+      706,
+      8084
+    ]
+  },
+  {
+    "startDataId": 30494,
+    "startRarity": 5,
+    "unitIds": [
+      707,
+      1111
+    ]
+  },
+  {
+    "startDataId": 30503,
+    "startRarity": 4,
+    "unitIds": [
+      721,
+      722,
+      723
+    ]
+  },
+  {
+    "startDataId": 30513,
+    "startRarity": 4,
+    "unitIds": [
+      762,
+      763,
+      764,
+      1086,
+      1539
+    ]
+  },
+  {
+    "startDataId": 30523,
+    "startRarity": 4,
+    "unitIds": [
+      798,
+      799
+    ]
+  },
+  {
+    "startDataId": 30533,
+    "startRarity": 4,
+    "unitIds": [
+      784,
+      785,
+      1124
+    ]
+  },
+  {
+    "startDataId": 30543,
+    "startRarity": 4,
+    "unitIds": [
+      821,
+      822,
+      823,
+      1345
+    ]
+  },
+  {
+    "startDataId": 30554,
+    "startRarity": 5,
+    "unitIds": [
+      856,
+      857,
+      858
+    ]
+  },
+  {
+    "startDataId": 30564,
+    "startRarity": 5,
+    "unitIds": [
+      889,
+      890,
+      891,
+      1454
+    ]
+  },
+  {
+    "startDataId": 30572,
+    "startRarity": 3,
+    "unitIds": [
+      938,
+      939
+    ]
+  },
+  {
+    "startDataId": 30582,
+    "startRarity": 3,
+    "unitIds": [
+      1027,
+      1028
+    ]
+  },
+  {
+    "startDataId": 30594,
+    "startRarity": 5,
+    "unitIds": [
+      914,
+      915,
+      916
+    ]
+  },
+  {
+    "startDataId": 30604,
+    "startRarity": 5,
+    "unitIds": [
+      957,
+      958,
+      959,
+      1741
+    ]
+  },
+  {
+    "startDataId": 30614,
+    "startRarity": 5,
+    "unitIds": [
+      984,
+      985,
+      986
+    ]
+  },
+  {
+    "startDataId": 30624,
+    "startRarity": 5,
+    "unitIds": [
+      1011,
+      1012,
+      1013,
+      1621
+    ]
+  },
+  {
+    "startDataId": 30634,
+    "startRarity": 5,
+    "unitIds": [
+      1045,
+      1046,
+      1047
+    ]
+  },
+  {
+    "startDataId": 30645,
+    "startRarity": 6,
+    "unitIds": [
+      1071,
+      1072
+    ]
+  },
+  {
+    "startDataId": 30654,
+    "startRarity": 5,
+    "unitIds": [
+      1061,
+      1062
+    ]
+  },
+  {
+    "startDataId": 30661,
+    "startRarity": 2,
+    "unitIds": [
+      1162,
+      1163
+    ]
+  },
+  {
+    "startDataId": 30674,
+    "startRarity": 5,
+    "unitIds": [
+      1096,
+      1097,
+      1098
+    ]
+  },
+  {
+    "startDataId": 30684,
+    "startRarity": 5,
+    "unitIds": [
+      1144,
+      1145,
+      1146
+    ]
+  },
+  {
+    "startDataId": 30694,
+    "startRarity": 5,
+    "unitIds": [
+      1182,
+      1183,
+      1184
+    ]
+  },
+  {
+    "startDataId": 30704,
+    "startRarity": 5,
+    "unitIds": [
+      1206,
+      1207,
+      1208
+    ]
+  },
+  {
+    "startDataId": 30714,
+    "startRarity": 5,
+    "unitIds": [
+      1242,
+      1243,
+      1244
+    ]
+  },
+  {
+    "startDataId": 30724,
+    "startRarity": 5,
+    "unitIds": [
+      1224,
+      1225
+    ]
+  },
+  {
+    "startDataId": 30734,
+    "startRarity": 5,
+    "unitIds": [
+      1268,
+      1269,
+      1270
+    ]
+  },
+  {
+    "startDataId": 30754,
+    "startRarity": 5,
+    "unitIds": [
+      1313,
+      1314,
+      1315
+    ]
+  },
+  {
+    "startDataId": 30764,
+    "startRarity": 5,
+    "unitIds": [
+      1328,
+      1329
+    ]
+  },
+  {
+    "startDataId": 30774,
+    "startRarity": 5,
+    "unitIds": [
+      1352,
+      1353,
+      1354
+    ]
+  },
+  {
+    "startDataId": 30786,
+    "startRarity": 7,
+    "unitIds": [
+      1375,
+      1376
+    ]
+  },
+  {
+    "startDataId": 30796,
+    "startRarity": 7,
+    "unitIds": [
+      1395,
+      1396
+    ]
+  },
+  {
+    "startDataId": 30804,
+    "startRarity": 5,
+    "unitIds": [
+      1413
+    ]
+  },
+  {
+    "startDataId": 30816,
+    "startRarity": 7,
+    "unitIds": [
+      1419,
+      1420
+    ]
+  },
+  {
+    "startDataId": 30822,
+    "startRarity": 3,
+    "unitIds": [
+      1430,
+      1431
+    ]
+  },
+  {
+    "startDataId": 30836,
+    "startRarity": 7,
+    "unitIds": [
+      1442,
+      1443
+    ]
+  },
+  {
+    "startDataId": 30846,
+    "startRarity": 7,
+    "unitIds": [
+      1459,
+      1460
+    ]
+  },
+  {
+    "startDataId": 30854,
+    "startRarity": 5,
+    "unitIds": [
+      1476,
+      1477,
+      1478
+    ]
+  },
+  {
+    "startDataId": 30866,
+    "startRarity": 7,
+    "unitIds": [
+      1487,
+      1488
+    ]
+  },
+  {
+    "startDataId": 30876,
+    "startRarity": 7,
+    "unitIds": [
+      1507,
+      1508
+    ]
+  },
+  {
+    "startDataId": 30884,
+    "startRarity": 5,
+    "unitIds": [
+      1531,
+      1532,
+      1533
+    ]
+  },
+  {
+    "startDataId": 30896,
+    "startRarity": 7,
+    "unitIds": [
+      1549,
+      1550
+    ]
+  },
+  {
+    "startDataId": 30907,
+    "startRarity": 8,
+    "unitIds": [
+      1554
+    ]
+  },
+  {
+    "startDataId": 30916,
+    "startRarity": 7,
+    "unitIds": [
+      1565,
+      1566
+    ]
+  },
+  {
+    "startDataId": 30926,
+    "startRarity": 7,
+    "unitIds": [
+      1585,
+      1586
+    ]
+  },
+  {
+    "startDataId": 30932,
+    "startRarity": 3,
+    "unitIds": [
+      1598,
+      1599
+    ]
+  },
+  {
+    "startDataId": 30946,
+    "startRarity": 7,
+    "unitIds": [
+      1611,
+      1612
+    ]
+  },
+  {
+    "startDataId": 30956,
+    "startRarity": 7,
+    "unitIds": [
+      1626,
+      1627
+    ]
+  },
+  {
+    "startDataId": 30966,
+    "startRarity": 7,
+    "unitIds": [
+      1632,
+      1633
+    ]
+  },
+  {
+    "startDataId": 30975,
+    "startRarity": 6,
+    "unitIds": [
+      1657
+    ]
+  },
+  {
+    "startDataId": 30986,
+    "startRarity": 7,
+    "unitIds": [
+      1666,
+      1667
+    ]
+  },
+  {
+    "startDataId": 30996,
+    "startRarity": 7,
+    "unitIds": [
+      1681,
+      1682
+    ]
+  },
+  {
+    "startDataId": 31006,
+    "startRarity": 7,
+    "unitIds": [
+      1699,
+      1700
+    ]
+  },
+  {
+    "startDataId": 31016,
+    "startRarity": 7,
+    "unitIds": [
+      1707
+    ]
+  },
+  {
+    "startDataId": 31026,
+    "startRarity": 7,
+    "unitIds": [
+      1708
+    ]
+  },
+  {
+    "startDataId": 31036,
+    "startRarity": 7,
+    "unitIds": [
+      1717,
+      1718
+    ]
+  },
+  {
+    "startDataId": 31046,
+    "startRarity": 7,
+    "unitIds": [
+      1727,
+      1728
+    ]
+  },
+  {
+    "startDataId": 31053,
+    "startRarity": 4,
+    "unitIds": [
+      1754,
+      1755,
+      1756
+    ]
+  },
+  {
+    "startDataId": 31066,
+    "startRarity": 7,
+    "unitIds": [
+      1776,
+      1777
+    ]
+  },
+  {
+    "startDataId": 31074,
+    "startRarity": 5,
+    "unitIds": [
+      1788,
+      1789,
+      1790
+    ]
+  },
+  {
+    "startDataId": 31084,
+    "startRarity": 5,
+    "unitIds": [
+      1802
+    ]
+  },
+  {
+    "startDataId": 40011,
+    "startRarity": 2,
+    "unitIds": [
+      13,
+      14,
+      15,
+      16,
+      341,
+      804,
+      1305
+    ]
+  },
+  {
+    "startDataId": 40021,
+    "startRarity": 2,
+    "unitIds": [
+      34,
+      35,
+      36,
+      323,
+      795
+    ]
+  },
+  {
+    "startDataId": 40030,
+    "startRarity": 1,
+    "unitIds": [
+      49,
+      50,
+      1082
+    ]
+  },
+  {
+    "startDataId": 40040,
+    "startRarity": 1,
+    "unitIds": [
+      61,
+      62,
+      284
+    ]
+  },
+  {
+    "startDataId": 40050,
+    "startRarity": 1,
+    "unitIds": [
+      73,
+      74,
+      521
+    ]
+  },
+  {
+    "startDataId": 40061,
+    "startRarity": 2,
+    "unitIds": [
+      85,
+      86,
+      315
+    ]
+  },
+  {
+    "startDataId": 40071,
+    "startRarity": 2,
+    "unitIds": [
+      93,
+      94,
+      702
+    ]
+  },
+  {
+    "startDataId": 40081,
+    "startRarity": 2,
+    "unitIds": [
+      105,
+      106,
+      361
+    ]
+  },
+  {
+    "startDataId": 40092,
+    "startRarity": 3,
+    "unitIds": [
+      117,
+      118,
+      367,
+      753
+    ]
+  },
+  {
+    "startDataId": 40102,
+    "startRarity": 3,
+    "unitIds": [
+      129,
+      130,
+      329,
+      712
+    ]
+  },
+  {
+    "startDataId": 40112,
+    "startRarity": 3,
+    "unitIds": [
+      144,
+      145,
+      146,
+      373
+    ]
+  },
+  {
+    "startDataId": 40117,
+    "startRarity": 8,
+    "unitIds": [
+      1719
+    ]
+  },
+  {
+    "startDataId": 40122,
+    "startRarity": 3,
+    "unitIds": [
+      162,
+      163,
+      164,
+      444
+    ]
+  },
+  {
+    "startDataId": 40130,
+    "startRarity": 1,
+    "unitIds": [
+      174,
+      180,
+      186,
+      192
+    ]
+  },
+  {
+    "startDataId": 40141,
+    "startRarity": 2,
+    "unitIds": [
+      212,
+      213,
+      214,
+      438,
+      842
+    ]
+  },
+  {
+    "startDataId": 40152,
+    "startRarity": 3,
+    "unitIds": [
+      230,
+      231,
+      232,
+      474
+    ]
+  },
+  {
+    "startDataId": 40162,
+    "startRarity": 3,
+    "unitIds": [
+      248,
+      249,
+      250,
+      480,
+      949,
+      1743
+    ]
+  },
+  {
+    "startDataId": 40171,
+    "startRarity": 2,
+    "unitIds": [
+      275,
+      276
+    ]
+  },
+  {
+    "startDataId": 40181,
+    "startRarity": 2,
+    "unitIds": [
+      465,
+      466
+    ]
+  },
+  {
+    "startDataId": 40191,
+    "startRarity": 3,
+    "unitIds": [
+      309
+    ]
+  },
+  {
+    "startDataId": 40202,
+    "startRarity": 3,
+    "unitIds": [
+      263,
+      264,
+      265
+    ]
+  },
+  {
+    "startDataId": 40212,
+    "startRarity": 3,
+    "unitIds": [
+      296,
+      297,
+      298,
+      485
+    ]
+  },
+  {
+    "startDataId": 40222,
+    "startRarity": 3,
+    "unitIds": [
+      585,
+      586
+    ]
+  },
+  {
+    "startDataId": 40233,
+    "startRarity": 4,
+    "unitIds": [
+      389,
+      390,
+      849,
+      1157
+    ]
+  },
+  {
+    "startDataId": 40243,
+    "startRarity": 4,
+    "unitIds": [
+      397,
+      398,
+      871
+    ]
+  },
+  {
+    "startDataId": 40253,
+    "startRarity": 4,
+    "unitIds": [
+      352,
+      353,
+      527
+    ]
+  },
+  {
+    "startDataId": 40261,
+    "startRarity": 2,
+    "unitIds": [
+      635,
+      636
+    ]
+  },
+  {
+    "startDataId": 40273,
+    "startRarity": 4,
+    "unitIds": [
+      421,
+      422,
+      491,
+      903
+    ]
+  },
+  {
+    "startDataId": 40283,
+    "startRarity": 4,
+    "unitIds": [
+      383,
+      384,
+      558
+    ]
+  },
+  {
+    "startDataId": 40293,
+    "startRarity": 4,
+    "unitIds": [
+      649,
+      650,
+      877
+    ]
+  },
+  {
+    "startDataId": 40303,
+    "startRarity": 4,
+    "unitIds": [
+      409,
+      410
+    ]
+  },
+  {
+    "startDataId": 40313,
+    "startRarity": 4,
+    "unitIds": [
+      453,
+      454,
+      497,
+      1175
+    ]
+  },
+  {
+    "startDataId": 40324,
+    "startRarity": 5,
+    "unitIds": [
+      432
+    ]
+  },
+  {
+    "startDataId": 40334,
+    "startRarity": 5,
+    "unitIds": [
+      810
+    ]
+  },
+  {
+    "startDataId": 40343,
+    "startRarity": 4,
+    "unitIds": [
+      509,
+      510,
+      511,
+      1136
+    ]
+  },
+  {
+    "startDataId": 40353,
+    "startRarity": 4,
+    "unitIds": [
+      539,
+      540,
+      541
+    ]
+  },
+  {
+    "startDataId": 40413,
+    "startRarity": 4,
+    "unitIds": [
+      1289,
+      1290,
+      1291
+    ]
+  },
+  {
+    "startDataId": 40423,
+    "startRarity": 4,
+    "unitIds": [
+      570,
+      571,
+      572
+    ]
+  },
+  {
+    "startDataId": 40432,
+    "startRarity": 3,
+    "unitIds": [
+      554
+    ]
+  },
+  {
+    "startDataId": 40443,
+    "startRarity": 4,
+    "unitIds": [
+      619,
+      620,
+      621,
+      1003
+    ]
+  },
+  {
+    "startDataId": 40452,
+    "startRarity": 3,
+    "unitIds": [
+      601,
+      602,
+      603,
+      1578
+    ]
+  },
+  {
+    "startDataId": 40463,
+    "startRarity": 4,
+    "unitIds": [
+      664,
+      665,
+      666
+    ]
+  },
+  {
+    "startDataId": 40473,
+    "startRarity": 4,
+    "unitIds": [
+      690,
+      691,
+      692
+    ]
+  },
+  {
+    "startDataId": 40483,
+    "startRarity": 4,
+    "unitIds": [
+      739,
+      740
+    ]
+  },
+  {
+    "startDataId": 40493,
+    "startRarity": 4,
+    "unitIds": [
+      724,
+      725,
+      726,
+      1260
+    ]
+  },
+  {
+    "startDataId": 40503,
+    "startRarity": 4,
+    "unitIds": [
+      765,
+      766,
+      767,
+      1087,
+      1540
+    ]
+  },
+  {
+    "startDataId": 40513,
+    "startRarity": 4,
+    "unitIds": [
+      786,
+      787,
+      1125
+    ]
+  },
+  {
+    "startDataId": 40523,
+    "startRarity": 4,
+    "unitIds": [
+      824,
+      825,
+      826
+    ]
+  },
+  {
+    "startDataId": 40534,
+    "startRarity": 5,
+    "unitIds": [
+      859,
+      860,
+      861,
+      1512
+    ]
+  },
+  {
+    "startDataId": 40544,
+    "startRarity": 5,
+    "unitIds": [
+      892,
+      893,
+      894
+    ]
+  },
+  {
+    "startDataId": 40552,
+    "startRarity": 3,
+    "unitIds": [
+      940,
+      941
+    ]
+  },
+  {
+    "startDataId": 40562,
+    "startRarity": 3,
+    "unitIds": [
+      1029,
+      1030
+    ]
+  },
+  {
+    "startDataId": 40574,
+    "startRarity": 5,
+    "unitIds": [
+      917,
+      918,
+      919,
+      1440
+    ]
+  },
+  {
+    "startDataId": 40584,
+    "startRarity": 5,
+    "unitIds": [
+      960,
+      961,
+      962,
+      1720
+    ]
+  },
+  {
+    "startDataId": 40594,
+    "startRarity": 5,
+    "unitIds": [
+      987,
+      988,
+      989
+    ]
+  },
+  {
+    "startDataId": 40604,
+    "startRarity": 5,
+    "unitIds": [
+      1014,
+      1015,
+      1016,
+      1622
+    ]
+  },
+  {
+    "startDataId": 40614,
+    "startRarity": 5,
+    "unitIds": [
+      1048,
+      1049,
+      1050
+    ]
+  },
+  {
+    "startDataId": 40624,
+    "startRarity": 5,
+    "unitIds": [
+      1063,
+      1064
+    ]
+  },
+  {
+    "startDataId": 40631,
+    "startRarity": 2,
+    "unitIds": [
+      1164,
+      1165
+    ]
+  },
+  {
+    "startDataId": 40644,
+    "startRarity": 5,
+    "unitIds": [
+      1099,
+      1100,
+      1101
+    ]
+  },
+  {
+    "startDataId": 40653,
+    "startRarity": 4,
+    "unitIds": [
+      1114,
+      1115,
+      1116
+    ]
+  },
+  {
+    "startDataId": 40664,
+    "startRarity": 5,
+    "unitIds": [
+      1147,
+      1148,
+      1149
+    ]
+  },
+  {
+    "startDataId": 40674,
+    "startRarity": 5,
+    "unitIds": [
+      1185,
+      1186,
+      1187
+    ]
+  },
+  {
+    "startDataId": 40684,
+    "startRarity": 5,
+    "unitIds": [
+      1209,
+      1210,
+      1211
+    ]
+  },
+  {
+    "startDataId": 40694,
+    "startRarity": 5,
+    "unitIds": [
+      1245,
+      1246,
+      1247
+    ]
+  },
+  {
+    "startDataId": 40704,
+    "startRarity": 5,
+    "unitIds": [
+      1226,
+      1227
+    ]
+  },
+  {
+    "startDataId": 40714,
+    "startRarity": 5,
+    "unitIds": [
+      1271,
+      1272,
+      1273
+    ]
+  },
+  {
+    "startDataId": 40734,
+    "startRarity": 5,
+    "unitIds": [
+      1256,
+      1257
+    ]
+  },
+  {
+    "startDataId": 40744,
+    "startRarity": 5,
+    "unitIds": [
+      1316,
+      1317,
+      1318
+    ]
+  },
+  {
+    "startDataId": 40755,
+    "startRarity": 6,
+    "unitIds": [
+      1330
+    ]
+  },
+  {
+    "startDataId": 40766,
+    "startRarity": 7,
+    "unitIds": [
+      1355,
+      1356
+    ]
+  },
+  {
+    "startDataId": 40774,
+    "startRarity": 5,
+    "unitIds": [
+      1377,
+      1378,
+      1379
+    ]
+  },
+  {
+    "startDataId": 40786,
+    "startRarity": 7,
+    "unitIds": [
+      1403,
+      1404
+    ]
+  },
+  {
+    "startDataId": 40794,
+    "startRarity": 5,
+    "unitIds": [
+      1414
+    ]
+  },
+  {
+    "startDataId": 40802,
+    "startRarity": 3,
+    "unitIds": [
+      1432,
+      1433
+    ]
+  },
+  {
+    "startDataId": 40816,
+    "startRarity": 7,
+    "unitIds": [
+      1444,
+      1445
+    ]
+  },
+  {
+    "startDataId": 40826,
+    "startRarity": 7,
+    "unitIds": [
+      1450,
+      1451
+    ]
+  },
+  {
+    "startDataId": 40833,
+    "startRarity": 4,
+    "unitIds": [
+      1465,
+      1466,
+      1467,
+      1468
+    ]
+  },
+  {
+    "startDataId": 40844,
+    "startRarity": 5,
+    "unitIds": [
+      1482,
+      1483,
+      1484
+    ]
+  },
+  {
+    "startDataId": 40856,
+    "startRarity": 7,
+    "unitIds": [
+      1495,
+      1496
+    ]
+  },
+  {
+    "startDataId": 40866,
+    "startRarity": 7,
+    "unitIds": [
+      1509,
+      1510
+    ]
+  },
+  {
+    "startDataId": 40876,
+    "startRarity": 7,
+    "unitIds": [
+      1551,
+      1552
+    ]
+  },
+  {
+    "startDataId": 40886,
+    "startRarity": 7,
+    "unitIds": [
+      1567,
+      1568
+    ]
+  },
+  {
+    "startDataId": 40896,
+    "startRarity": 7,
+    "unitIds": [
+      1573,
+      1574
+    ]
+  },
+  {
+    "startDataId": 40906,
+    "startRarity": 7,
+    "unitIds": [
+      1603,
+      1604
+    ]
+  },
+  {
+    "startDataId": 40916,
+    "startRarity": 7,
+    "unitIds": [
+      1615,
+      1616
+    ]
+  },
+  {
+    "startDataId": 40927,
+    "startRarity": 8,
+    "unitIds": [
+      1641
+    ]
+  },
+  {
+    "startDataId": 40936,
+    "startRarity": 7,
+    "unitIds": [
+      1643,
+      1644
+    ]
+  },
+  {
+    "startDataId": 40946,
+    "startRarity": 7,
+    "unitIds": [
+      1653,
+      1654
+    ]
+  },
+  {
+    "startDataId": 40955,
+    "startRarity": 6,
+    "unitIds": [
+      1658
+    ]
+  },
+  {
+    "startDataId": 40965,
+    "startRarity": 6,
+    "unitIds": [
+      1660
+    ]
+  },
+  {
+    "startDataId": 40976,
+    "startRarity": 7,
+    "unitIds": [
+      1683,
+      1684
+    ]
+  },
+  {
+    "startDataId": 40986,
+    "startRarity": 7,
+    "unitIds": [
+      1701,
+      1702
+    ]
+  },
+  {
+    "startDataId": 40996,
+    "startRarity": 7,
+    "unitIds": [
+      1709
+    ]
+  },
+  {
+    "startDataId": 41006,
+    "startRarity": 7,
+    "unitIds": [
+      1710
+    ]
+  },
+  {
+    "startDataId": 41016,
+    "startRarity": 7,
+    "unitIds": [
+      1725,
+      1726
+    ]
+  },
+  {
+    "startDataId": 41026,
+    "startRarity": 7,
+    "unitIds": [
+      1729,
+      1730
+    ]
+  },
+  {
+    "startDataId": 41036,
+    "startRarity": 7,
+    "unitIds": [
+      1744,
+      1745
+    ]
+  },
+  {
+    "startDataId": 41043,
+    "startRarity": 4,
+    "unitIds": [
+      1757,
+      1758,
+      1759
+    ]
+  },
+  {
+    "startDataId": 41054,
+    "startRarity": 5,
+    "unitIds": [
+      1791,
+      1792,
+      1793
+    ]
+  },
+  {
+    "startDataId": 50011,
+    "startRarity": 2,
+    "unitIds": [
+      17,
+      18,
+      19,
+      20,
+      342,
+      805,
+      1306
+    ]
+  },
+  {
+    "startDataId": 50021,
+    "startRarity": 2,
+    "unitIds": [
+      37,
+      38,
+      39,
+      324,
+      796
+    ]
+  },
+  {
+    "startDataId": 50030,
+    "startRarity": 1,
+    "unitIds": [
+      51,
+      52,
+      1083
+    ]
+  },
+  {
+    "startDataId": 50040,
+    "startRarity": 1,
+    "unitIds": [
+      63,
+      64,
+      285
+    ]
+  },
+  {
+    "startDataId": 50050,
+    "startRarity": 1,
+    "unitIds": [
+      75,
+      76,
+      522
+    ]
+  },
+  {
+    "startDataId": 50060,
+    "startRarity": 2,
+    "unitIds": [
+      95,
+      96
+    ]
+  },
+  {
+    "startDataId": 50063,
+    "startRarity": 4,
+    "unitIds": [
+      703
+    ]
+  },
+  {
+    "startDataId": 50071,
+    "startRarity": 2,
+    "unitIds": [
+      107,
+      108,
+      362
+    ]
+  },
+  {
+    "startDataId": 50082,
+    "startRarity": 3,
+    "unitIds": [
+      119,
+      120,
+      368,
+      754
+    ]
+  },
+  {
+    "startDataId": 50092,
+    "startRarity": 3,
+    "unitIds": [
+      131,
+      132,
+      330,
+      713
+    ]
+  },
+  {
+    "startDataId": 50102,
+    "startRarity": 3,
+    "unitIds": [
+      147,
+      148,
+      149,
+      374,
+      1300
+    ]
+  },
+  {
+    "startDataId": 50112,
+    "startRarity": 3,
+    "unitIds": [
+      165,
+      166,
+      167,
+      445,
+      977
+    ]
+  },
+  {
+    "startDataId": 50120,
+    "startRarity": 1,
+    "unitIds": [
+      175,
+      181,
+      187,
+      193
+    ]
+  },
+  {
+    "startDataId": 50131,
+    "startRarity": 2,
+    "unitIds": [
+      195,
+      196,
+      197,
+      628
+    ]
+  },
+  {
+    "startDataId": 50141,
+    "startRarity": 2,
+    "unitIds": [
+      215,
+      216,
+      217,
+      439,
+      843
+    ]
+  },
+  {
+    "startDataId": 50152,
+    "startRarity": 3,
+    "unitIds": [
+      233,
+      234,
+      235,
+      475
+    ]
+  },
+  {
+    "startDataId": 50162,
+    "startRarity": 3,
+    "unitIds": [
+      299,
+      300,
+      301,
+      486,
+      880,
+      1697
+    ]
+  },
+  {
+    "startDataId": 50171,
+    "startRarity": 2,
+    "unitIds": [
+      277,
+      278
+    ]
+  },
+  {
+    "startDataId": 50181,
+    "startRarity": 2,
+    "unitIds": [
+      467,
+      468
+    ]
+  },
+  {
+    "startDataId": 50191,
+    "startRarity": 3,
+    "unitIds": [
+      310
+    ]
+  },
+  {
+    "startDataId": 50202,
+    "startRarity": 3,
+    "unitIds": [
+      266,
+      267,
+      268
+    ]
+  },
+  {
+    "startDataId": 50223,
+    "startRarity": 4,
+    "unitIds": [
+      251,
+      252
+    ]
+  },
+  {
+    "startDataId": 50234,
+    "startRarity": 5,
+    "unitIds": [
+      253
+    ]
+  },
+  {
+    "startDataId": 50242,
+    "startRarity": 3,
+    "unitIds": [
+      587,
+      588
+    ]
+  },
+  {
+    "startDataId": 50253,
+    "startRarity": 4,
+    "unitIds": [
+      427,
+      428,
+      1298,
+      1336
+    ]
+  },
+  {
+    "startDataId": 50263,
+    "startRarity": 4,
+    "unitIds": [
+      399,
+      400,
+      872
+    ]
+  },
+  {
+    "startDataId": 50273,
+    "startRarity": 4,
+    "unitIds": [
+      354,
+      355,
+      528,
+      1004
+    ]
+  },
+  {
+    "startDataId": 50285,
+    "startRarity": 6,
+    "unitIds": [
+      996,
+      997,
+      1386
+    ]
+  },
+  {
+    "startDataId": 50291,
+    "startRarity": 2,
+    "unitIds": [
+      637,
+      638
+    ]
+  },
+  {
+    "startDataId": 50303,
+    "startRarity": 4,
+    "unitIds": [
+      423,
+      424,
+      492
+    ]
+  },
+  {
+    "startDataId": 50313,
+    "startRarity": 4,
+    "unitIds": [
+      385,
+      386,
+      559,
+      1198,
+      1636
+    ]
+  },
+  {
+    "startDataId": 50323,
+    "startRarity": 4,
+    "unitIds": [
+      651,
+      652,
+      878
+    ]
+  },
+  {
+    "startDataId": 50333,
+    "startRarity": 4,
+    "unitIds": [
+      411,
+      412
+    ]
+  },
+  {
+    "startDataId": 50344,
+    "startRarity": 5,
+    "unitIds": [
+      344
+    ]
+  },
+  {
+    "startDataId": 50354,
+    "startRarity": 5,
+    "unitIds": [
+      332
+    ]
+  },
+  {
+    "startDataId": 50364,
+    "startRarity": 5,
+    "unitIds": [
+      433
+    ]
+  },
+  {
+    "startDataId": 50383,
+    "startRarity": 4,
+    "unitIds": [
+      455,
+      456,
+      498,
+      1234
+    ]
+  },
+  {
+    "startDataId": 50394,
+    "startRarity": 5,
+    "unitIds": [
+      811
+    ]
+  },
+  {
+    "startDataId": 50403,
+    "startRarity": 4,
+    "unitIds": [
+      512,
+      513,
+      514,
+      1037
+    ]
+  },
+  {
+    "startDataId": 50413,
+    "startRarity": 4,
+    "unitIds": [
+      542,
+      543,
+      544
+    ]
+  },
+  {
+    "startDataId": 50444,
+    "startRarity": 5,
+    "unitIds": [
+      845,
+      846
+    ]
+  },
+  {
+    "startDataId": 50463,
+    "startRarity": 4,
+    "unitIds": [
+      1292,
+      1293,
+      1294
+    ]
+  },
+  {
+    "startDataId": 50473,
+    "startRarity": 4,
+    "unitIds": [
+      573,
+      574,
+      575
+    ]
+  },
+  {
+    "startDataId": 50477,
+    "startRarity": 8,
+    "unitIds": [
+      1455
+    ]
+  },
+  {
+    "startDataId": 50483,
+    "startRarity": 4,
+    "unitIds": [
+      622,
+      623,
+      624
+    ]
+  },
+  {
+    "startDataId": 50492,
+    "startRarity": 3,
+    "unitIds": [
+      604,
+      605,
+      606,
+      1579
+    ]
+  },
+  {
+    "startDataId": 50503,
+    "startRarity": 4,
+    "unitIds": [
+      667,
+      668,
+      669
+    ]
+  },
+  {
+    "startDataId": 50513,
+    "startRarity": 4,
+    "unitIds": [
+      693,
+      694,
+      695
+    ]
+  },
+  {
+    "startDataId": 50525,
+    "startRarity": 6,
+    "unitIds": [
+      591
+    ]
+  },
+  {
+    "startDataId": 50534,
+    "startRarity": 5,
+    "unitIds": [
+      679
+    ]
+  },
+  {
+    "startDataId": 50544,
+    "startRarity": 5,
+    "unitIds": [
+      680
+    ]
+  },
+  {
+    "startDataId": 50553,
+    "startRarity": 4,
+    "unitIds": [
+      678
+    ]
+  },
+  {
+    "startDataId": 50563,
+    "startRarity": 4,
+    "unitIds": [
+      641,
+      642,
+      1170
+    ]
+  },
+  {
+    "startDataId": 50573,
+    "startRarity": 4,
+    "unitIds": [
+      741,
+      742
+    ]
+  },
+  {
+    "startDataId": 50583,
+    "startRarity": 4,
+    "unitIds": [
+      727,
+      728,
+      729
+    ]
+  },
+  {
+    "startDataId": 50593,
+    "startRarity": 4,
+    "unitIds": [
+      774,
+      775
+    ]
+  },
+  {
+    "startDataId": 50603,
+    "startRarity": 4,
+    "unitIds": [
+      768,
+      769,
+      770
+    ]
+  },
+  {
+    "startDataId": 50612,
+    "startRarity": 3,
+    "unitIds": [
+      814
+    ]
+  },
+  {
+    "startDataId": 50623,
+    "startRarity": 4,
+    "unitIds": [
+      835,
+      836
+    ]
+  },
+  {
+    "startDataId": 50633,
+    "startRarity": 4,
+    "unitIds": [
+      788,
+      789,
+      1126
+    ]
+  },
+  {
+    "startDataId": 50643,
+    "startRarity": 4,
+    "unitIds": [
+      827,
+      828,
+      829
+    ]
+  },
+  {
+    "startDataId": 50654,
+    "startRarity": 5,
+    "unitIds": [
+      862,
+      863,
+      864,
+      1561
+    ]
+  },
+  {
+    "startDataId": 50664,
+    "startRarity": 5,
+    "unitIds": [
+      895,
+      896,
+      897
+    ]
+  },
+  {
+    "startDataId": 50672,
+    "startRarity": 3,
+    "unitIds": [
+      942,
+      943
+    ]
+  },
+  {
+    "startDataId": 50682,
+    "startRarity": 3,
+    "unitIds": [
+      1031,
+      1032
+    ]
+  },
+  {
+    "startDataId": 50694,
+    "startRarity": 5,
+    "unitIds": [
+      920,
+      921,
+      922
+    ]
+  },
+  {
+    "startDataId": 50703,
+    "startRarity": 4,
+    "unitIds": [
+      904,
+      905,
+      1194,
+      1364
+    ]
+  },
+  {
+    "startDataId": 50712,
+    "startRarity": 3,
+    "unitIds": [
+      926,
+      927,
+      928
+    ]
+  },
+  {
+    "startDataId": 50724,
+    "startRarity": 5,
+    "unitIds": [
+      932
+    ]
+  },
+  {
+    "startDataId": 50734,
+    "startRarity": 5,
+    "unitIds": [
+      963,
+      964,
+      965,
+      1721
+    ]
+  },
+  {
+    "startDataId": 50744,
+    "startRarity": 5,
+    "unitIds": [
+      990,
+      991,
+      992
+    ]
+  },
+  {
+    "startDataId": 50754,
+    "startRarity": 5,
+    "unitIds": [
+      1017,
+      1018,
+      1019,
+      1388
+    ]
+  },
+  {
+    "startDataId": 50764,
+    "startRarity": 5,
+    "unitIds": [
+      1051,
+      1052,
+      1053
+    ]
+  },
+  {
+    "startDataId": 50774,
+    "startRarity": 5,
+    "unitIds": [
+      1065,
+      1066
+    ]
+  },
+  {
+    "startDataId": 50786,
+    "startRarity": 7,
+    "unitIds": [
+      1078
+    ]
+  },
+  {
+    "startDataId": 50792,
+    "startRarity": 3,
+    "unitIds": [
+      1088
+    ]
+  },
+  {
+    "startDataId": 50801,
+    "startRarity": 2,
+    "unitIds": [
+      1166,
+      1167
+    ]
+  },
+  {
+    "startDataId": 50814,
+    "startRarity": 5,
+    "unitIds": [
+      1102,
+      1103,
+      1104
+    ]
+  },
+  {
+    "startDataId": 50823,
+    "startRarity": 4,
+    "unitIds": [
+      1117,
+      1118,
+      1119
+    ]
+  },
+  {
+    "startDataId": 50834,
+    "startRarity": 5,
+    "unitIds": [
+      1150,
+      1151,
+      1152
+    ]
+  },
+  {
+    "startDataId": 50844,
+    "startRarity": 5,
+    "unitIds": [
+      1130,
+      1131
+    ]
+  },
+  {
+    "startDataId": 50854,
+    "startRarity": 5,
+    "unitIds": [
+      1132,
+      1133
+    ]
+  },
+  {
+    "startDataId": 50864,
+    "startRarity": 5,
+    "unitIds": [
+      1188,
+      1189,
+      1190
+    ]
+  },
+  {
+    "startDataId": 50876,
+    "startRarity": 7,
+    "unitIds": [
+      1195
+    ]
+  },
+  {
+    "startDataId": 50884,
+    "startRarity": 5,
+    "unitIds": [
+      1212,
+      1213,
+      1214
+    ]
+  },
+  {
+    "startDataId": 50894,
+    "startRarity": 5,
+    "unitIds": [
+      1248,
+      1249,
+      1250
+    ]
+  },
+  {
+    "startDataId": 50904,
+    "startRarity": 5,
+    "unitIds": [
+      1228,
+      1229
+    ]
+  },
+  {
+    "startDataId": 50914,
+    "startRarity": 5,
+    "unitIds": [
+      1274,
+      1275,
+      1276,
+      1367
+    ]
+  },
+  {
+    "startDataId": 50934,
+    "startRarity": 5,
+    "unitIds": [
+      1319,
+      1320,
+      1321
+    ]
+  },
+  {
+    "startDataId": 50944,
+    "startRarity": 5,
+    "unitIds": [
+      1331,
+      1332
+    ]
+  },
+  {
+    "startDataId": 50955,
+    "startRarity": 6,
+    "unitIds": [
+      1333
+    ]
+  },
+  {
+    "startDataId": 50964,
+    "startRarity": 5,
+    "unitIds": [
+      1357,
+      1358,
+      1359
+    ]
+  },
+  {
+    "startDataId": 50975,
+    "startRarity": 6,
+    "unitIds": [
+      1365,
+      1366
+    ]
+  },
+  {
+    "startDataId": 50986,
+    "startRarity": 7,
+    "unitIds": [
+      1380,
+      1381
+    ]
+  },
+  {
+    "startDataId": 50996,
+    "startRarity": 7,
+    "unitIds": [
+      1393,
+      1394
+    ]
+  },
+  {
+    "startDataId": 51006,
+    "startRarity": 7,
+    "unitIds": [
+      1397,
+      1398
+    ]
+  },
+  {
+    "startDataId": 51014,
+    "startRarity": 5,
+    "unitIds": [
+      1415
+    ]
+  },
+  {
+    "startDataId": 51026,
+    "startRarity": 7,
+    "unitIds": [
+      1424,
+      1425
+    ]
+  },
+  {
+    "startDataId": 51036,
+    "startRarity": 7,
+    "unitIds": [
+      1438,
+      1439
+    ]
+  },
+  {
+    "startDataId": 51046,
+    "startRarity": 7,
+    "unitIds": [
+      1452,
+      1453
+    ]
+  },
+  {
+    "startDataId": 51053,
+    "startRarity": 4,
+    "unitIds": [
+      1469,
+      1470,
+      1471,
+      1472
+    ]
+  },
+  {
+    "startDataId": 51066,
+    "startRarity": 7,
+    "unitIds": [
+      1489,
+      1490
+    ]
+  },
+  {
+    "startDataId": 51075,
+    "startRarity": 6,
+    "unitIds": [
+      1503,
+      1504
+    ]
+  },
+  {
+    "startDataId": 51086,
+    "startRarity": 7,
+    "unitIds": [
+      1515,
+      1516
+    ]
+  },
+  {
+    "startDataId": 51093,
+    "startRarity": 4,
+    "unitIds": [
+      1534,
+      1535,
+      1536
+    ]
+  },
+  {
+    "startDataId": 51106,
+    "startRarity": 7,
+    "unitIds": [
+      1521,
+      1522
+    ]
+  },
+  {
+    "startDataId": 51112,
+    "startRarity": 3,
+    "unitIds": [
+      1541,
+      1542
+    ]
+  },
+  {
+    "startDataId": 51126,
+    "startRarity": 7,
+    "unitIds": [
+      1557,
+      1558
+    ]
+  },
+  {
+    "startDataId": 51136,
+    "startRarity": 7,
+    "unitIds": [
+      1587,
+      1588
+    ]
+  },
+  {
+    "startDataId": 51147,
+    "startRarity": 8,
+    "unitIds": [
+      1600
+    ]
+  },
+  {
+    "startDataId": 51155,
+    "startRarity": 6,
+    "unitIds": [
+      1592,
+      1593,
+      1594
+    ]
+  },
+  {
+    "startDataId": 51166,
+    "startRarity": 7,
+    "unitIds": [
+      1605,
+      1606
+    ]
+  },
+  {
+    "startDataId": 51186,
+    "startRarity": 7,
+    "unitIds": [
+      1617,
+      1618
+    ]
+  },
+  {
+    "startDataId": 51192,
+    "startRarity": 3,
+    "unitIds": [
+      1630,
+      1631
+    ]
+  },
+  {
+    "startDataId": 51207,
+    "startRarity": 8,
+    "unitIds": [
+      1642
+    ]
+  },
+  {
+    "startDataId": 51216,
+    "startRarity": 7,
+    "unitIds": [
+      1645,
+      1646
+    ]
+  },
+  {
+    "startDataId": 51227,
+    "startRarity": 8,
+    "unitIds": [
+      1647
+    ]
+  },
+  {
+    "startDataId": 51235,
+    "startRarity": 6,
+    "unitIds": [
+      1655
+    ]
+  },
+  {
+    "startDataId": 51246,
+    "startRarity": 7,
+    "unitIds": [
+      1668,
+      1669
+    ]
+  },
+  {
+    "startDataId": 51256,
+    "startRarity": 7,
+    "unitIds": [
+      1672,
+      1673
+    ]
+  },
+  {
+    "startDataId": 51266,
+    "startRarity": 7,
+    "unitIds": [
+      1687,
+      1688
+    ]
+  },
+  {
+    "startDataId": 51276,
+    "startRarity": 7,
+    "unitIds": [
+      1692,
+      1693
+    ]
+  },
+  {
+    "startDataId": 51286,
+    "startRarity": 7,
+    "unitIds": [
+      1711
+    ]
+  },
+  {
+    "startDataId": 51296,
+    "startRarity": 7,
+    "unitIds": [
+      1712
+    ]
+  },
+  {
+    "startDataId": 51306,
+    "startRarity": 7,
+    "unitIds": [
+      1731,
+      1732
+    ]
+  },
+  {
+    "startDataId": 51317,
+    "startRarity": 8,
+    "unitIds": [
+      1735
+    ]
+  },
+  {
+    "startDataId": 51326,
+    "startRarity": 7,
+    "unitIds": [
+      1736,
+      1737
+    ]
+  },
+  {
+    "startDataId": 51336,
+    "startRarity": 7,
+    "unitIds": [
+      1746,
+      1747
+    ]
+  },
+  {
+    "startDataId": 51343,
+    "startRarity": 4,
+    "unitIds": [
+      1760,
+      1761,
+      1762,
+      1763
+    ]
+  },
+  {
+    "startDataId": 51354,
+    "startRarity": 5,
+    "unitIds": [
+      1794,
+      1795,
+      1796
+    ]
+  },
+  {
+    "startDataId": 51367,
+    "startRarity": 8,
+    "unitIds": [
+      8587
+    ]
+  },
+  {
+    "startDataId": 51367,
+    "startRarity": 8,
+    "unitIds": [
+      1800
+    ]
+  },
+  {
+    "startDataId": 51374,
+    "startRarity": 5,
+    "unitIds": [
+      1803
+    ]
+  },
+  {
+    "startDataId": 60011,
+    "startRarity": 2,
+    "unitIds": [
+      21,
+      22,
+      23,
+      24,
+      343,
+      806,
+      1307
+    ]
+  },
+  {
+    "startDataId": 60021,
+    "startRarity": 2,
+    "unitIds": [
+      40,
+      41,
+      42,
+      325,
+      797
+    ]
+  },
+  {
+    "startDataId": 60027,
+    "startRarity": 8,
+    "unitIds": [
+      1368
+    ]
+  },
+  {
+    "startDataId": 60030,
+    "startRarity": 1,
+    "unitIds": [
+      53,
+      54,
+      1084
+    ]
+  },
+  {
+    "startDataId": 60040,
+    "startRarity": 1,
+    "unitIds": [
+      65,
+      66,
+      286
+    ]
+  },
+  {
+    "startDataId": 60050,
+    "startRarity": 1,
+    "unitIds": [
+      77,
+      78,
+      523
+    ]
+  },
+  {
+    "startDataId": 60061,
+    "startRarity": 2,
+    "unitIds": [
+      97,
+      98,
+      704
+    ]
+  },
+  {
+    "startDataId": 60071,
+    "startRarity": 2,
+    "unitIds": [
+      109,
+      110,
+      363
+    ]
+  },
+  {
+    "startDataId": 60082,
+    "startRarity": 3,
+    "unitIds": [
+      121,
+      122,
+      369,
+      755
+    ]
+  },
+  {
+    "startDataId": 60092,
+    "startRarity": 3,
+    "unitIds": [
+      133,
+      134,
+      331,
+      714,
+      1261,
+      1637
+    ]
+  },
+  {
+    "startDataId": 60102,
+    "startRarity": 3,
+    "unitIds": [
+      150,
+      151,
+      152,
+      375
+    ]
+  },
+  {
+    "startDataId": 60112,
+    "startRarity": 3,
+    "unitIds": [
+      168,
+      169,
+      170,
+      446,
+      950,
+      1399
+    ]
+  },
+  {
+    "startDataId": 60120,
+    "startRarity": 1,
+    "unitIds": [
+      176,
+      182,
+      188,
+      194
+    ]
+  },
+  {
+    "startDataId": 60132,
+    "startRarity": 3,
+    "unitIds": [
+      198,
+      199,
+      200
+    ]
+  },
+  {
+    "startDataId": 60142,
+    "startRarity": 3,
+    "unitIds": [
+      201,
+      202,
+      305
+    ]
+  },
+  {
+    "startDataId": 60151,
+    "startRarity": 2,
+    "unitIds": [
+      218,
+      219,
+      220,
+      440,
+      844
+    ]
+  },
+  {
+    "startDataId": 60162,
+    "startRarity": 3,
+    "unitIds": [
+      236,
+      237,
+      238,
+      476
+    ]
+  },
+  {
+    "startDataId": 60172,
+    "startRarity": 3,
+    "unitIds": [
+      302,
+      303,
+      304,
+      487,
+      881,
+      1698
+    ]
+  },
+  {
+    "startDataId": 60181,
+    "startRarity": 2,
+    "unitIds": [
+      279,
+      280
+    ]
+  },
+  {
+    "startDataId": 60191,
+    "startRarity": 2,
+    "unitIds": [
+      469,
+      470
+    ]
+  },
+  {
+    "startDataId": 60201,
+    "startRarity": 3,
+    "unitIds": [
+      311
+    ]
+  },
+  {
+    "startDataId": 60212,
+    "startRarity": 3,
+    "unitIds": [
+      589,
+      590
+    ]
+  },
+  {
+    "startDataId": 60224,
+    "startRarity": 5,
+    "unitIds": [
+      481
+    ]
+  },
+  {
+    "startDataId": 60233,
+    "startRarity": 4,
+    "unitIds": [
+      316,
+      317
+    ]
+  },
+  {
+    "startDataId": 60243,
+    "startRarity": 4,
+    "unitIds": [
+      401,
+      402,
+      873
+    ]
+  },
+  {
+    "startDataId": 60253,
+    "startRarity": 4,
+    "unitIds": [
+      356,
+      357,
+      529
+    ]
+  },
+  {
+    "startDataId": 60257,
+    "startRarity": 8,
+    "unitIds": [
+      1665
+    ]
+  },
+  {
+    "startDataId": 60261,
+    "startRarity": 2,
+    "unitIds": [
+      639,
+      640
+    ]
+  },
+  {
+    "startDataId": 60273,
+    "startRarity": 4,
+    "unitIds": [
+      425,
+      426,
+      493
+    ]
+  },
+  {
+    "startDataId": 60283,
+    "startRarity": 4,
+    "unitIds": [
+      387,
+      388,
+      560,
+      1137
+    ]
+  },
+  {
+    "startDataId": 60293,
+    "startRarity": 4,
+    "unitIds": [
+      653,
+      654,
+      879
+    ]
+  },
+  {
+    "startDataId": 60303,
+    "startRarity": 4,
+    "unitIds": [
+      413,
+      414
+    ]
+  },
+  {
+    "startDataId": 60313,
+    "startRarity": 4,
+    "unitIds": [
+      457,
+      458,
+      499,
+      1038,
+      1781
+    ]
+  },
+  {
+    "startDataId": 60324,
+    "startRarity": 5,
+    "unitIds": [
+      376,
+      837,
+      1255
+    ]
+  },
+  {
+    "startDataId": 60334,
+    "startRarity": 5,
+    "unitIds": [
+      434
+    ]
+  },
+  {
+    "startDataId": 60344,
+    "startRarity": 5,
+    "unitIds": [
+      812
+    ]
+  },
+  {
+    "startDataId": 60353,
+    "startRarity": 4,
+    "unitIds": [
+      515,
+      516,
+      517,
+      1235,
+      1775
+    ]
+  },
+  {
+    "startDataId": 60363,
+    "startRarity": 4,
+    "unitIds": [
+      545,
+      546,
+      547
+    ]
+  },
+  {
+    "startDataId": 60425,
+    "startRarity": 6,
+    "unitIds": [
+      705
+    ]
+  },
+  {
+    "startDataId": 60435,
+    "startRarity": 6,
+    "unitIds": [
+      838
+    ]
+  },
+  {
+    "startDataId": 60445,
+    "startRarity": 6,
+    "unitIds": [
+      933
+    ]
+  },
+  {
+    "startDataId": 60463,
+    "startRarity": 4,
+    "unitIds": [
+      1295,
+      1296,
+      1297
+    ]
+  },
+  {
+    "startDataId": 60473,
+    "startRarity": 4,
+    "unitIds": [
+      576,
+      577,
+      578,
+      1301
+    ]
+  },
+  {
+    "startDataId": 60483,
+    "startRarity": 4,
+    "unitIds": [
+      548,
+      549
+    ]
+  },
+  {
+    "startDataId": 60493,
+    "startRarity": 4,
+    "unitIds": [
+      625,
+      626,
+      627
+    ]
+  },
+  {
+    "startDataId": 60497,
+    "startRarity": 8,
+    "unitIds": [
+      1678
+    ]
+  },
+  {
+    "startDataId": 60512,
+    "startRarity": 3,
+    "unitIds": [
+      607,
+      608,
+      609,
+      1580
+    ]
+  },
+  {
+    "startDataId": 60523,
+    "startRarity": 4,
+    "unitIds": [
+      670,
+      671,
+      672,
+      1199,
+      1400
+    ]
+  },
+  {
+    "startDataId": 60533,
+    "startRarity": 4,
+    "unitIds": [
+      696,
+      697,
+      698,
+      1346
+    ]
+  },
+  {
+    "startDataId": 60543,
+    "startRarity": 4,
+    "unitIds": [
+      675,
+      676
+    ]
+  },
+  {
+    "startDataId": 60553,
+    "startRarity": 4,
+    "unitIds": [
+      743,
+      744
+    ]
+  },
+  {
+    "startDataId": 60565,
+    "startRarity": 6,
+    "unitIds": [
+      998,
+      999
+    ]
+  },
+  {
+    "startDataId": 60575,
+    "startRarity": 6,
+    "unitIds": [
+      1000,
+      1001
+    ]
+  },
+  {
+    "startDataId": 60583,
+    "startRarity": 4,
+    "unitIds": [
+      708
+    ]
+  },
+  {
+    "startDataId": 60583,
+    "startRarity": 4,
+    "unitIds": [
+      8091,
+      1112
+    ]
+  },
+  {
+    "startDataId": 60584,
+    "startRarity": 5,
+    "unitIds": [
+      8092,
+      1113
+    ]
+  },
+  {
+    "startDataId": 60585,
+    "startRarity": 6,
+    "unitIds": [
+      8093
+    ]
+  },
+  {
+    "startDataId": 60593,
+    "startRarity": 4,
+    "unitIds": [
+      730,
+      731,
+      732
+    ]
+  },
+  {
+    "startDataId": 60603,
+    "startRarity": 4,
+    "unitIds": [
+      746,
+      747
+    ]
+  },
+  {
+    "startDataId": 60613,
+    "startRarity": 4,
+    "unitIds": [
+      776
+    ]
+  },
+  {
+    "startDataId": 60613,
+    "startRarity": 5,
+    "unitIds": [
+      776
+    ]
+  },
+  {
+    "startDataId": 60623,
+    "startRarity": 4,
+    "unitIds": [
+      771,
+      772,
+      773
+    ]
+  },
+  {
+    "startDataId": 60633,
+    "startRarity": 4,
+    "unitIds": [
+      790,
+      791,
+      1127
+    ]
+  },
+  {
+    "startDataId": 60643,
+    "startRarity": 4,
+    "unitIds": [
+      830,
+      831,
+      832
+    ]
+  },
+  {
+    "startDataId": 60655,
+    "startRarity": 6,
+    "unitIds": [
+      1073,
+      1074
+    ]
+  },
+  {
+    "startDataId": 60664,
+    "startRarity": 5,
+    "unitIds": [
+      865,
+      866,
+      867,
+      1562
+    ]
+  },
+  {
+    "startDataId": 60674,
+    "startRarity": 5,
+    "unitIds": [
+      898,
+      899,
+      900
+    ]
+  },
+  {
+    "startDataId": 60682,
+    "startRarity": 3,
+    "unitIds": [
+      944,
+      945
+    ]
+  },
+  {
+    "startDataId": 60692,
+    "startRarity": 3,
+    "unitIds": [
+      1033,
+      1034
+    ]
+  },
+  {
+    "startDataId": 60704,
+    "startRarity": 5,
+    "unitIds": [
+      923,
+      924,
+      925
+    ]
+  },
+  {
+    "startDataId": 60713,
+    "startRarity": 4,
+    "unitIds": [
+      906,
+      907
+    ]
+  },
+  {
+    "startDataId": 60722,
+    "startRarity": 3,
+    "unitIds": [
+      929,
+      930,
+      931
+    ]
+  },
+  {
+    "startDataId": 60734,
+    "startRarity": 5,
+    "unitIds": [
+      966,
+      967,
+      968,
+      1722
+    ]
+  },
+  {
+    "startDataId": 60743,
+    "startRarity": 4,
+    "unitIds": [
+      972,
+      973,
+      974,
+      1582
+    ]
+  },
+  {
+    "startDataId": 60754,
+    "startRarity": 5,
+    "unitIds": [
+      993,
+      994,
+      995
+    ]
+  },
+  {
+    "startDataId": 60764,
+    "startRarity": 5,
+    "unitIds": [
+      1020,
+      1021,
+      1022,
+      1623
+    ]
+  },
+  {
+    "startDataId": 60774,
+    "startRarity": 5,
+    "unitIds": [
+      1054,
+      1055,
+      1056
+    ]
+  },
+  {
+    "startDataId": 60785,
+    "startRarity": 6,
+    "unitIds": [
+      1120,
+      1121
+    ]
+  },
+  {
+    "startDataId": 60794,
+    "startRarity": 5,
+    "unitIds": [
+      1067,
+      1068
+    ]
+  },
+  {
+    "startDataId": 60806,
+    "startRarity": 7,
+    "unitIds": [
+      1077
+    ]
+  },
+  {
+    "startDataId": 60812,
+    "startRarity": 3,
+    "unitIds": [
+      1089
+    ]
+  },
+  {
+    "startDataId": 60821,
+    "startRarity": 2,
+    "unitIds": [
+      1168,
+      1169
+    ]
+  },
+  {
+    "startDataId": 60834,
+    "startRarity": 5,
+    "unitIds": [
+      1105,
+      1106,
+      1107
+    ]
+  },
+  {
+    "startDataId": 60844,
+    "startRarity": 5,
+    "unitIds": [
+      1153,
+      1154,
+      1155
+    ]
+  },
+  {
+    "startDataId": 60864,
+    "startRarity": 5,
+    "unitIds": [
+      1171,
+      1172
+    ]
+  },
+  {
+    "startDataId": 60874,
+    "startRarity": 5,
+    "unitIds": [
+      1191,
+      1192,
+      1193
+    ]
+  },
+  {
+    "startDataId": 60884,
+    "startRarity": 5,
+    "unitIds": [
+      1215,
+      1216,
+      1217
+    ]
+  },
+  {
+    "startDataId": 60894,
+    "startRarity": 5,
+    "unitIds": [
+      1251,
+      1252,
+      1253
+    ]
+  },
+  {
+    "startDataId": 60904,
+    "startRarity": 5,
+    "unitIds": [
+      1230,
+      1231
+    ]
+  },
+  {
+    "startDataId": 60914,
+    "startRarity": 5,
+    "unitIds": [
+      1277,
+      1278,
+      1279
+    ]
+  },
+  {
+    "startDataId": 60936,
+    "startRarity": 7,
+    "unitIds": [
+      1337
+    ]
+  },
+  {
+    "startDataId": 60945,
+    "startRarity": 6,
+    "unitIds": [
+      1385
+    ]
+  },
+  {
+    "startDataId": 60954,
+    "startRarity": 5,
+    "unitIds": [
+      1322,
+      1323,
+      1324
+    ]
+  },
+  {
+    "startDataId": 60964,
+    "startRarity": 5,
+    "unitIds": [
+      1334,
+      1335
+    ]
+  },
+  {
+    "startDataId": 60974,
+    "startRarity": 5,
+    "unitIds": [
+      1360,
+      1361,
+      1362
+    ]
+  },
+  {
+    "startDataId": 60984,
+    "startRarity": 5,
+    "unitIds": [
+      1382,
+      1383,
+      1384
+    ]
+  },
+  {
+    "startDataId": 60994,
+    "startRarity": 5,
+    "unitIds": [
+      1416
+    ]
+  },
+  {
+    "startDataId": 61006,
+    "startRarity": 7,
+    "unitIds": [
+      1409,
+      1410
+    ]
+  },
+  {
+    "startDataId": 61016,
+    "startRarity": 7,
+    "unitIds": [
+      1422,
+      1423
+    ]
+  },
+  {
+    "startDataId": 61026,
+    "startRarity": 7,
+    "unitIds": [
+      1446,
+      1447
+    ]
+  },
+  {
+    "startDataId": 61036,
+    "startRarity": 7,
+    "unitIds": [
+      1461,
+      1462
+    ]
+  },
+  {
+    "startDataId": 61046,
+    "startRarity": 7,
+    "unitIds": [
+      1497,
+      1498
+    ]
+  },
+  {
+    "startDataId": 61056,
+    "startRarity": 7,
+    "unitIds": [
+      1517,
+      1518
+    ]
+  },
+  {
+    "startDataId": 61066,
+    "startRarity": 7,
+    "unitIds": [
+      1523,
+      1524
+    ]
+  },
+  {
+    "startDataId": 61072,
+    "startRarity": 3,
+    "unitIds": [
+      1543,
+      1544
+    ]
+  },
+  {
+    "startDataId": 61086,
+    "startRarity": 7,
+    "unitIds": [
+      1559,
+      1560
+    ]
+  },
+  {
+    "startDataId": 61096,
+    "startRarity": 7,
+    "unitIds": [
+      1589,
+      1590
+    ]
+  },
+  {
+    "startDataId": 61107,
+    "startRarity": 8,
+    "unitIds": [
+      1591
+    ]
+  },
+  {
+    "startDataId": 61115,
+    "startRarity": 6,
+    "unitIds": [
+      1595,
+      1596,
+      1597
+    ]
+  },
+  {
+    "startDataId": 61125,
+    "startRarity": 6,
+    "unitIds": [
+      1619,
+      1620
+    ]
+  },
+  {
+    "startDataId": 61136,
+    "startRarity": 7,
+    "unitIds": [
+      1628,
+      1629
+    ]
+  },
+  {
+    "startDataId": 61146,
+    "startRarity": 7,
+    "unitIds": [
+      1634,
+      1635
+    ]
+  },
+  {
+    "startDataId": 61157,
+    "startRarity": 8,
+    "unitIds": [
+      1639
+    ]
+  },
+  {
+    "startDataId": 61167,
+    "startRarity": 8,
+    "unitIds": [
+      1648
+    ]
+  },
+  {
+    "startDataId": 61175,
+    "startRarity": 6,
+    "unitIds": [
+      1656
+    ]
+  },
+  {
+    "startDataId": 61185,
+    "startRarity": 6,
+    "unitIds": [
+      1661
+    ]
+  },
+  {
+    "startDataId": 61196,
+    "startRarity": 7,
+    "unitIds": [
+      1674,
+      1675
+    ]
+  },
+  {
+    "startDataId": 61207,
+    "startRarity": 8,
+    "unitIds": [
+      1689
+    ]
+  },
+  {
+    "startDataId": 61216,
+    "startRarity": 7,
+    "unitIds": [
+      1694,
+      1695
+    ]
+  },
+  {
+    "startDataId": 61226,
+    "startRarity": 7,
+    "unitIds": [
+      1713
+    ]
+  },
+  {
+    "startDataId": 61236,
+    "startRarity": 7,
+    "unitIds": [
+      1714
+    ]
+  },
+  {
+    "startDataId": 61246,
+    "startRarity": 7,
+    "unitIds": [
+      1733,
+      1734
+    ]
+  },
+  {
+    "startDataId": 61256,
+    "startRarity": 7,
+    "unitIds": [
+      1738,
+      1739
+    ]
+  },
+  {
+    "startDataId": 61263,
+    "startRarity": 4,
+    "unitIds": [
+      1764,
+      1765,
+      1766
+    ]
+  },
+  {
+    "startDataId": 61275,
+    "startRarity": 6,
+    "unitIds": [
+      1767,
+      1768,
+      1769
+    ]
+  },
+  {
+    "startDataId": 61286,
+    "startRarity": 7,
+    "unitIds": [
+      1778,
+      1779
+    ]
+  },
+  {
+    "startDataId": 61294,
+    "startRarity": 5,
+    "unitIds": [
+      1797,
+      1798,
+      1799
+    ]
+  },
+  {
+    "startDataId": 710167,
+    "startRarity": 7,
+    "unitIds": [
+      8407,
+      8408
+    ]
+  },
+  {
+    "startDataId": 710217,
+    "startRarity": 8,
+    "unitIds": [
+      8312
+    ]
+  },
+  {
+    "startDataId": 710227,
+    "startRarity": 8,
+    "unitIds": [
+      8506
+    ]
+  },
+  {
+    "startDataId": 720157,
+    "startRarity": 8,
+    "unitIds": [
+      8321
+    ]
+  },
+  {
+    "startDataId": 720167,
+    "startRarity": 8,
+    "unitIds": [
+      8562
+    ]
+  },
+  {
+    "startDataId": 720237,
+    "startRarity": 8,
+    "unitIds": [
+      8531
+    ]
+  },
+  {
+    "startDataId": 730227,
+    "startRarity": 8,
+    "unitIds": [
+      8528
+    ]
+  },
+  {
+    "startDataId": 730257,
+    "startRarity": 8,
+    "unitIds": [
+      8502
+    ]
+  },
+  {
+    "startDataId": 730287,
+    "startRarity": 8,
+    "unitIds": [
+      8595
+    ]
+  },
+  {
+    "startDataId": 730302,
+    "startRarity": 4,
+    "unitIds": [
+      9990
+    ]
+  },
+  {
+    "startDataId": 730312,
+    "startRarity": 4,
+    "unitIds": [
+      9991
+    ]
+  },
+  {
+    "startDataId": 730322,
+    "startRarity": 4,
+    "unitIds": [
+      9992
+    ]
+  },
+  {
+    "startDataId": 730332,
+    "startRarity": 4,
+    "unitIds": [
+      9993
+    ]
+  },
+  {
+    "startDataId": 730342,
+    "startRarity": 4,
+    "unitIds": [
+      9994
+    ]
+  },
+  {
+    "startDataId": 730352,
+    "startRarity": 4,
+    "unitIds": [
+      9995
+    ]
+  },
+  {
+    "startDataId": 730362,
+    "startRarity": 4,
+    "unitIds": [
+      9996
+    ]
+  },
+  {
+    "startDataId": 740157,
+    "startRarity": 8,
+    "unitIds": [
+      8329
+    ]
+  },
+  {
+    "startDataId": 740237,
+    "startRarity": 8,
+    "unitIds": [
+      8450
+    ]
+  },
+  {
+    "startDataId": 740247,
+    "startRarity": 8,
+    "unitIds": [
+      8513
+    ]
+  },
+  {
+    "startDataId": 750003,
+    "startRarity": 4,
+    "unitIds": [
+      9999,
+      9998,
+      10000,
+      9997
+    ]
+  },
+  {
+    "startDataId": 750122,
+    "startRarity": 3,
+    "unitIds": [
+      8404
+    ]
+  },
+  {
+    "startDataId": 750166,
+    "startRarity": 7,
+    "unitIds": [
+      8292,
+      8293
+    ]
+  },
+  {
+    "startDataId": 750317,
+    "startRarity": 8,
+    "unitIds": [
+      8601
+    ]
+  },
+  {
+    "startDataId": 760006,
+    "startRarity": 8,
+    "unitIds": [
+      8593
+    ]
+  },
+  {
+    "startDataId": 760226,
+    "startRarity": 7,
+    "unitIds": [
+      8290,
+      8291
+    ]
+  },
+  {
+    "startDataId": 810003,
+    "startRarity": 3,
+    "unitIds": [
+      8000,
+      8001,
+      8002,
+      8191
+    ]
+  },
+  {
+    "startDataId": 810034,
+    "startRarity": 3,
+    "unitIds": [
+      8025,
+      8104
+    ]
+  },
+  {
+    "startDataId": 810044,
+    "startRarity": 4,
+    "unitIds": [
+      8032,
+      8033
+    ]
+  },
+  {
+    "startDataId": 810047,
+    "startRarity": 7,
+    "unitIds": [
+      8317,
+      8318
+    ]
+  },
+  {
+    "startDataId": 810104,
+    "startRarity": 4,
+    "unitIds": [
+      8040,
+      8041,
+      8042,
+      8148,
+      8235
+    ]
+  },
+  {
+    "startDataId": 810114,
+    "startRarity": 4,
+    "unitIds": [
+      8095,
+      8096,
+      8097
+    ]
+  },
+  {
+    "startDataId": 810124,
+    "startRarity": 4,
+    "unitIds": [
+      8047,
+      8048
+    ]
+  },
+  {
+    "startDataId": 810134,
+    "startRarity": 4,
+    "unitIds": [
+      8049,
+      8050
+    ]
+  },
+  {
+    "startDataId": 810146,
+    "startRarity": 6,
+    "unitIds": [
+      8051,
+      8136,
+      8402
+    ]
+  },
+  {
+    "startDataId": 810176,
+    "startRarity": 6,
+    "unitIds": [
+      8211,
+      8212,
+      8274
+    ]
+  },
+  {
+    "startDataId": 810186,
+    "startRarity": 6,
+    "unitIds": [
+      8209,
+      8210,
+      8521
+    ]
+  },
+  {
+    "startDataId": 810204,
+    "startRarity": 4,
+    "unitIds": [
+      8077,
+      8078,
+      8079
+    ]
+  },
+  {
+    "startDataId": 810212,
+    "startRarity": 3,
+    "unitIds": [
+      8116
+    ]
+  },
+  {
+    "startDataId": 810265,
+    "startRarity": 5,
+    "unitIds": [
+      8146,
+      8147
+    ]
+  },
+  {
+    "startDataId": 810277,
+    "startRarity": 7,
+    "unitIds": [
+      8280,
+      8281
+    ]
+  },
+  {
+    "startDataId": 810287,
+    "startRarity": 7,
+    "unitIds": [
+      8315,
+      8316
+    ]
+  },
+  {
+    "startDataId": 810315,
+    "startRarity": 5,
+    "unitIds": [
+      8152,
+      8153,
+      8154,
+      8449
+    ]
+  },
+  {
+    "startDataId": 810325,
+    "startRarity": 5,
+    "unitIds": [
+      8177,
+      8178,
+      8179
+    ]
+  },
+  {
+    "startDataId": 810337,
+    "startRarity": 7,
+    "unitIds": [
+      8200,
+      8201
+    ]
+  },
+  {
+    "startDataId": 810356,
+    "startRarity": 7,
+    "unitIds": [
+      8261,
+      8262
+    ]
+  },
+  {
+    "startDataId": 810377,
+    "startRarity": 7,
+    "unitIds": [
+      8357,
+      8358
+    ]
+  },
+  {
+    "startDataId": 810397,
+    "startRarity": 7,
+    "unitIds": [
+      8240,
+      8241
+    ]
+  },
+  {
+    "startDataId": 810408,
+    "startRarity": 8,
+    "unitIds": [
+      8394
+    ]
+  },
+  {
+    "startDataId": 810417,
+    "startRarity": 7,
+    "unitIds": [
+      8225,
+      8226
+    ]
+  },
+  {
+    "startDataId": 810427,
+    "startRarity": 7,
+    "unitIds": [
+      8398,
+      8399
+    ]
+  },
+  {
+    "startDataId": 810437,
+    "startRarity": 7,
+    "unitIds": [
+      8351,
+      8352
+    ]
+  },
+  {
+    "startDataId": 810507,
+    "startRarity": 7,
+    "unitIds": [
+      8268,
+      8269
+    ]
+  },
+  {
+    "startDataId": 810517,
+    "startRarity": 7,
+    "unitIds": [
+      8480,
+      8481
+    ]
+  },
+  {
+    "startDataId": 810525,
+    "startRarity": 5,
+    "unitIds": [
+      8123,
+      8124,
+      8125,
+      8417
+    ]
+  },
+  {
+    "startDataId": 810547,
+    "startRarity": 7,
+    "unitIds": [
+      8334,
+      8335
+    ]
+  },
+  {
+    "startDataId": 810557,
+    "startRarity": 7,
+    "unitIds": [
+      8381,
+      8382
+    ]
+  },
+  {
+    "startDataId": 810587,
+    "startRarity": 7,
+    "unitIds": [
+      8434,
+      8435
+    ]
+  },
+  {
+    "startDataId": 810617,
+    "startRarity": 7,
+    "unitIds": [
+      8482,
+      8483
+    ]
+  },
+  {
+    "startDataId": 810627,
+    "startRarity": 7,
+    "unitIds": [
+      8458,
+      8459
+    ]
+  },
+  {
+    "startDataId": 810657,
+    "startRarity": 7,
+    "unitIds": [
+      8447,
+      8448
+    ]
+  },
+  {
+    "startDataId": 810687,
+    "startRarity": 7,
+    "unitIds": [
+      8548,
+      8549
+    ]
+  },
+  {
+    "startDataId": 810708,
+    "startRarity": 8,
+    "unitIds": [
+      8503
+    ]
+  },
+  {
+    "startDataId": 810718,
+    "startRarity": 8,
+    "unitIds": [
+      8514
+    ]
+  },
+  {
+    "startDataId": 810757,
+    "startRarity": 7,
+    "unitIds": [
+      8529,
+      8530
+    ]
+  },
+  {
+    "startDataId": 810767,
+    "startRarity": 7,
+    "unitIds": [
+      8539,
+      8540
+    ]
+  },
+  {
+    "startDataId": 810778,
+    "startRarity": 8,
+    "unitIds": [
+      8536
+    ]
+  },
+  {
+    "startDataId": 810798,
+    "startRarity": 8,
+    "unitIds": [
+      8581
+    ]
+  },
+  {
+    "startDataId": 810808,
+    "startRarity": 8,
+    "unitIds": [
+      8589
+    ]
+  },
+  {
+    "startDataId": 810827,
+    "startRarity": 7,
+    "unitIds": [
+      8583,
+      8584
+    ]
+  },
+  {
+    "startDataId": 810837,
+    "startRarity": 7,
+    "unitIds": [
+      8575,
+      8576
+    ]
+  },
+  {
+    "startDataId": 810858,
+    "startRarity": 8,
+    "unitIds": [
+      8606
+    ]
+  },
+  {
+    "startDataId": 810888,
+    "startRarity": 8,
+    "unitIds": [
+      8643
+    ]
+  },
+  {
+    "startDataId": 810898,
+    "startRarity": 8,
+    "unitIds": [
+      8622
+    ]
+  },
+  {
+    "startDataId": 810900,
+    "startRarity": 8,
+    "unitIds": [
+      8496
+    ]
+  },
+  {
+    "startDataId": 810908,
+    "startRarity": 8,
+    "unitIds": [
+      8627
+    ]
+  },
+  {
+    "startDataId": 810918,
+    "startRarity": 8,
+    "unitIds": [
+      8631
+    ]
+  },
+  {
+    "startDataId": 810928,
+    "startRarity": 8,
+    "unitIds": [
+      8634
+    ]
+  },
+  {
+    "startDataId": 810958,
+    "startRarity": 8,
+    "unitIds": [
+      8639
+    ]
+  },
+  {
+    "startDataId": 810998,
+    "startRarity": 8,
+    "unitIds": [
+      8652
+    ]
+  },
+  {
+    "startDataId": 811008,
+    "startRarity": 8,
+    "unitIds": [
+      8657
+    ]
+  },
+  {
+    "startDataId": 811016,
+    "startRarity": 6,
+    "unitIds": [
+      8150,
+      8151
+    ]
+  },
+  {
+    "startDataId": 811028,
+    "startRarity": 8,
+    "unitIds": [
+      8662
+    ]
+  },
+  {
+    "startDataId": 811038,
+    "startRarity": 8,
+    "unitIds": [
+      8663
+    ]
+  },
+  {
+    "startDataId": 811116,
+    "startRarity": 6,
+    "unitIds": [
+      8170
+    ]
+  },
+  {
+    "startDataId": 811118,
+    "startRarity": 8,
+    "unitIds": [
+      8380
+    ]
+  },
+  {
+    "startDataId": 820003,
+    "startRarity": 3,
+    "unitIds": [
+      8003,
+      8004,
+      8005,
+      8192
+    ]
+  },
+  {
+    "startDataId": 820034,
+    "startRarity": 3,
+    "unitIds": [
+      8026,
+      8105
+    ]
+  },
+  {
+    "startDataId": 820044,
+    "startRarity": 4,
+    "unitIds": [
+      8034,
+      8035
+    ]
+  },
+  {
+    "startDataId": 820047,
+    "startRarity": 7,
+    "unitIds": [
+      8325,
+      8326
+    ]
+  },
+  {
+    "startDataId": 820114,
+    "startRarity": 4,
+    "unitIds": [
+      8098,
+      8099,
+      8100
+    ]
+  },
+  {
+    "startDataId": 820124,
+    "startRarity": 4,
+    "unitIds": [
+      8052,
+      8053
+    ]
+  },
+  {
+    "startDataId": 820134,
+    "startRarity": 4,
+    "unitIds": [
+      8054,
+      8055
+    ]
+  },
+  {
+    "startDataId": 820146,
+    "startRarity": 6,
+    "unitIds": [
+      8056,
+      8137,
+      8377
+    ]
+  },
+  {
+    "startDataId": 820157,
+    "startRarity": 7,
+    "unitIds": [
+      8288,
+      8289
+    ]
+  },
+  {
+    "startDataId": 820167,
+    "startRarity": 7,
+    "unitIds": [
+      8286,
+      8287
+    ]
+  },
+  {
+    "startDataId": 820176,
+    "startRarity": 6,
+    "unitIds": [
+      8213,
+      8214,
+      8275
+    ]
+  },
+  {
+    "startDataId": 820204,
+    "startRarity": 4,
+    "unitIds": [
+      8080,
+      8081,
+      8082
+    ]
+  },
+  {
+    "startDataId": 820212,
+    "startRarity": 2,
+    "unitIds": [
+      8094
+    ]
+  },
+  {
+    "startDataId": 820277,
+    "startRarity": 7,
+    "unitIds": [
+      8294,
+      8295
+    ]
+  },
+  {
+    "startDataId": 820287,
+    "startRarity": 7,
+    "unitIds": [
+      8319,
+      8320
+    ]
+  },
+  {
+    "startDataId": 820297,
+    "startRarity": 7,
+    "unitIds": [
+      8388,
+      8389
+    ]
+  },
+  {
+    "startDataId": 820315,
+    "startRarity": 5,
+    "unitIds": [
+      8155,
+      8156,
+      8157,
+      8438
+    ]
+  },
+  {
+    "startDataId": 820357,
+    "startRarity": 7,
+    "unitIds": [
+      8378,
+      8379
+    ]
+  },
+  {
+    "startDataId": 820377,
+    "startRarity": 7,
+    "unitIds": [
+      8359,
+      8360
+    ]
+  },
+  {
+    "startDataId": 820387,
+    "startRarity": 7,
+    "unitIds": [
+      8238,
+      8239
+    ]
+  },
+  {
+    "startDataId": 820397,
+    "startRarity": 7,
+    "unitIds": [
+      8244,
+      8245
+    ]
+  },
+  {
+    "startDataId": 820417,
+    "startRarity": 7,
+    "unitIds": [
+      8259,
+      8260
+    ]
+  },
+  {
+    "startDataId": 820437,
+    "startRarity": 7,
+    "unitIds": [
+      8443,
+      8444
+    ]
+  },
+  {
+    "startDataId": 820504,
+    "startRarity": 4,
+    "unitIds": [
+      8110,
+      8111,
+      8112,
+      8366,
+      8367
+    ]
+  },
+  {
+    "startDataId": 820518,
+    "startRarity": 8,
+    "unitIds": [
+      8370
+    ]
+  },
+  {
+    "startDataId": 820547,
+    "startRarity": 7,
+    "unitIds": [
+      8340,
+      8341
+    ]
+  },
+  {
+    "startDataId": 820557,
+    "startRarity": 7,
+    "unitIds": [
+      8395,
+      8396
+    ]
+  },
+  {
+    "startDataId": 820567,
+    "startRarity": 7,
+    "unitIds": [
+      8426,
+      8427
+    ]
+  },
+  {
+    "startDataId": 820577,
+    "startRarity": 7,
+    "unitIds": [
+      8454,
+      8455
+    ]
+  },
+  {
+    "startDataId": 820587,
+    "startRarity": 7,
+    "unitIds": [
+      8436,
+      8437
+    ]
+  },
+  {
+    "startDataId": 820628,
+    "startRarity": 8,
+    "unitIds": [
+      8489
+    ]
+  },
+  {
+    "startDataId": 820657,
+    "startRarity": 7,
+    "unitIds": [
+      8461,
+      8462
+    ]
+  },
+  {
+    "startDataId": 820668,
+    "startRarity": 8,
+    "unitIds": [
+      8490
+    ]
+  },
+  {
+    "startDataId": 820677,
+    "startRarity": 7,
+    "unitIds": [
+      8491,
+      8492
+    ]
+  },
+  {
+    "startDataId": 820687,
+    "startRarity": 7,
+    "unitIds": [
+      8556,
+      8557
+    ]
+  },
+  {
+    "startDataId": 820717,
+    "startRarity": 7,
+    "unitIds": [
+      8515,
+      8516
+    ]
+  },
+  {
+    "startDataId": 820747,
+    "startRarity": 7,
+    "unitIds": [
+      8543,
+      8544
+    ]
+  },
+  {
+    "startDataId": 820757,
+    "startRarity": 7,
+    "unitIds": [
+      8541,
+      8542
+    ]
+  },
+  {
+    "startDataId": 820798,
+    "startRarity": 8,
+    "unitIds": [
+      8607
+    ]
+  },
+  {
+    "startDataId": 820808,
+    "startRarity": 8,
+    "unitIds": [
+      8590
+    ]
+  },
+  {
+    "startDataId": 820827,
+    "startRarity": 7,
+    "unitIds": [
+      8591,
+      8592
+    ]
+  },
+  {
+    "startDataId": 820837,
+    "startRarity": 7,
+    "unitIds": [
+      8578,
+      8579
+    ]
+  },
+  {
+    "startDataId": 820848,
+    "startRarity": 8,
+    "unitIds": [
+      8597
+    ]
+  },
+  {
+    "startDataId": 820867,
+    "startRarity": 7,
+    "unitIds": [
+      8610,
+      8611
+    ]
+  },
+  {
+    "startDataId": 820888,
+    "startRarity": 8,
+    "unitIds": [
+      8640
+    ]
+  },
+  {
+    "startDataId": 820898,
+    "startRarity": 8,
+    "unitIds": [
+      8623
+    ]
+  },
+  {
+    "startDataId": 820900,
+    "startRarity": 8,
+    "unitIds": [
+      8497
+    ]
+  },
+  {
+    "startDataId": 820938,
+    "startRarity": 8,
+    "unitIds": [
+      8629
+    ]
+  },
+  {
+    "startDataId": 820948,
+    "startRarity": 8,
+    "unitIds": [
+      8630
+    ]
+  },
+  {
+    "startDataId": 820958,
+    "startRarity": 8,
+    "unitIds": [
+      8647
+    ]
+  },
+  {
+    "startDataId": 820998,
+    "startRarity": 8,
+    "unitIds": [
+      8651
+    ]
+  },
+  {
+    "startDataId": 830003,
+    "startRarity": 3,
+    "unitIds": [
+      8006,
+      8007,
+      8008,
+      8193
+    ]
+  },
+  {
+    "startDataId": 830034,
+    "startRarity": 3,
+    "unitIds": [
+      8027,
+      8106
+    ]
+  },
+  {
+    "startDataId": 830044,
+    "startRarity": 4,
+    "unitIds": [
+      8036,
+      8037
+    ]
+  },
+  {
+    "startDataId": 830047,
+    "startRarity": 7,
+    "unitIds": [
+      8342,
+      8343
+    ]
+  },
+  {
+    "startDataId": 830115,
+    "startRarity": 5,
+    "unitIds": [
+      8172,
+      8173,
+      8174,
+      8251
+    ]
+  },
+  {
+    "startDataId": 830124,
+    "startRarity": 4,
+    "unitIds": [
+      8057,
+      8058
+    ]
+  },
+  {
+    "startDataId": 830134,
+    "startRarity": 4,
+    "unitIds": [
+      8059,
+      8060
+    ]
+  },
+  {
+    "startDataId": 830146,
+    "startRarity": 6,
+    "unitIds": [
+      8061,
+      8138,
+      8479
+    ]
+  },
+  {
+    "startDataId": 830177,
+    "startRarity": 7,
+    "unitIds": [
+      8215,
+      8216
+    ]
+  },
+  {
+    "startDataId": 830187,
+    "startRarity": 7,
+    "unitIds": [
+      8270,
+      8271
+    ]
+  },
+  {
+    "startDataId": 830277,
+    "startRarity": 7,
+    "unitIds": [
+      8252,
+      8253
+    ]
+  },
+  {
+    "startDataId": 830287,
+    "startRarity": 7,
+    "unitIds": [
+      8310,
+      8311
+    ]
+  },
+  {
+    "startDataId": 830297,
+    "startRarity": 7,
+    "unitIds": [
+      8390,
+      8391
+    ]
+  },
+  {
+    "startDataId": 830315,
+    "startRarity": 5,
+    "unitIds": [
+      8158,
+      8159,
+      8160,
+      8484
+    ]
+  },
+  {
+    "startDataId": 830325,
+    "startRarity": 5,
+    "unitIds": [
+      8202,
+      8203,
+      8204,
+      8363
+    ]
+  },
+  {
+    "startDataId": 830357,
+    "startRarity": 7,
+    "unitIds": [
+      8313,
+      8314
+    ]
+  },
+  {
+    "startDataId": 830377,
+    "startRarity": 7,
+    "unitIds": [
+      8300,
+      8301
+    ]
+  },
+  {
+    "startDataId": 830387,
+    "startRarity": 7,
+    "unitIds": [
+      8353,
+      8354
+    ]
+  },
+  {
+    "startDataId": 830408,
+    "startRarity": 8,
+    "unitIds": [
+      8428
+    ]
+  },
+  {
+    "startDataId": 830417,
+    "startRarity": 7,
+    "unitIds": [
+      8249,
+      8250
+    ]
+  },
+  {
+    "startDataId": 830437,
+    "startRarity": 7,
+    "unitIds": [
+      8327,
+      8328
+    ]
+  },
+  {
+    "startDataId": 830504,
+    "startRarity": 4,
+    "unitIds": [
+      8113,
+      8114
+    ]
+  },
+  {
+    "startDataId": 830516,
+    "startRarity": 6,
+    "unitIds": [
+      8115
+    ]
+  },
+  {
+    "startDataId": 830518,
+    "startRarity": 8,
+    "unitIds": [
+      8265
+    ]
+  },
+  {
+    "startDataId": 830525,
+    "startRarity": 5,
+    "unitIds": [
+      8126,
+      8127,
+      8128,
+      8403
+    ]
+  },
+  {
+    "startDataId": 830537,
+    "startRarity": 7,
+    "unitIds": [
+      8371,
+      8372
+    ]
+  },
+  {
+    "startDataId": 830557,
+    "startRarity": 7,
+    "unitIds": [
+      8409,
+      8410
+    ]
+  },
+  {
+    "startDataId": 830587,
+    "startRarity": 7,
+    "unitIds": [
+      8431,
+      8432
+    ]
+  },
+  {
+    "startDataId": 830597,
+    "startRarity": 7,
+    "unitIds": [
+      8451,
+      8452
+    ]
+  },
+  {
+    "startDataId": 830628,
+    "startRarity": 8,
+    "unitIds": [
+      8460
+    ]
+  },
+  {
+    "startDataId": 830647,
+    "startRarity": 7,
+    "unitIds": [
+      8463,
+      8464
+    ]
+  },
+  {
+    "startDataId": 830657,
+    "startRarity": 7,
+    "unitIds": [
+      8474,
+      8475
+    ]
+  },
+  {
+    "startDataId": 830678,
+    "startRarity": 8,
+    "unitIds": [
+      8493
+    ]
+  },
+  {
+    "startDataId": 830688,
+    "startRarity": 8,
+    "unitIds": [
+      8547
+    ]
+  },
+  {
+    "startDataId": 830697,
+    "startRarity": 7,
+    "unitIds": [
+      8504,
+      8505
+    ]
+  },
+  {
+    "startDataId": 830708,
+    "startRarity": 8,
+    "unitIds": [
+      8546
+    ]
+  },
+  {
+    "startDataId": 830757,
+    "startRarity": 7,
+    "unitIds": [
+      8550,
+      8551
+    ]
+  },
+  {
+    "startDataId": 830767,
+    "startRarity": 7,
+    "unitIds": [
+      8534,
+      8535
+    ]
+  },
+  {
+    "startDataId": 830787,
+    "startRarity": 7,
+    "unitIds": [
+      8566,
+      8567
+    ]
+  },
+  {
+    "startDataId": 830798,
+    "startRarity": 8,
+    "unitIds": [
+      8582
+    ]
+  },
+  {
+    "startDataId": 830808,
+    "startRarity": 8,
+    "unitIds": [
+      8571
+    ]
+  },
+  {
+    "startDataId": 830818,
+    "startRarity": 8,
+    "unitIds": [
+      8586
+    ]
+  },
+  {
+    "startDataId": 830827,
+    "startRarity": 7,
+    "unitIds": [
+      8599,
+      8600
+    ]
+  },
+  {
+    "startDataId": 830838,
+    "startRarity": 8,
+    "unitIds": [
+      8577
+    ]
+  },
+  {
+    "startDataId": 830858,
+    "startRarity": 8,
+    "unitIds": [
+      8605
+    ]
+  },
+  {
+    "startDataId": 830867,
+    "startRarity": 7,
+    "unitIds": [
+      8612,
+      8613
+    ]
+  },
+  {
+    "startDataId": 830888,
+    "startRarity": 8,
+    "unitIds": [
+      8619
+    ]
+  },
+  {
+    "startDataId": 830900,
+    "startRarity": 8,
+    "unitIds": [
+      8498
+    ]
+  },
+  {
+    "startDataId": 830918,
+    "startRarity": 8,
+    "unitIds": [
+      8632
+    ]
+  },
+  {
+    "startDataId": 830958,
+    "startRarity": 8,
+    "unitIds": [
+      8637
+    ]
+  },
+  {
+    "startDataId": 830978,
+    "startRarity": 8,
+    "unitIds": [
+      8648
+    ]
+  },
+  {
+    "startDataId": 830998,
+    "startRarity": 8,
+    "unitIds": [
+      8653
+    ]
+  },
+  {
+    "startDataId": 831018,
+    "startRarity": 8,
+    "unitIds": [
+      8660
+    ]
+  },
+  {
+    "startDataId": 840003,
+    "startRarity": 3,
+    "unitIds": [
+      8009,
+      8010,
+      8011,
+      8194
+    ]
+  },
+  {
+    "startDataId": 840034,
+    "startRarity": 3,
+    "unitIds": [
+      8028,
+      8107
+    ]
+  },
+  {
+    "startDataId": 840044,
+    "startRarity": 4,
+    "unitIds": [
+      8038,
+      8039
+    ]
+  },
+  {
+    "startDataId": 840047,
+    "startRarity": 7,
+    "unitIds": [
+      8349,
+      8350
+    ]
+  },
+  {
+    "startDataId": 840114,
+    "startRarity": 4,
+    "unitIds": [
+      8117,
+      8118,
+      8119,
+      8183,
+      8517
+    ]
+  },
+  {
+    "startDataId": 840124,
+    "startRarity": 4,
+    "unitIds": [
+      8062,
+      8063
+    ]
+  },
+  {
+    "startDataId": 840127,
+    "startRarity": 7,
+    "unitIds": [
+      8255,
+      8256
+    ]
+  },
+  {
+    "startDataId": 840134,
+    "startRarity": 4,
+    "unitIds": [
+      8064,
+      8065
+    ]
+  },
+  {
+    "startDataId": 840146,
+    "startRarity": 6,
+    "unitIds": [
+      8066,
+      8139,
+      8473
+    ]
+  },
+  {
+    "startDataId": 840155,
+    "startRarity": 5,
+    "unitIds": [
+      8175,
+      8176
+    ]
+  },
+  {
+    "startDataId": 840176,
+    "startRarity": 6,
+    "unitIds": [
+      8217,
+      8218,
+      8272
+    ]
+  },
+  {
+    "startDataId": 840204,
+    "startRarity": 4,
+    "unitIds": [
+      8085,
+      8086,
+      8087
+    ]
+  },
+  {
+    "startDataId": 840255,
+    "startRarity": 5,
+    "unitIds": [
+      8130,
+      8131,
+      8132,
+      8618
+    ]
+  },
+  {
+    "startDataId": 840277,
+    "startRarity": 7,
+    "unitIds": [
+      8266,
+      8267
+    ]
+  },
+  {
+    "startDataId": 840287,
+    "startRarity": 7,
+    "unitIds": [
+      8330,
+      8331
+    ]
+  },
+  {
+    "startDataId": 840315,
+    "startRarity": 5,
+    "unitIds": [
+      8161,
+      8162,
+      8163,
+      8509
+    ]
+  },
+  {
+    "startDataId": 840325,
+    "startRarity": 5,
+    "unitIds": [
+      8180,
+      8181,
+      8182
+    ]
+  },
+  {
+    "startDataId": 840357,
+    "startRarity": 7,
+    "unitIds": [
+      8322,
+      8323
+    ]
+  },
+  {
+    "startDataId": 840367,
+    "startRarity": 7,
+    "unitIds": [
+      8227,
+      8228
+    ]
+  },
+  {
+    "startDataId": 840377,
+    "startRarity": 7,
+    "unitIds": [
+      8302,
+      8303
+    ]
+  },
+  {
+    "startDataId": 840397,
+    "startRarity": 7,
+    "unitIds": [
+      8246,
+      8247
+    ]
+  },
+  {
+    "startDataId": 840417,
+    "startRarity": 7,
+    "unitIds": [
+      8263,
+      8264
+    ]
+  },
+  {
+    "startDataId": 840437,
+    "startRarity": 7,
+    "unitIds": [
+      8386,
+      8387
+    ]
+  },
+  {
+    "startDataId": 840507,
+    "startRarity": 7,
+    "unitIds": [
+      8276,
+      8277
+    ]
+  },
+  {
+    "startDataId": 840547,
+    "startRarity": 7,
+    "unitIds": [
+      8338,
+      8339
+    ]
+  },
+  {
+    "startDataId": 840557,
+    "startRarity": 7,
+    "unitIds": [
+      8415,
+      8416
+    ]
+  },
+  {
+    "startDataId": 840567,
+    "startRarity": 7,
+    "unitIds": [
+      8392,
+      8393
+    ]
+  },
+  {
+    "startDataId": 840577,
+    "startRarity": 7,
+    "unitIds": [
+      8418,
+      8419
+    ]
+  },
+  {
+    "startDataId": 840587,
+    "startRarity": 7,
+    "unitIds": [
+      8429,
+      8430
+    ]
+  },
+  {
+    "startDataId": 840607,
+    "startRarity": 7,
+    "unitIds": [
+      8411,
+      8412
+    ]
+  },
+  {
+    "startDataId": 840627,
+    "startRarity": 7,
+    "unitIds": [
+      8487,
+      8488
+    ]
+  },
+  {
+    "startDataId": 840657,
+    "startRarity": 7,
+    "unitIds": [
+      8485,
+      8486
+    ]
+  },
+  {
+    "startDataId": 840688,
+    "startRarity": 8,
+    "unitIds": [
+      8565
+    ]
+  },
+  {
+    "startDataId": 840708,
+    "startRarity": 8,
+    "unitIds": [
+      8527
+    ]
+  },
+  {
+    "startDataId": 840748,
+    "startRarity": 8,
+    "unitIds": [
+      8545
+    ]
+  },
+  {
+    "startDataId": 840757,
+    "startRarity": 7,
+    "unitIds": [
+      8558,
+      8559
+    ]
+  },
+  {
+    "startDataId": 840767,
+    "startRarity": 7,
+    "unitIds": [
+      8532,
+      8533
+    ]
+  },
+  {
+    "startDataId": 840788,
+    "startRarity": 8,
+    "unitIds": [
+      8554
+    ]
+  },
+  {
+    "startDataId": 840798,
+    "startRarity": 8,
+    "unitIds": [
+      8594
+    ]
+  },
+  {
+    "startDataId": 840808,
+    "startRarity": 8,
+    "unitIds": [
+      8572
+    ]
+  },
+  {
+    "startDataId": 840827,
+    "startRarity": 7,
+    "unitIds": [
+      8603,
+      8604
+    ]
+  },
+  {
+    "startDataId": 840848,
+    "startRarity": 8,
+    "unitIds": [
+      8596
+    ]
+  },
+  {
+    "startDataId": 840867,
+    "startRarity": 7,
+    "unitIds": [
+      8608,
+      8609
+    ]
+  },
+  {
+    "startDataId": 840878,
+    "startRarity": 8,
+    "unitIds": [
+      8616
+    ]
+  },
+  {
+    "startDataId": 840888,
+    "startRarity": 8,
+    "unitIds": [
+      8624
+    ]
+  },
+  {
+    "startDataId": 840900,
+    "startRarity": 8,
+    "unitIds": [
+      8499
+    ]
+  },
+  {
+    "startDataId": 840958,
+    "startRarity": 8,
+    "unitIds": [
+      8641
+    ]
+  },
+  {
+    "startDataId": 840968,
+    "startRarity": 8,
+    "unitIds": [
+      8644
+    ]
+  },
+  {
+    "startDataId": 840998,
+    "startRarity": 8,
+    "unitIds": [
+      8655
+    ]
+  },
+  {
+    "startDataId": 841028,
+    "startRarity": 8,
+    "unitIds": [
+      8661
+    ]
+  },
+  {
+    "startDataId": 850003,
+    "startRarity": 3,
+    "unitIds": [
+      8012,
+      8013,
+      8014,
+      8195
+    ]
+  },
+  {
+    "startDataId": 850013,
+    "startRarity": 3,
+    "unitIds": [
+      8021,
+      8022,
+      8023
+    ]
+  },
+  {
+    "startDataId": 850017,
+    "startRarity": 7,
+    "unitIds": [
+      8413,
+      8414
+    ]
+  },
+  {
+    "startDataId": 850025,
+    "startRarity": 5,
+    "unitIds": [
+      8024
+    ]
+  },
+  {
+    "startDataId": 850034,
+    "startRarity": 3,
+    "unitIds": [
+      8029,
+      8108
+    ]
+  },
+  {
+    "startDataId": 850047,
+    "startRarity": 7,
+    "unitIds": [
+      8361,
+      8362
+    ]
+  },
+  {
+    "startDataId": 850114,
+    "startRarity": 4,
+    "unitIds": [
+      8101,
+      8102,
+      8103
+    ]
+  },
+  {
+    "startDataId": 850124,
+    "startRarity": 4,
+    "unitIds": [
+      8067,
+      8068
+    ]
+  },
+  {
+    "startDataId": 850134,
+    "startRarity": 4,
+    "unitIds": [
+      8069,
+      8070
+    ]
+  },
+  {
+    "startDataId": 850146,
+    "startRarity": 6,
+    "unitIds": [
+      8071,
+      8140,
+      8453
+    ]
+  },
+  {
+    "startDataId": 850154,
+    "startRarity": 4,
+    "unitIds": [
+      8120,
+      8121,
+      8122,
+      8184,
+      8285
+    ]
+  },
+  {
+    "startDataId": 850165,
+    "startRarity": 6,
+    "unitIds": [
+      8185,
+      8186,
+      8187
+    ]
+  },
+  {
+    "startDataId": 850176,
+    "startRarity": 6,
+    "unitIds": [
+      8219,
+      8220,
+      8273
+    ]
+  },
+  {
+    "startDataId": 850196,
+    "startRarity": 6,
+    "unitIds": [
+      8197,
+      8198,
+      8199
+    ]
+  },
+  {
+    "startDataId": 850204,
+    "startRarity": 4,
+    "unitIds": [
+      8088,
+      8089,
+      8090
+    ]
+  },
+  {
+    "startDataId": 850265,
+    "startRarity": 5,
+    "unitIds": [
+      8144,
+      8145
+    ]
+  },
+  {
+    "startDataId": 850277,
+    "startRarity": 7,
+    "unitIds": [
+      8296,
+      8297
+    ]
+  },
+  {
+    "startDataId": 850287,
+    "startRarity": 7,
+    "unitIds": [
+      8308,
+      8309
+    ]
+  },
+  {
+    "startDataId": 850297,
+    "startRarity": 7,
+    "unitIds": [
+      8383,
+      8384
+    ]
+  },
+  {
+    "startDataId": 850315,
+    "startRarity": 5,
+    "unitIds": [
+      8164,
+      8165,
+      8166,
+      8397
+    ]
+  },
+  {
+    "startDataId": 850328,
+    "startRarity": 8,
+    "unitIds": [
+      8324
+    ]
+  },
+  {
+    "startDataId": 850346,
+    "startRarity": 6,
+    "unitIds": [
+      8142,
+      8143
+    ]
+  },
+  {
+    "startDataId": 850357,
+    "startRarity": 7,
+    "unitIds": [
+      8375,
+      8376
+    ]
+  },
+  {
+    "startDataId": 850367,
+    "startRarity": 7,
+    "unitIds": [
+      8229,
+      8230
+    ]
+  },
+  {
+    "startDataId": 850377,
+    "startRarity": 7,
+    "unitIds": [
+      8306,
+      8307
+    ]
+  },
+  {
+    "startDataId": 850387,
+    "startRarity": 7,
+    "unitIds": [
+      8355,
+      8356
+    ]
+  },
+  {
+    "startDataId": 850397,
+    "startRarity": 7,
+    "unitIds": [
+      8242,
+      8243
+    ]
+  },
+  {
+    "startDataId": 850417,
+    "startRarity": 7,
+    "unitIds": [
+      8233,
+      8234
+    ]
+  },
+  {
+    "startDataId": 850437,
+    "startRarity": 7,
+    "unitIds": [
+      8420,
+      8421
+    ]
+  },
+  {
+    "startDataId": 850507,
+    "startRarity": 7,
+    "unitIds": [
+      8368,
+      8369
+    ]
+  },
+  {
+    "startDataId": 850547,
+    "startRarity": 7,
+    "unitIds": [
+      8332,
+      8333
+    ]
+  },
+  {
+    "startDataId": 850557,
+    "startRarity": 7,
+    "unitIds": [
+      8423,
+      8424
+    ]
+  },
+  {
+    "startDataId": 850567,
+    "startRarity": 7,
+    "unitIds": [
+      8445,
+      8446
+    ]
+  },
+  {
+    "startDataId": 850588,
+    "startRarity": 8,
+    "unitIds": [
+      8433
+    ]
+  },
+  {
+    "startDataId": 850627,
+    "startRarity": 7,
+    "unitIds": [
+      8510,
+      8511
+    ]
+  },
+  {
+    "startDataId": 850637,
+    "startRarity": 7,
+    "unitIds": [
+      8467,
+      8468
+    ]
+  },
+  {
+    "startDataId": 850647,
+    "startRarity": 7,
+    "unitIds": [
+      8465,
+      8466
+    ]
+  },
+  {
+    "startDataId": 850657,
+    "startRarity": 7,
+    "unitIds": [
+      8494,
+      8495
+    ]
+  },
+  {
+    "startDataId": 850688,
+    "startRarity": 8,
+    "unitIds": [
+      8555
+    ]
+  },
+  {
+    "startDataId": 850708,
+    "startRarity": 8,
+    "unitIds": [
+      8520
+    ]
+  },
+  {
+    "startDataId": 850727,
+    "startRarity": 7,
+    "unitIds": [
+      8518,
+      8519
+    ]
+  },
+  {
+    "startDataId": 850757,
+    "startRarity": 7,
+    "unitIds": [
+      8569,
+      8570
+    ]
+  },
+  {
+    "startDataId": 850767,
+    "startRarity": 7,
+    "unitIds": [
+      8537,
+      8538
+    ]
+  },
+  {
+    "startDataId": 850788,
+    "startRarity": 8,
+    "unitIds": [
+      8568
+    ]
+  },
+  {
+    "startDataId": 850798,
+    "startRarity": 8,
+    "unitIds": [
+      8602
+    ]
+  },
+  {
+    "startDataId": 850808,
+    "startRarity": 8,
+    "unitIds": [
+      8560
+    ]
+  },
+  {
+    "startDataId": 850827,
+    "startRarity": 7,
+    "unitIds": [
+      8620,
+      8621
+    ]
+  },
+  {
+    "startDataId": 850858,
+    "startRarity": 8,
+    "unitIds": [
+      8617
+    ]
+  },
+  {
+    "startDataId": 850888,
+    "startRarity": 8,
+    "unitIds": [
+      8628
+    ]
+  },
+  {
+    "startDataId": 850900,
+    "startRarity": 8,
+    "unitIds": [
+      8500
+    ]
+  },
+  {
+    "startDataId": 850908,
+    "startRarity": 8,
+    "unitIds": [
+      8638
+    ]
+  },
+  {
+    "startDataId": 850918,
+    "startRarity": 8,
+    "unitIds": [
+      8633
+    ]
+  },
+  {
+    "startDataId": 850928,
+    "startRarity": 8,
+    "unitIds": [
+      8635
+    ]
+  },
+  {
+    "startDataId": 850958,
+    "startRarity": 8,
+    "unitIds": [
+      8642
+    ]
+  },
+  {
+    "startDataId": 850977,
+    "startRarity": 7,
+    "unitIds": [
+      8364,
+      8365
+    ]
+  },
+  {
+    "startDataId": 850988,
+    "startRarity": 8,
+    "unitIds": [
+      8646
+    ]
+  },
+  {
+    "startDataId": 850998,
+    "startRarity": 8,
+    "unitIds": [
+      8656
+    ]
+  },
+  {
+    "startDataId": 851018,
+    "startRarity": 8,
+    "unitIds": [
+      8659
+    ]
+  },
+  {
+    "startDataId": 860003,
+    "startRarity": 3,
+    "unitIds": [
+      8015,
+      8016,
+      8017,
+      8196
+    ]
+  },
+  {
+    "startDataId": 860013,
+    "startRarity": 3,
+    "unitIds": [
+      8018,
+      8019,
+      8020
+    ]
+  },
+  {
+    "startDataId": 860017,
+    "startRarity": 7,
+    "unitIds": [
+      8400,
+      8401
+    ]
+  },
+  {
+    "startDataId": 860034,
+    "startRarity": 3,
+    "unitIds": [
+      8030,
+      8109
+    ]
+  },
+  {
+    "startDataId": 860047,
+    "startRarity": 7,
+    "unitIds": [
+      8373,
+      8374
+    ]
+  },
+  {
+    "startDataId": 860104,
+    "startRarity": 4,
+    "unitIds": [
+      8043,
+      8044,
+      8045,
+      8149,
+      8456
+    ]
+  },
+  {
+    "startDataId": 860124,
+    "startRarity": 4,
+    "unitIds": [
+      8072,
+      8073
+    ]
+  },
+  {
+    "startDataId": 860127,
+    "startRarity": 7,
+    "unitIds": [
+      8257,
+      8258
+    ]
+  },
+  {
+    "startDataId": 860134,
+    "startRarity": 4,
+    "unitIds": [
+      8074,
+      8075
+    ]
+  },
+  {
+    "startDataId": 860146,
+    "startRarity": 6,
+    "unitIds": [
+      8076,
+      8141,
+      8425
+    ]
+  },
+  {
+    "startDataId": 860156,
+    "startRarity": 6,
+    "unitIds": [
+      8129
+    ]
+  },
+  {
+    "startDataId": 860158,
+    "startRarity": 8,
+    "unitIds": [
+      8284
+    ]
+  },
+  {
+    "startDataId": 860165,
+    "startRarity": 6,
+    "unitIds": [
+      8188,
+      8189,
+      8190
+    ]
+  },
+  {
+    "startDataId": 860177,
+    "startRarity": 7,
+    "unitIds": [
+      8221,
+      8222
+    ]
+  },
+  {
+    "startDataId": 860186,
+    "startRarity": 6,
+    "unitIds": [
+      8223,
+      8224
+    ]
+  },
+  {
+    "startDataId": 860237,
+    "startRarity": 7,
+    "unitIds": [
+      8207,
+      8208
+    ]
+  },
+  {
+    "startDataId": 860255,
+    "startRarity": 5,
+    "unitIds": [
+      8133,
+      8134,
+      8135,
+      8248
+    ]
+  },
+  {
+    "startDataId": 860277,
+    "startRarity": 7,
+    "unitIds": [
+      8278,
+      8279
+    ]
+  },
+  {
+    "startDataId": 860287,
+    "startRarity": 7,
+    "unitIds": [
+      8344,
+      8345
+    ]
+  },
+  {
+    "startDataId": 860315,
+    "startRarity": 5,
+    "unitIds": [
+      8167,
+      8168,
+      8169,
+      8348
+    ]
+  },
+  {
+    "startDataId": 860328,
+    "startRarity": 8,
+    "unitIds": [
+      8385
+    ]
+  },
+  {
+    "startDataId": 860338,
+    "startRarity": 8,
+    "unitIds": [
+      8422
+    ]
+  },
+  {
+    "startDataId": 860356,
+    "startRarity": 7,
+    "unitIds": [
+      8282,
+      8283
+    ]
+  },
+  {
+    "startDataId": 860367,
+    "startRarity": 7,
+    "unitIds": [
+      8231,
+      8232
+    ]
+  },
+  {
+    "startDataId": 860377,
+    "startRarity": 7,
+    "unitIds": [
+      8304,
+      8305
+    ]
+  },
+  {
+    "startDataId": 860417,
+    "startRarity": 7,
+    "unitIds": [
+      8298,
+      8299
+    ]
+  },
+  {
+    "startDataId": 860427,
+    "startRarity": 7,
+    "unitIds": [
+      8236,
+      8237
+    ]
+  },
+  {
+    "startDataId": 860437,
+    "startRarity": 7,
+    "unitIds": [
+      8441,
+      8442
+    ]
+  },
+  {
+    "startDataId": 860517,
+    "startRarity": 7,
+    "unitIds": [
+      8346,
+      8347
+    ]
+  },
+  {
+    "startDataId": 860547,
+    "startRarity": 7,
+    "unitIds": [
+      8336,
+      8337
+    ]
+  },
+  {
+    "startDataId": 860557,
+    "startRarity": 7,
+    "unitIds": [
+      8439,
+      8440
+    ]
+  },
+  {
+    "startDataId": 860568,
+    "startRarity": 8,
+    "unitIds": [
+      8457
+    ]
+  },
+  {
+    "startDataId": 860577,
+    "startRarity": 7,
+    "unitIds": [
+      8477,
+      8478
+    ]
+  },
+  {
+    "startDataId": 860607,
+    "startRarity": 7,
+    "unitIds": [
+      8405,
+      8406
+    ]
+  },
+  {
+    "startDataId": 860628,
+    "startRarity": 8,
+    "unitIds": [
+      8526
+    ]
+  },
+  {
+    "startDataId": 860637,
+    "startRarity": 7,
+    "unitIds": [
+      8471,
+      8472
+    ]
+  },
+  {
+    "startDataId": 860647,
+    "startRarity": 7,
+    "unitIds": [
+      8469,
+      8470
+    ]
+  },
+  {
+    "startDataId": 860657,
+    "startRarity": 7,
+    "unitIds": [
+      8507,
+      8508
+    ]
+  },
+  {
+    "startDataId": 860678,
+    "startRarity": 8,
+    "unitIds": [
+      8476
+    ]
+  },
+  {
+    "startDataId": 860687,
+    "startRarity": 7,
+    "unitIds": [
+      8563,
+      8564
+    ]
+  },
+  {
+    "startDataId": 860708,
+    "startRarity": 8,
+    "unitIds": [
+      8512
+    ]
+  },
+  {
+    "startDataId": 860727,
+    "startRarity": 7,
+    "unitIds": [
+      8522,
+      8523
+    ]
+  },
+  {
+    "startDataId": 860738,
+    "startRarity": 8,
+    "unitIds": [
+      8524
+    ]
+  },
+  {
+    "startDataId": 860757,
+    "startRarity": 7,
+    "unitIds": [
+      8573,
+      8574
+    ]
+  },
+  {
+    "startDataId": 860787,
+    "startRarity": 7,
+    "unitIds": [
+      8552,
+      8553
+    ]
+  },
+  {
+    "startDataId": 860798,
+    "startRarity": 8,
+    "unitIds": [
+      8598
+    ]
+  },
+  {
+    "startDataId": 860808,
+    "startRarity": 8,
+    "unitIds": [
+      8561
+    ]
+  },
+  {
+    "startDataId": 860818,
+    "startRarity": 8,
+    "unitIds": [
+      8588
+    ]
+  },
+  {
+    "startDataId": 860827,
+    "startRarity": 7,
+    "unitIds": [
+      8625,
+      8626
+    ]
+  },
+  {
+    "startDataId": 860838,
+    "startRarity": 8,
+    "unitIds": [
+      8580
+    ]
+  },
+  {
+    "startDataId": 860867,
+    "startRarity": 7,
+    "unitIds": [
+      8614,
+      8615
+    ]
+  },
+  {
+    "startDataId": 860888,
+    "startRarity": 8,
+    "unitIds": [
+      8636
+    ]
+  },
+  {
+    "startDataId": 860900,
+    "startRarity": 8,
+    "unitIds": [
+      8501
+    ]
+  },
+  {
+    "startDataId": 860958,
+    "startRarity": 8,
+    "unitIds": [
+      8650
+    ]
+  },
+  {
+    "startDataId": 860968,
+    "startRarity": 8,
+    "unitIds": [
+      8645
+    ]
+  },
+  {
+    "startDataId": 860978,
+    "startRarity": 8,
+    "unitIds": [
+      8649
+    ]
+  },
+  {
+    "startDataId": 860998,
+    "startRarity": 8,
+    "unitIds": [
+      8654
+    ]
+  },
+  {
+    "startDataId": 861008,
+    "startRarity": 8,
+    "unitIds": [
+      8658
+    ]
+  },
+  {
+    "startDataId": 870034,
+    "startRarity": 3,
+    "unitIds": [
+      8031
+    ]
+  },
+  {
+    "startDataId": 87102601,
+    "startRarity": 4,
+    "unitIds": [
+      7001,
+      7007,
+      7013
+    ]
+  },
+  {
+    "startDataId": 87202601,
+    "startRarity": 4,
+    "unitIds": [
+      7002,
+      7008,
+      7014
+    ]
+  },
+  {
+    "startDataId": 87302601,
+    "startRarity": 4,
+    "unitIds": [
+      7003,
+      7009,
+      7015
+    ]
+  },
+  {
+    "startDataId": 87402601,
+    "startRarity": 4,
+    "unitIds": [
+      7004,
+      7010,
+      7016
+    ]
+  },
+  {
+    "startDataId": 87502601,
+    "startRarity": 4,
+    "unitIds": [
+      7005,
+      7011,
+      7017
+    ]
+  },
+  {
+    "startDataId": 87602601,
+    "startRarity": 4,
+    "unitIds": [
+      7006,
+      7012,
+      7018
+    ]
+  }
+]

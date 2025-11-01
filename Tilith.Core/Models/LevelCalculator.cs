@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -6,6 +7,8 @@ namespace Tilith.Core.Models;
 
 public static class LevelCalculator
 {
+    private const int BaseXpValue = 4;
+
     private static readonly JsonSerializerOptions Options = new()
     {
         WriteIndented = true,
@@ -14,6 +17,7 @@ public static class LevelCalculator
     };
 
     private static readonly long[] CumulativeXp;
+    private static readonly long[] XpGains;
     private static readonly int MaxLevel;
 
     static LevelCalculator()
@@ -25,35 +29,29 @@ public static class LevelCalculator
 
         MaxLevel = levels.Length;
         CumulativeXp = new long[MaxLevel + 1];
+        XpGains = new long[MaxLevel + 1];
 
-        var span = CumulativeXp.AsSpan();
-        span[0] = 0;
+        var cumulativeSpan = CumulativeXp.AsSpan(1);
+        var gainsSpan = XpGains.AsSpan(0, MaxLevel);
 
+        long runningTotal = 0;
         for ( var i = 0; i < MaxLevel; i++ )
         {
-            span[i + 1] = span[i] + levels[i].XpRequired;
+            runningTotal += levels[i].XpRequired;
+            cumulativeSpan[i] = runningTotal;
+            gainsSpan[i] = BaseXpValue * (i + 1);
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static int CalculateLevel(long experience)
     {
         if ( experience < 0 )
             return 1;
 
-        var span = CumulativeXp.AsSpan();
-        var idx = span.BinarySearch(experience);
-        if ( idx >= 0 )
-            return Math.Clamp(idx + 1, 1, MaxLevel);
-
-        idx = Math.Max(0, ~idx - 1);
-        return Math.Clamp(idx + 1, 1, MaxLevel);
-    }
-
-    public static long GetXpForLevel(int level)
-    {
-        if ( level <= 1 )
-            return 0;
-        return level > MaxLevel + 1 ? CumulativeXp[^1] : CumulativeXp[level - 1];
+        var idx = CumulativeXp.AsSpan().BinarySearch(experience);
+        var level = idx >= 0 ? idx + 1 : ~idx;
+        return Math.Clamp(level, 1, MaxLevel);
     }
 
     public static (int Level, long CurrentLevelXp, long NextLevelXp) GetLevelProgress(long experience)
@@ -68,8 +66,17 @@ public static class LevelCalculator
         return (level, currentLevelXp, nextLevelXp);
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private static long GetXpForLevel(int level)
+    {
+        if ( level <= 1 )
+            return 0;
+        return level > MaxLevel ? CumulativeXp[^1] : CumulativeXp[level - 1];
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static long CalculateXpGain(int currentLevel)
     {
-        return Math.Clamp((long)Math.Ceiling(9 + currentLevel / 2.0), 10, 50);
+        return currentLevel > MaxLevel ? 0 : XpGains[currentLevel - 1];
     }
 }

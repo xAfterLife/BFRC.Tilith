@@ -12,6 +12,7 @@ public sealed class SummonService
 {
     private const int BaseSummonCost = 5;
 
+    // Base rates: 3★=50%, 4★=35%, 5★=12%, 6★=3%
     private static readonly FrozenDictionary<int, double> BaseRarityRates = new Dictionary<int, double>
     {
         [3] = 0.50,
@@ -25,23 +26,17 @@ public sealed class SummonService
     private readonly IServiceScopeFactory _scopeFactory;
     private readonly UnitService _unitService;
 
-    public SummonService(IServiceScopeFactory scopeFactory,
-        UnitService unitService,
-        ILogger<SummonService> logger)
+    public SummonService(IServiceScopeFactory scopeFactory, UnitService unitService, ILogger<SummonService> logger)
     {
         _scopeFactory = scopeFactory;
         _unitService = unitService;
         _logger = logger;
     }
 
-    public async ValueTask<Result<SummonResult>> SummonAsync(ulong discordId,
-        int? bannerId,
-        CancellationToken ct = default)
+    public async ValueTask<Result<SummonResult>> SummonAsync(ulong discordId, int? bannerId, CancellationToken ct = default)
     {
         await using var scope = _scopeFactory.CreateAsyncScope();
         var db = scope.ServiceProvider.GetRequiredService<TilithDbContext>();
-
-        // Use EF's execution strategy for retry-safe transactions
         var strategy = db.Database.CreateExecutionStrategy();
 
         return await strategy.ExecuteAsync(async () =>
@@ -53,22 +48,28 @@ public sealed class SummonService
                     if ( user is null || user.Gems < BaseSummonCost )
                         return Result<SummonResult>.Failure("Insufficient gems (need 5)");
 
-                    // Get banner pool (move outside transaction if possible)
-                    var banner = bannerId.HasValue
-                        ? await db.Banners
-                                  .AsNoTracking()
-                                  .Include(b => b.BannerUnits)
-                                  .FirstOrDefaultAsync(b => b.Id == bannerId && b.IsActive, ct)
-                        : null;
+                    Banner? banner = null;
+                    if ( bannerId.HasValue )
+                    {
+                        banner = await db.Banners
+                                         .AsNoTracking()
+                                         .Include(b => b.BannerUnits)
+                                         .FirstOrDefaultAsync(b => b.Id == bannerId && b.IsActive, ct);
 
-                    // Roll unit
+                        if ( banner is null || banner.BannerUnits.Count == 0 )
+                            return Result<SummonResult>.Failure("Banner not found or has no units");
+                    }
+                    else
+                    {
+                        return Result<SummonResult>.Failure("No banner specified—banner summon required");
+                    }
+
                     var (unit, rarity, isRateUp) = RollUnit(banner);
 
-                    // Deduct gems
                     user.Gems -= BaseSummonCost;
                     user.UpdatedAtUtc = DateTime.UtcNow;
 
-                    // Upsert inventory
+                    // Update inventory (always track quantity)
                     var inventory = await db.UserInventory
                                             .FirstOrDefaultAsync(i => i.DiscordId == discordId && i.UnitId == unit.UnitId, ct);
 
@@ -90,7 +91,24 @@ public sealed class SummonService
                         inventory.UpdatedAtUtc = DateTime.UtcNow;
                     }
 
-                    // Log history
+                    // Create UserUnitInstance only if first summon (for future favorite selection)
+                    var unitInstance = await db.UserUnits
+                                               .FirstOrDefaultAsync(u => u.DiscordId == discordId && u.UnitId == unit.UnitId, ct);
+                    if ( unitInstance is null )
+                    {
+                        db.UserUnits.Add(new UserUnitInstance
+                            {
+                                DiscordId = discordId,
+                                UnitId = unit.UnitId,
+                                UnitXp = 0,
+                                IsFavorite = false,
+                                CreatedAtUtc = DateTime.UtcNow,
+                                UpdatedAtUtc = DateTime.UtcNow
+                            }
+                        );
+                    }
+                    // Note: Duplicate summons only increment UserInventory.Quantity
+
                     db.SummonHistory.Add(new SummonHistory
                         {
                             DiscordId = discordId,
@@ -105,58 +123,47 @@ public sealed class SummonService
                     await db.SaveChangesAsync(ct);
                     await tx.CommitAsync(ct);
 
-                    _logger.LogInformation(
-                        "User {UserId} summoned {UnitId} (★{Rarity})",
-                        discordId, unit.UnitId, rarity
+                    _logger.LogInformation("User {UserId} summoned {UnitId} (★{Rarity}) from banner {BannerId}",
+                        discordId, unit.UnitId, rarity, bannerId
                     );
 
-                    return Result<SummonResult>.Success(new SummonResult(
-                            unit, rarity, isRateUp, BaseSummonCost, user.Gems
-                        )
-                    );
+                    return Result<SummonResult>.Success(new SummonResult(unit, rarity, isRateUp, BaseSummonCost, user.Gems));
                 }
                 catch ( Exception ex )
                 {
                     await tx.RollbackAsync(ct);
                     _logger.LogError(ex, "Summon failed for user {UserId}", discordId);
-                    throw; // Let strategy handle retry
+                    throw;
                 }
             }
         );
     }
 
-    private (UnitData Unit, int Rarity, bool IsRateUp) RollUnit(Banner? banner)
+    private (UnitData Unit, int Rarity, bool IsRateUp) RollUnit(Banner banner)
     {
         var rarity = RollRarity();
 
-        // Filter units by rarity
+        var bannerUnitIds = banner.BannerUnits.Select(bu => bu.UnitId).ToHashSet();
         var pool = _unitService.Units
-                               .Where(u => u.Rarity.StartsWith(rarity.ToString()))
+                               .Where(u => bannerUnitIds.Contains(u.UnitId) && u.Rarity == rarity)
                                .ToArray();
 
         if ( pool.Length == 0 )
-            throw new InvalidOperationException($"No units of rarity {rarity}");
-
-        // Rate-up logic
-        var isRateUp = false;
-        if ( banner is not null && banner.BannerUnits.Count > 0 )
         {
-            var rateUpUnits = banner.BannerUnits
-                                    .Select(bu => bu.UnitId)
-                                    .ToHashSet();
+            rarity -= 1;
+            pool = _unitService.Units
+                               .Where(u => bannerUnitIds.Contains(u.UnitId) && u.Rarity == rarity)
+                               .ToArray();
+        }
 
-            var rateUpPool = pool.Where(u => rateUpUnits.Contains(u.UnitId)).ToArray();
-
-            // 30% chance to pull from rate-up pool if available
-            if ( rateUpPool.Length > 0 && _rng.NextDouble() < 0.30 )
-            {
-                isRateUp = true;
-                pool = rateUpPool;
-            }
+        if ( pool.Length == 0 )
+        {
+            throw new InvalidOperationException($"Banner {banner.Id} has no valid units");
         }
 
         var unit = pool[_rng.Next(pool.Length)];
-        return (unit, rarity, isRateUp);
+
+        return (unit, rarity, false);
     }
 
     private int RollRarity()
@@ -171,11 +178,10 @@ public sealed class SummonService
                 return rarity;
         }
 
-        return 3; // Fallback
+        return 3; // fallback
     }
 }
 
-// Result helper
 public readonly record struct Result<T>
 {
     public T? Value { get; init; }

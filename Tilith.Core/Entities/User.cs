@@ -23,6 +23,8 @@ public sealed class User
     public DateTime CreatedAtUtc { get; init; } = DateTime.UtcNow;
     public DateTime UpdatedAtUtc { get; set; } = DateTime.UtcNow;
 
+    public int? FavoriteUnitId { get; set; }
+
     [NotMapped]
     public int Level => LevelCalculator.CalculateLevel(Experience);
 }

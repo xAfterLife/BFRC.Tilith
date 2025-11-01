@@ -56,6 +56,15 @@ services:
       Discord__Token: ${DISCORD_BOT_TOKEN:?DISCORD_BOT_TOKEN is required}
       Discord__TestGuild: ${DISCORD_TEST_GUILD:-}
       
+      # Element Roles
+      ElementRoles__Roles__1173914858744455218: "BE0000"  # Fire
+      ElementRoles__Roles__1173914860233424996: "0087A5"  # Water
+      ElementRoles__Roles__1173914951342116924: "ADA501"  # Thunder
+      ElementRoles__Roles__1173914859654623274: "49930C"  # Earth
+      ElementRoles__Roles__1173914860757725204: "9A19BF"  # Dark
+      ElementRoles__Roles__1173914852809527338: "94A0A0"  # Light
+      ElementRoles__Roles__987786080889749564 : "761076"  # Test Server Purple
+      
       # CORS
       Cors__AllowedOrigins__0: "http://localhost:3000"
       Cors__AllowedOrigins__1: "http://localhost:5173"

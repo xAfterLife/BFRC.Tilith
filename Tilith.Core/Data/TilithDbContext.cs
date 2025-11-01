@@ -12,6 +12,7 @@ public sealed class TilithDbContext : DbContext
     public DbSet<BannerUnit> BannerUnits => Set<BannerUnit>();
     public DbSet<UserInventory> UserInventory => Set<UserInventory>();
     public DbSet<SummonHistory> SummonHistory => Set<SummonHistory>();
+    public DbSet<UserUnitInstance> UserUnits => Set<UserUnitInstance>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -120,6 +121,20 @@ public sealed class TilithDbContext : DbContext
                  .WithMany()
                  .HasForeignKey(x => x.BannerId)
                  .OnDelete(DeleteBehavior.SetNull);
+            }
+        );
+
+        modelBuilder.Entity<UserUnitInstance>(e =>
+            {
+                e.HasKey(x => x.Id);
+                e.HasIndex(x => new { x.DiscordId, x.UnitId });
+                e.HasIndex(x => x.IsFavorite);
+                e.Property(x => x.CreatedAtUtc).HasDefaultValueSql("NOW()");
+                e.Property(x => x.UpdatedAtUtc).HasDefaultValueSql("NOW()");
+                e.HasOne(x => x.User)
+                 .WithMany()
+                 .HasForeignKey(x => x.DiscordId)
+                 .OnDelete(DeleteBehavior.Cascade);
             }
         );
     }

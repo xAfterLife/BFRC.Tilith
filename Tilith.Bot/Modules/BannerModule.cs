@@ -63,7 +63,7 @@ public sealed class BannerModule : InteractionModuleBase<SocketInteractionContex
     {
         await DeferAsync(true);
 
-        var unitArray = unitIds.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        var unitArray = unitIds.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Select(int.Parse).ToArray();
         if ( unitArray.Length == 0 )
         {
             await FollowupAsync("❌ At least one unit ID is required.", ephemeral: true);

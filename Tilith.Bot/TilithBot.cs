@@ -178,6 +178,7 @@ public sealed class TilithBot
                     await _xpService.TryGrantXpAsync(
                         author.Id,
                         message.Channel.Id,
+                        author is SocketGuildUser socketGuildUser ? socketGuildUser.Guild.Id : 0,
                         DateTime.UtcNow,
                         metadata, // Pass metadata
                         CancellationToken.None

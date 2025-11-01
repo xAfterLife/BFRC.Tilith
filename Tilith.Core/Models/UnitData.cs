@@ -1,3 +1,3 @@
 ﻿namespace Tilith.Core.Models;
 
-public readonly record struct UnitData(string UnitId, string Name, string Rarity, string UnitDataId, string ImageUrl);
+public readonly record struct UnitData(int UnitId, string Name, int Rarity, int UnitDataId, string ImageUrl);

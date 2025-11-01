@@ -57,7 +57,7 @@ public sealed class BannerService
         DateTime? endDate,
         bool isActive,
         string? imageUrl,
-        IReadOnlyList<string> unitIds,
+        IReadOnlyList<int> unitIds,
         CancellationToken ct = default)
     {
         await using var scope = _scopeFactory.CreateAsyncScope();
@@ -113,7 +113,7 @@ public sealed class BannerService
         DateTime? endDate,
         bool? isActive,
         string? imageUrl,
-        IReadOnlyList<string>? unitIds,
+        IReadOnlyList<int>? unitIds,
         CancellationToken ct = default)
     {
         await using var scope = _scopeFactory.CreateAsyncScope();

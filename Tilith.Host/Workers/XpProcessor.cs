@@ -10,28 +10,31 @@ namespace Tilith.Host.Workers;
 public sealed class XpProcessor : BackgroundService
 {
     private static readonly TimeSpan BatchInterval = TimeSpan.FromSeconds(5);
+    private readonly EvolutionService _evolutionService;
     private readonly LevelCacheService _levelCache;
+    private readonly LevelUpNotificationService _levelUpNotificationService;
     private readonly ILogger<XpProcessor> _logger;
-    private readonly NotificationService _notificationService;
     private readonly IServiceScopeFactory _scopeFactory;
     private readonly XpService _xpService;
 
     public XpProcessor(XpService xpService,
-        NotificationService notificationService,
+        LevelUpNotificationService levelUpNotificationService,
         IServiceScopeFactory scopeFactory,
         LevelCacheService levelCache,
+        EvolutionService evolutionService,
         ILogger<XpProcessor> logger)
     {
         _xpService = xpService;
-        _notificationService = notificationService;
+        _levelUpNotificationService = levelUpNotificationService;
         _scopeFactory = scopeFactory;
         _levelCache = levelCache;
+        _evolutionService = evolutionService;
         _logger = logger;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _logger.LogInformation("XP Processor started with username tracking");
+        _logger.LogInformation("XP Processor started (with unit XP + evolution)");
 
         await foreach ( var batch in ReadBatchesAsync(stoppingToken) )
         {
@@ -41,7 +44,6 @@ public sealed class XpProcessor : BackgroundService
             await using var scope = _scopeFactory.CreateAsyncScope();
             var context = scope.ServiceProvider.GetRequiredService<TilithDbContext>();
 
-            // Group grants + capture message metadata
             var userGrants = batch
                              .GroupBy(x => x.UserId)
                              .Select(g => new
@@ -49,7 +51,8 @@ public sealed class XpProcessor : BackgroundService
                                      UserId = g.Key,
                                      XpDelta = g.Sum(x => x.XpAmount),
                                      g.Last().ChannelId,
-                                     g.Last().MessageMetadata // NEW: username/display from message
+                                     g.Last().GuildId,
+                                     g.Last().MessageMetadata
                                  }
                              )
                              .ToList();
@@ -65,7 +68,6 @@ public sealed class XpProcessor : BackgroundService
             {
                 if ( !users.TryGetValue(grant.UserId, out var user) )
                 {
-                    // New user: capture initial username
                     user = new User
                     {
                         DiscordId = grant.UserId,
@@ -77,34 +79,36 @@ public sealed class XpProcessor : BackgroundService
                     };
                     context.Users.Add(user);
                     users[grant.UserId] = user;
+
+                    continue;
                 }
-                else
+
+                var oldLevel = LevelCalculator.CalculateLevel(user.Experience);
+                user.Experience += grant.XpDelta;
+
+                if ( !string.IsNullOrEmpty(grant.MessageMetadata.Username) && user.Username != grant.MessageMetadata.Username )
                 {
-                    var oldLevel = LevelCalculator.CalculateLevel(user.Experience);
-                    user.Experience += grant.XpDelta;
+                    user.Username = grant.MessageMetadata.Username;
+                    user.UpdatedAtUtc = now;
+                }
 
-                    // Update names if changed (opportunistic sync)
-                    var newUsername = grant.MessageMetadata.Username;
-                    var newDisplayName = grant.MessageMetadata.DisplayName;
+                if ( !string.IsNullOrEmpty(grant.MessageMetadata.DisplayName) && user.DisplayName != grant.MessageMetadata.DisplayName )
+                {
+                    user.DisplayName = grant.MessageMetadata.DisplayName;
+                    user.UpdatedAtUtc = now;
+                }
 
-                    if ( !string.IsNullOrEmpty(newUsername) && user.Username != newUsername )
-                    {
-                        user.Username = newUsername;
-                        user.UpdatedAtUtc = now;
-                    }
-
-                    if ( !string.IsNullOrEmpty(newDisplayName) && user.DisplayName != newDisplayName )
-                    {
-                        user.DisplayName = newDisplayName;
-                        user.UpdatedAtUtc = now;
-                    }
-
-                    var newLevel = LevelCalculator.CalculateLevel(user.Experience);
-                    if ( newLevel <= oldLevel )
-                        continue;
-
-                    _notificationService.QueueLevelUp(user.DiscordId, grant.ChannelId, oldLevel, newLevel);
+                var newLevel = LevelCalculator.CalculateLevel(user.Experience);
+                if ( newLevel > oldLevel )
+                {
+                    _levelUpNotificationService.QueueLevelUp(user.DiscordId, grant.ChannelId, grant.GuildId, user.Experience);
                     _levelCache.UpdateUserLevel(user.DiscordId, newLevel);
+                }
+
+                await _evolutionService.GrantUnitXpAsync(grant.UserId, stoppingToken);
+                if ( await _evolutionService.TryEvolveAsync(grant.UserId, stoppingToken) )
+                {
+                    // Do something Fancy like the levelUpNotificationService above
                 }
             }
 
@@ -136,7 +140,7 @@ public sealed class XpProcessor : BackgroundService
             if ( batch.Count <= 0 )
                 continue;
 
-            yield return [..batch];
+            yield return [.. batch];
             batch.Clear();
         }
     }

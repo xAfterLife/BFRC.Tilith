@@ -74,9 +74,9 @@ public sealed class SummonModule : InteractionModuleBase<SocketInteractionContex
     }
 
     [SlashCommand("inventory", "View your unit collection")]
-    public async Task InventoryAsync(
-        [Summary("rarity", "Filter by rarity")] [MinValue(3)] [MaxValue(6)] int? rarity = null,
-        [Summary("page", "Page number")] [MinValue(1)] int page = 1)
+    public async Task InventoryAsync([Summary("rarity", "Filter by rarity")] [MinValue(3)] [MaxValue(6)] int? rarity = null,
+        [Summary("page", "Page number")] [MinValue(1)]
+        int page = 1)
     {
         await DeferAsync();
 

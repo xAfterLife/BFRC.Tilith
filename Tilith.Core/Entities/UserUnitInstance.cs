@@ -1,12 +1,13 @@
 ﻿namespace Tilith.Core.Entities;
 
-public sealed class UserInventory
+public sealed class UserUnitInstance
 {
     public int Id { get; init; }
     public ulong DiscordId { get; init; }
-    public int UnitId { get; init; }
-    public int Quantity { get; set; } = 1;
-    public DateTime AcquiredAtUtc { get; init; }
+    public int UnitId { get; set; }
+    public long UnitXp { get; set; }
+    public bool IsFavorite { get; set; }
+    public DateTime CreatedAtUtc { get; init; }
     public DateTime UpdatedAtUtc { get; set; }
 
     public User User { get; init; } = null!;

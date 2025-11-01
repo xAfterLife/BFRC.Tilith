@@ -3,7 +3,7 @@ using Tilith.Core.Models;
 
 namespace Tilith.Core.Services;
 
-public sealed class NotificationService
+public sealed class LevelUpNotificationService
 {
     private readonly Channel<LevelUpNotification> _channel = Channel.CreateUnbounded<LevelUpNotification>(new UnboundedChannelOptions
         {
@@ -14,8 +14,8 @@ public sealed class NotificationService
 
     public ChannelReader<LevelUpNotification> Reader => _channel.Reader;
 
-    public void QueueLevelUp(ulong userId, ulong channelId, int oldLevel, int newLevel)
+    public void QueueLevelUp(ulong userId, ulong channelId, ulong guildId, long experience)
     {
-        _channel.Writer.TryWrite(new LevelUpNotification(userId, channelId, oldLevel, newLevel));
+        _channel.Writer.TryWrite(new LevelUpNotification(userId, channelId, guildId, experience));
     }
 }

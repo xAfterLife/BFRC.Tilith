@@ -4,6 +4,6 @@ public readonly record struct LevelUpNotification
 (
     ulong UserId,
     ulong ChannelId,
-    int OldLevel,
-    int NewLevel
+    ulong GuildId,
+    long Experience
 );

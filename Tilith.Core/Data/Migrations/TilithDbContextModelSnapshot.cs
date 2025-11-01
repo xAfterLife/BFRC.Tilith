@@ -78,9 +78,9 @@ namespace Tilith.Core.Data.Migrations
                     b.Property<int>("BannerId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("UnitId")
+                    b.Property<int>("UnitId")
                         .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
+                        .HasColumnType("integer");
 
                     b.Property<decimal?>("RateUpMultiplier")
                         .HasPrecision(4, 2)
@@ -118,9 +118,8 @@ namespace Tilith.Core.Data.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasDefaultValueSql("NOW()");
 
-                    b.Property<string>("UnitId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("UnitId")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -148,6 +147,9 @@ namespace Tilith.Core.Data.Migrations
 
                     b.Property<long>("Experience")
                         .HasColumnType("bigint");
+
+                    b.Property<int?>("FavoriteUnitId")
+                        .HasColumnType("integer");
 
                     b.Property<int>("Gems")
                         .HasColumnType("integer");
@@ -197,9 +199,8 @@ namespace Tilith.Core.Data.Migrations
                         .HasColumnType("integer")
                         .HasDefaultValue(1);
 
-                    b.Property<string>("UnitId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("UnitId")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("UpdatedAtUtc")
                         .ValueGeneratedOnAdd()
@@ -212,6 +213,45 @@ namespace Tilith.Core.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("UserInventory");
+                });
+
+            modelBuilder.Entity("Tilith.Core.Entities.UserUnitInstance", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAtUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("NOW()");
+
+                    b.Property<decimal>("DiscordId")
+                        .HasColumnType("numeric(20,0)");
+
+                    b.Property<bool>("IsFavorite")
+                        .HasColumnType("boolean");
+
+                    b.Property<int>("UnitId")
+                        .HasColumnType("integer");
+
+                    b.Property<long>("UnitXp")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("UpdatedAtUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("NOW()");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsFavorite");
+
+                    b.HasIndex("DiscordId", "UnitId");
+
+                    b.ToTable("UserUnits");
                 });
 
             modelBuilder.Entity("Tilith.Core.Entities.BannerUnit", b =>
@@ -244,6 +284,17 @@ namespace Tilith.Core.Data.Migrations
                 });
 
             modelBuilder.Entity("Tilith.Core.Entities.UserInventory", b =>
+                {
+                    b.HasOne("Tilith.Core.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("DiscordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Tilith.Core.Entities.UserUnitInstance", b =>
                 {
                     b.HasOne("Tilith.Core.Entities.User", "User")
                         .WithMany()
